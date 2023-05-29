@@ -714,9 +714,11 @@ namespace Pathos
           else if (!Entity.IsUnique && char.IsUpper(Entity.Name[0]))
             Record($"Entity {Entity.Name} name must have a common name when marked as non-unique.");
 
-          if (Entity.HasReactions())
+          //if (Entity.HasReactions())
+          if (Entity.Reactions != null && Entity.Reactions.Count > 0)
           {
-            foreach (var Reaction in Entity.GetReactions())
+            //foreach (var Reaction in Entity.GetReactions())
+            foreach (var Reaction in Entity.Reactions)
             {
               foreach (var Effect in Reaction.Apply.GetEffects())
               {

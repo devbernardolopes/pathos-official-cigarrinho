@@ -119,68 +119,68 @@ armour,suit,white dragon scale mail,,,light armour:6,,,,hide,100,600,900,0,stand
 armour,suit,white dragon scales,,,light armour:3,,,,hide,50,400,500,0,standard,FALSE,
 armour,suit,yellow dragon scale mail,,,light armour:6,,,,hide,100,600,900,0,standard,FALSE,
 armour,suit,yellow dragon scales,,,light armour:3,,,,hide,50,400,500,0,standard,FALSE,
-book,book,book of acid stream,colourful book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9
-book,book,book of animate dead,thick book,,,,,,paper,48,500,200,15,standard,FALSE,study:LearnSpell:|/necromancy:3
-book,book,book of animate object,spotted book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/enchantment:12
-book,book,book of bind undead,black book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/necromancy:12
+book,book,book of acid stream,colourful book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9|clairvoir:LearnSpell:|/:0
+book,book,book of animate dead,thick book,,,,,,paper,48,500,200,15,standard,FALSE,study:LearnSpell:|/necromancy:3|clairvoir:LearnSpell:|/:0
+book,book,book of animate object,spotted book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/enchantment:12|clairvoir:LearnSpell:|/:0
+book,book,book of bind undead,black book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/necromancy:12|clairvoir:LearnSpell:|/:0
 book,book,book of blank paper,plain book,,,,,,paper,4,500,50,20,standard,FALSE,
-book,book,book of blinking,fuzzy book,,,,,,paper,32,500,100,15,standard,FALSE,study:LearnSpell:|/abjuration:0
-book,book,book of cancellation,shining book,,,,,,paper,128,500,700,15,standard,FALSE,study:LearnSpell:|/transmutation:18
-book,book,book of charm,magenta book,,,,,,paper,64,500,300,20,standard,FALSE,study:LearnSpell:|/enchantment:6
-book,book,book of clairvoyance,dark blue book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/divination:6
-book,book,book of cone of cold,dog eared book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/evocation:12
-book,book,book of confusion,orange book,,,,,,paper,48,500,200,25,standard,FALSE,study:LearnSpell:|/enchantment:3
-book,book,book of create familiar,glittering book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/conjuration:15
-book,book,book of crushing sphere,humongous book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3
-book,book,book of curing,indigo book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/clerical:3
-book,book,book of darkness,faded book,,,,,,paper,32,500,100,30,standard,FALSE,study:LearnSpell:|/necromancy:0
-book,book,book of deflection,wide book,,,,,,paper,32,500,100,15,standard,FALSE,study:LearnSpell:|/abjuration:0
-book,book,book of detect food,cyan book,,,,,,paper,48,500,200,15,standard,FALSE,study:LearnSpell:|/divination:3
-book,book,book of detect monsters,leather book,,,,,,paper,32,500,100,20,standard,FALSE,study:LearnSpell:|/divination:0
-book,book,book of detect treasure,grey book,,,,,,paper,80,500,400,25,standard,FALSE,study:LearnSpell:|/divination:9
-book,book,book of detect unseen,violet book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/divination:6
-book,book,book of dig,parchment book,,,,,,paper,96,500,500,20,standard,FALSE,study:LearnSpell:|/transmutation:12
-book,book,book of disintegrate,yellow book,,,,,,paper,128,500,700,5,standard,FALSE,study:LearnSpell:|/transmutation:18
-book,book,book of drain life,velvet book,,,,,,paper,64,500,300,10,standard,FALSE,study:LearnSpell:|/necromancy:6
-book,book,book of extra healing,plaid book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/clerical:6
-book,book,book of fear,light blue book,,,,,,paper,64,500,300,20,standard,FALSE,study:LearnSpell:|/enchantment:6
-book,book,book of finger of death,stained book,,,,,,paper,128,500,700,5,standard,FALSE,study:LearnSpell:|/necromancy:18
-book,book,book of fireball,ragged book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9
-book,book,book of flaming sphere,canvas book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3
-book,book,book of force bolt,red book,,,,,,paper,32,500,100,25,standard,FALSE,study:LearnSpell:|/evocation:0
-book,book,book of freezing sphere,hardcover book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3
-book,book,book of full healing,long book,,,,,,paper,96,500,500,5,standard,FALSE,study:LearnSpell:|/clerical:12
-book,book,book of haste,purple book,,,,,,paper,64,500,300,20,standard,FALSE,study:LearnSpell:|/abjuration:6
-book,book,book of healing,white book,,,,,,paper,32,500,100,30,standard,FALSE,study:LearnSpell:|/clerical:0
-book,book,book of ice storm,thin book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9
-book,book,book of identify,bronze book,,,,,,paper,96,500,500,30,standard,FALSE,study:LearnSpell:|/divination:12
-book,book,book of invisibility,dark brown book,,,,,,paper,80,500,400,20,standard,FALSE,study:LearnSpell:|/abjuration:9
-book,book,book of jumping,torn book,,,,,,paper,48,500,200,15,standard,FALSE,study:LearnSpell:|/abjuration:3
-book,book,book of knock,pink book,,,,,,paper,32,500,100,25,standard,FALSE,study:LearnSpell:|/transmutation:0
-book,book,book of levitation,tan book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/abjuration:9
-book,book,book of light,cloth book,,,,,,paper,32,500,100,30,standard,FALSE,study:LearnSpell:|/abjuration:0
-book,book,book of lightning bolt,rainbow book,,,,,,paper,80,500,400,10,standard,FALSE,study:LearnSpell:|/evocation:9
-book,book,book of living wall,deep book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/necromancy:15
-book,book,book of magic mapping,dusty book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/divination:12
-book,book,book of magic missile,vellum book,,,,,,paper,48,500,200,40,standard,FALSE,study:LearnSpell:|/evocation:3
-book,book,book of phasing,shadow book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/enchantment:15
-book,book,book of poison blast,tattered book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9
-book,book,book of polymorph,silver book,,,,,,paper,112,500,600,15,standard,FALSE,study:LearnSpell:|/transmutation:15
-book,book,book of raise dead,papyrus book,,,,,,paper,128,500,700,10,standard,FALSE,study:LearnSpell:|/necromancy:18
-book,book,book of regenerate,dull book,,,,,,paper,80,500,400,10,standard,FALSE,study:LearnSpell:|/clerical:9
-book,book,book of remove curse,wrinkled book,,,,,,paper,96,500,500,25,standard,FALSE,study:LearnSpell:|/clerical:12
-book,book,book of restoration,light brown book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/clerical:9
-book,book,book of shocking sphere,stylish book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3
-book,book,book of sleep,mottled book,,,,,,paper,32,500,100,35,standard,FALSE,study:LearnSpell:|/enchantment:0
-book,book,book of slow,light green book,,,,,,paper,48,500,200,25,standard,FALSE,study:LearnSpell:|/enchantment:3
-book,book,book of soaking sphere,tiny book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3
-book,book,book of summoning,turquoise book,,,,,,paper,48,500,200,25,standard,FALSE,study:LearnSpell:|/conjuration:3
-book,book,book of telekinesis,backwards book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/abjuration:6
-book,book,book of teleport away,gold book,,,,,,paper,112,500,600,15,standard,FALSE,study:LearnSpell:|/abjuration:15
-book,book,book of toxic spray,ochre book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/transmutation:6
-book,book,book of turn undead,copper book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/clerical:6
-book,book,book of walling,big book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/transmutation:15
-book,book,book of wizard lock,dark green book,,,,,,paper,48,500,200,30,standard,FALSE,study:LearnSpell:|/transmutation:3
+book,book,book of blinking,fuzzy book,,,,,,paper,32,500,100,15,standard,FALSE,study:LearnSpell:|/abjuration:0|clairvoir:LearnSpell:|/:0
+book,book,book of cancellation,shining book,,,,,,paper,128,500,700,15,standard,FALSE,study:LearnSpell:|/transmutation:18|clairvoir:LearnSpell:|/:0
+book,book,book of charm,magenta book,,,,,,paper,64,500,300,20,standard,FALSE,study:LearnSpell:|/enchantment:6|clairvoir:LearnSpell:|/:0
+book,book,book of clairvoyance,dark blue book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/divination:6|clairvoir:LearnSpell:|/:0
+book,book,book of cone of cold,dog eared book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/evocation:12|clairvoir:LearnSpell:|/:0
+book,book,book of confusion,orange book,,,,,,paper,48,500,200,25,standard,FALSE,study:LearnSpell:|/enchantment:3|clairvoir:LearnSpell:|/:0
+book,book,book of create familiar,glittering book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/conjuration:15|clairvoir:LearnSpell:|/:0
+book,book,book of crushing sphere,humongous book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3|clairvoir:LearnSpell:|/:0
+book,book,book of curing,indigo book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/clerical:3|clairvoir:LearnSpell:|/:0
+book,book,book of darkness,faded book,,,,,,paper,32,500,100,30,standard,FALSE,study:LearnSpell:|/necromancy:0|clairvoir:LearnSpell:|/:0
+book,book,book of deflection,wide book,,,,,,paper,32,500,100,15,standard,FALSE,study:LearnSpell:|/abjuration:0|clairvoir:LearnSpell:|/:0
+book,book,book of detect food,cyan book,,,,,,paper,48,500,200,15,standard,FALSE,study:LearnSpell:|/divination:3|clairvoir:LearnSpell:|/:0
+book,book,book of detect monsters,leather book,,,,,,paper,32,500,100,20,standard,FALSE,study:LearnSpell:|/divination:0|clairvoir:LearnSpell:|/:0
+book,book,book of detect treasure,grey book,,,,,,paper,80,500,400,25,standard,FALSE,study:LearnSpell:|/divination:9|clairvoir:LearnSpell:|/:0
+book,book,book of detect unseen,violet book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/divination:6|clairvoir:LearnSpell:|/:0
+book,book,book of dig,parchment book,,,,,,paper,96,500,500,20,standard,FALSE,study:LearnSpell:|/transmutation:12|clairvoir:LearnSpell:|/:0
+book,book,book of disintegrate,yellow book,,,,,,paper,128,500,700,5,standard,FALSE,study:LearnSpell:|/transmutation:18|clairvoir:LearnSpell:|/:0
+book,book,book of drain life,velvet book,,,,,,paper,64,500,300,10,standard,FALSE,study:LearnSpell:|/necromancy:6|clairvoir:LearnSpell:|/:0
+book,book,book of extra healing,plaid book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/clerical:6|clairvoir:LearnSpell:|/:0
+book,book,book of fear,light blue book,,,,,,paper,64,500,300,20,standard,FALSE,study:LearnSpell:|/enchantment:6|clairvoir:LearnSpell:|/:0
+book,book,book of finger of death,stained book,,,,,,paper,128,500,700,5,standard,FALSE,study:LearnSpell:|/necromancy:18|clairvoir:LearnSpell:|/:0
+book,book,book of fireball,ragged book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9|clairvoir:LearnSpell:|/:0
+book,book,book of flaming sphere,canvas book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3|clairvoir:LearnSpell:|/:0
+book,book,book of force bolt,red book,,,,,,paper,32,500,100,25,standard,FALSE,study:LearnSpell:|/evocation:0|clairvoir:LearnSpell:|/:0
+book,book,book of freezing sphere,hardcover book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3|clairvoir:LearnSpell:|/:0
+book,book,book of full healing,long book,,,,,,paper,96,500,500,5,standard,FALSE,study:LearnSpell:|/clerical:12|clairvoir:LearnSpell:|/:0
+book,book,book of haste,purple book,,,,,,paper,64,500,300,20,standard,FALSE,study:LearnSpell:|/abjuration:6|clairvoir:LearnSpell:|/:0
+book,book,book of healing,white book,,,,,,paper,32,500,100,30,standard,FALSE,study:LearnSpell:|/clerical:0|clairvoir:LearnSpell:|/:0
+book,book,book of ice storm,thin book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9|clairvoir:LearnSpell:|/:0
+book,book,book of identify,bronze book,,,,,,paper,96,500,500,30,standard,FALSE,study:LearnSpell:|/divination:12|clairvoir:LearnSpell:|/:0
+book,book,book of invisibility,dark brown book,,,,,,paper,80,500,400,20,standard,FALSE,study:LearnSpell:|/abjuration:9|clairvoir:LearnSpell:|/:0
+book,book,book of jumping,torn book,,,,,,paper,48,500,200,15,standard,FALSE,study:LearnSpell:|/abjuration:3|clairvoir:LearnSpell:|/:0
+book,book,book of knock,pink book,,,,,,paper,32,500,100,25,standard,FALSE,study:LearnSpell:|/transmutation:0|clairvoir:LearnSpell:|/:0
+book,book,book of levitation,tan book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/abjuration:9|clairvoir:LearnSpell:|/:0
+book,book,book of light,cloth book,,,,,,paper,32,500,100,30,standard,FALSE,study:LearnSpell:|/abjuration:0|clairvoir:LearnSpell:|/:0
+book,book,book of lightning bolt,rainbow book,,,,,,paper,80,500,400,10,standard,FALSE,study:LearnSpell:|/evocation:9|clairvoir:LearnSpell:|/:0
+book,book,book of living wall,deep book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/necromancy:15|clairvoir:LearnSpell:|/:0
+book,book,book of magic mapping,dusty book,,,,,,paper,96,500,500,15,standard,FALSE,study:LearnSpell:|/divination:12|clairvoir:LearnSpell:|/:0
+book,book,book of magic missile,vellum book,,,,,,paper,48,500,200,40,standard,FALSE,study:LearnSpell:|/evocation:3|clairvoir:LearnSpell:|/:0
+book,book,book of phasing,shadow book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/enchantment:15|clairvoir:LearnSpell:|/:0
+book,book,book of poison blast,tattered book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/evocation:9|clairvoir:LearnSpell:|/:0
+book,book,book of polymorph,silver book,,,,,,paper,112,500,600,15,standard,FALSE,study:LearnSpell:|/transmutation:15|clairvoir:LearnSpell:|/:0
+book,book,book of raise dead,papyrus book,,,,,,paper,128,500,700,10,standard,FALSE,study:LearnSpell:|/necromancy:18|clairvoir:LearnSpell:|/:0
+book,book,book of regenerate,dull book,,,,,,paper,80,500,400,10,standard,FALSE,study:LearnSpell:|/clerical:9|clairvoir:LearnSpell:|/:0
+book,book,book of remove curse,wrinkled book,,,,,,paper,96,500,500,25,standard,FALSE,study:LearnSpell:|/clerical:12|clairvoir:LearnSpell:|/:0
+book,book,book of restoration,light brown book,,,,,,paper,80,500,400,15,standard,FALSE,study:LearnSpell:|/clerical:9|clairvoir:LearnSpell:|/:0
+book,book,book of shocking sphere,stylish book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3|clairvoir:LearnSpell:|/:0
+book,book,book of sleep,mottled book,,,,,,paper,32,500,100,35,standard,FALSE,study:LearnSpell:|/enchantment:0|clairvoir:LearnSpell:|/:0
+book,book,book of slow,light green book,,,,,,paper,48,500,200,25,standard,FALSE,study:LearnSpell:|/enchantment:3|clairvoir:LearnSpell:|/:0
+book,book,book of soaking sphere,tiny book,,,,,,paper,48,500,200,20,standard,FALSE,study:LearnSpell:|/conjuration:3|clairvoir:LearnSpell:|/:0
+book,book,book of summoning,turquoise book,,,,,,paper,48,500,200,25,standard,FALSE,study:LearnSpell:|/conjuration:3|clairvoir:LearnSpell:|/:0
+book,book,book of telekinesis,backwards book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/abjuration:6|clairvoir:LearnSpell:|/:0
+book,book,book of teleport away,gold book,,,,,,paper,112,500,600,15,standard,FALSE,study:LearnSpell:|/abjuration:15|clairvoir:LearnSpell:|/:0
+book,book,book of toxic spray,ochre book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/transmutation:6|clairvoir:LearnSpell:|/:0
+book,book,book of turn undead,copper book,,,,,,paper,64,500,300,15,standard,FALSE,study:LearnSpell:|/clerical:6|clairvoir:LearnSpell:|/:0
+book,book,book of walling,big book,,,,,,paper,112,500,600,10,standard,FALSE,study:LearnSpell:|/transmutation:15|clairvoir:LearnSpell:|/:0
+book,book,book of wizard lock,dark green book,,,,,,paper,48,500,200,30,standard,FALSE,study:LearnSpell:|/transmutation:3|clairvoir:LearnSpell:|/:0
 food,corpse,animal corpse,,,,,,,animal,1,0,1,0,standard,FALSE,
 food,corpse,vegetable corpse,,,,,,,vegetable,1,0,1,0,standard,FALSE,
 food,egg,egg,,,,,,,animal,10,0,9,80,standard,FALSE,

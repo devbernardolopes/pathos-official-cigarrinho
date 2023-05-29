@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,ช่างบัดกรี
 ClassName,tourist//female,นักท่องเที่ยว
 ClassName,tourist//male,นักท่องเที่ยว
 ClassName,tourist//non-binary,นักท่องเที่ยว
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,วาลคิรี
 ClassName,valkyrie//male,วาลคิรี
 ClassName,valkyrie//non-binary,วาลคิรี
@@ -836,6 +839,7 @@ CounterName,boons,ผลประโยชน์
 CounterName,captures,จับ
 CounterName,casts,ร่าย
 CounterName,chants,ท่อง
+CounterName,clairvoirs,
 CounterName,constructs,สร้าง
 CounterName,copies,
 CounterName,crafts,งานฝีมือ
@@ -950,6 +954,7 @@ DietName,lithivore,สัตว์กินหิน
 DietName,metalivore,สัตว์กินเหล็ก
 DietName,omnivore,กินทั้งพืชและสัตว์
 DietName,organivore,กินเฉพาะอาหารไร้สารเคมี
+DietName,photoautotroph,
 DietName,xylophagy,สัตว์กินไม้
 EffectProperty,afflictions,ความทุกข์
 EffectProperty,all kind,ทุกเหล่า
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,ลงอาคมทรัพย์สิน
 EffectType,engulf,เขมือบ
 EffectType,enlightenment,
 EffectType,exchange,แปลเปลี่ยน
+EffectType,extinguish spill,
 EffectType,gain level,ได้รับเลเวล
 EffectType,gain skill,ได้รับทักษะ
 EffectType,genocide,ล้างเผ่าพันธุ์
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,ต้านท
 ElementDescription,Complete resistance to electric and shock damage.,ต้านทานไฟฟ้าโดยสิ้นเชิง
 ElementDescription,Complete resistance to fire and heat damage.,ต้านทานไฟและความร้อนโดยสิ้นเชิง
 ElementDescription,Complete resistance to life and mana draining effects.,ต้านทานการดูดพลังชีวิตและมานาโดยสิ้นเชิง
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,ต้านทานการเสกเป็นหินโดยสิ้นเชิง
 ElementDescription,Complete resistance to poison damage.,ต้านทานพิษโดยสิ้นเชิง
 ElementDescription,Protects you against pure magical effects.,ป้องกันจากผลของเวทมนตร์
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,การสลาย
 ElementName,drain,ดูดซับ
 ElementName,fire,เพลิง
 ElementName,force,แรง
+ElementName,light,
 ElementName,magical,เวทมนตร์
 ElementName,necrotic,การเน่าเปื่อย
 ElementName,petrify,การกลายเป็นหิน
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",
 EntityDescription,Beware this clockwork machine of war.,
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",
@@ -1362,6 +1371,7 @@ EntityName,Elwing,
 EntityName,embalmer,
 EntityName,energy vortex,
 EntityName,erinys,
+EntityName,ethereal,
 EntityName,ettin,
 EntityName,ettin mummy,
 EntityName,ettin zombie,
@@ -3036,6 +3046,7 @@ KindName,dwarf,คนแคระ
 KindName,echo,
 KindName,elemental,ธาตุ
 KindName,elf,เอลฟ์
+KindName,extradimensional,
 KindName,eye,ดวงตา
 KindName,fairy,
 KindName,flayer,
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,
 LiteralText,VIEW,ดู
 LiteralText,Visit the website,เยี่ยมชมเว็บไซต์
 LiteralText,VOID SPACE,
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,แพ้ทางต่อ
 LiteralText,WAIT,รอ
 LiteralText,Wait how many turns?,รอกี่เทิร์น?
@@ -3905,6 +3917,7 @@ MaterialName,ice,น้ำแข็ง
 MaterialName,iron,เหล็ก
 MaterialName,lava,ลาวา
 MaterialName,leather,หนังสัตว์
+MaterialName,light,
 MaterialName,mithril,มิธริล
 MaterialName,paper,กระดาษ
 MaterialName,plastic,พลาสติก
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,ชโลม
 MotionPastName,ate,กิน
 MotionPastName,captured,ถูกจับ
 MotionPastName,chanted,ร่าย
+MotionPastName,clairvu,
 MotionPastName,constructed,สร้าง
 MotionPastName,copied,
 MotionPastName,dipped,จุ่ม
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,ยิง
 MotionPresentName,anoint,ชโลม
 MotionPresentName,capture,จับ
 MotionPresentName,chant,ร่าย
+MotionPresentName,clairvoir,
 MotionPresentName,construct,สร้าง
 MotionPresentName,copy,
 MotionPresentName,dig,ขุด
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,ภาวะง่วงหลับ
 PropertyName,paralysis,อมพาต
 PropertyName,petrifying,กลายเป็นหิน
 PropertyName,phasing,ทะลุผ่าน
+PropertyName,photosensitivity,
 PropertyName,polymorph,กลายร่าง
 PropertyName,polymorph control,ควบคุมการกลายร่าง
 PropertyName,quickness,รวดเร็ว
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,ถูกรังเกียจ
 PunishmentName,thirst,กระหาย
 PunishmentName,wanted,ต้องการตัว
 QualificationCode,c,แชมป์เปี้
+QualificationCode,d,
 QualificationCode,e,ผู้เชี่ยวชาญ
 QualificationCode,m,ปรมาจารย์
 QualificationCode,p,ชำนาญ
 QualificationCode,s,ผู้ชำนาญพิเศษ
+QualificationCode,t,
 QualificationName,champion,แชมป์เปี้
+QualificationName,divine,
 QualificationName,expert,ผู้เชี่ยวชาญ
 QualificationName,master,ปรมาจารย์
 QualificationName,proficient,ชำนาญ
 QualificationName,specialist,ผู้ชำนาญพิเศษ
+QualificationName,transcendent,
 RaceName,angel//female,ทูตสวรรค์
 RaceName,angel//male,ทูตสวรรค์
 RaceName,angel//non-binary,ทูตสวรรค์
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,
 RaceName,elf//female,เอลฟ์
 RaceName,elf//male,เอลฟ์
 RaceName,elf//non-binary,เอลฟ์
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,
 RaceName,ettin//male,
 RaceName,ettin//non-binary,
@@ -4579,10 +4603,12 @@ SpellName,acid stream,ไอกรด
 SpellName,animate dead,ควบคุมสิ่งไม่มีชีวิต
 SpellName,animate object,ควบคุมวัตถุ
 SpellName,bind undead,
+SpellName,blessing,
 SpellName,blinking,การเคลื่อนที่พริบตา
 SpellName,cancellation,การยกเลิก
 SpellName,charm,ทำให้ลุ่มหลง
 SpellName,clairvoyance,ตาทิพย์
+SpellName,clairvoyance reading,
 SpellName,cone of cold,คลื่นความเย็น
 SpellName,confusion,ทำให้สับสน
 SpellName,create familiar,เสกสัตว์เลี้ยง
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,ตรวจหาสิ่งที่มองไม�
 SpellName,dig,ขุด
 SpellName,disintegrate,ทำให้สลาย
 SpellName,drain life,ดูดพลังชีวิต
+SpellName,enchantment,
 SpellName,extra healing,ฟื้นฟูพิเศษ
 SpellName,fear,ความกลัว
 SpellName,finger of death,นิ้วแห่งความตาย
@@ -4624,6 +4651,7 @@ SpellName,polymorph,กลายร่าง
 SpellName,raise dead,คืนชีพคนตาย
 SpellName,regenerate,การฟื้นฟู
 SpellName,remove curse,ถอนคำสาป
+SpellName,replication,
 SpellName,restoration,ฟื้นฟูความสามารถ
 SpellName,shocking sphere,ก้อนพลังไฟฟ้า
 SpellName,sleep,นอนหลับ
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,
 SpellName,summoning,การอัญเชิญ
 SpellName,telekinesis,พลังโทรจิต
 SpellName,teleport away,เทเลพอร์ตหนี
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,ฉีดพิษ
 SpellName,turn undead,
 SpellName,walling,สร้างกำแพง

@@ -3,7 +3,7 @@
     "Run Pathos": {
       "commandName": "Executable",
       "executablePath": "$(PathosInstallation)\\PathosGame.exe",
-      "commandLineArgs": "disable-update campaign:\"$(AssemblyName).dll\" module:$(PathosModule) start:$(PathosHero)"
+      "commandLineArgs": "disable-update wm campaign:\"$(AssemblyName).dll\" module:$(PathosModule) start:$(PathosHero)"
     }
   }
 }

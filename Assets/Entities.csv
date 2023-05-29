@@ -218,6 +218,7 @@ elf,elf,green elf,,10,3,12,189,medium,animal,10000,5.0,12,attack,,12,13,11,14,15
 elf,elf,grey elf,,14,3,16,242,medium,animal,10000,5.0,13,attack,,12,13,12,14,15,13
 elf,elf,high elf,,17,1,19,427,medium,animal,11000,5.0,15,attack,,17,15,12,15,15,14
 elf,elf,woodland elf,,7,3,9,60,medium,animal,9000,5.0,10,attack,,12,13,10,13,13,12
+extradimensional,ethereal,ethereal,Extradimensional beings that feed on light.,0,0,0,0,medium,ether,150,7.5,10,attack,BASE,10,10,10,10,10,10
 eye,,beholder,,32,1,34,1508,large,animal,25000,3.7,26,attack,,14,13,15,14,11,14
 eye,,blinking eye,,7,1,9,76,small,animal,100,3.7,16,attack,,6,15,11,4,6,8
 eye,,bloodshot eye,,21,1,19,406,small,animal,100,2.0,13,attack,,6,16,8,4,6,5

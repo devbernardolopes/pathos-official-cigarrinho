@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,kontár
 ClassName,tourist//female,turista
 ClassName,tourist//male,turista
 ClassName,tourist//non-binary,turista
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,valkűr
 ClassName,valkyrie//male,valkűr
 ClassName,valkyrie//non-binary,valkűr
@@ -836,6 +839,7 @@ CounterName,boons,áldások
 CounterName,captures,elfogások
 CounterName,casts,varázslások
 CounterName,chants,kántálások
+CounterName,clairvoirs,
 CounterName,constructs,építések
 CounterName,copies,
 CounterName,crafts,barkácsolások
@@ -950,6 +954,7 @@ DietName,lithivore,kőevő
 DietName,metalivore,fémevő
 DietName,omnivore,mindenevő
 DietName,organivore,organikus élelemmel táplálkozó
+DietName,photoautotroph,
 DietName,xylophagy,faevő
 EffectProperty,afflictions,csapás
 EffectProperty,all kind,mindenfajta
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,eszköz igézése
 EffectType,engulf,elnyelés
 EffectType,enlightenment,felvilágosodás
 EffectType,exchange,kicserél
+EffectType,extinguish spill,
 EffectType,gain level,szint megszerzése
 EffectType,gain skill,képesség megszerzése
 EffectType,genocide,népirtás
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,Teljes ellenál
 ElementDescription,Complete resistance to electric and shock damage.,Teljes ellenállás elektromos- és sokksebzés ellen.
 ElementDescription,Complete resistance to fire and heat damage.,Teljes ellenállás tűz- és hősebzés ellen.
 ElementDescription,Complete resistance to life and mana draining effects.,Teljes ellenállás élet- és manaelszívás ellen.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,Teljes ellenállás kővé dermedés ellen.
 ElementDescription,Complete resistance to poison damage.,Teljes ellenállás méregsebzés ellen.
 ElementDescription,Protects you against pure magical effects.,Megvéd a tisztán mágikus hatásokkal szemben.
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,bomlás
 ElementName,drain,elszívás
 ElementName,fire,tűz
 ElementName,force,erő
+ElementName,light,
 ElementName,magical,mágikus
 ElementName,necrotic,nekrotikus
 ElementName,petrify,megkövülés
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Asztrális lények, akik egy legyőzött kalandor rettenthetetlen szellemének hordozói. Saját indíttatás híján örömmel ajánlják fel a testük feletti uralmat másoknak, így helyezve az elhunyt kalandor kezébe a bosszú vagy a megváltás második esélyét. Asztrális anyagból születtek, termetük vékony. Áttetszők és képesek szabadon áthaladni bármilyen fizikai akadályon."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Gyönyörű, nem e világi lények, kik jellemző glóriával és tollakkal borított szárnyaikkal rendelkeznek. Ezek a lények erősen ráhangolódtak a jó és a gonosz közötti szüntelen harcra, és emiatt képesek érzékelni az üdvösséget bármiben, ami csak a kezük ügyébe kerül."
 EntityDescription,Beware this clockwork machine of war.,Óvakodj ettől a kíméletlen halálosztótól.
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Túlvilági lények, kiket erőteljes természeti szellemek kötnek össze, hogy hóbortjaikat táplálják. Zömök, szőrös alsó testtel, a kecskééhez hasonló patával és a kosokra jellemző csavart szarvval rendelkeznek. Trágár és okos lények, akik vidám vezérei az ivás, a tánc és a harc hedonista kalandjainak."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Nagy, húsevő hüllők, kiknek vad ősei már jóval a civilizáció születése előtt uralták a világot. Félelmetes ragadozók, akik képesek lenyűgöző távolságokra ugrani, valamint vastag és pikkelyes bőrükkel támadások sokaságát elhárítani."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Perverz, aberrált, bíborszín bőrű, fejükön szarvakat viselő lények. Puszta jelenlétük arra kényszeríti a körülöttük lévőket, hogy legsötétebb és legerőszakosabb vágyaiknak tegyenek eleget."
@@ -1362,6 +1371,7 @@ EntityName,Elwing,Elwing
 EntityName,embalmer,balzsamozó
 EntityName,energy vortex,energiaörvény
 EntityName,erinys,erinyes
+EntityName,ethereal,
 EntityName,ettin,kétfejű
 EntityName,ettin mummy,kétfejű múmia
 EntityName,ettin zombie,zombikétfejű
@@ -3036,6 +3046,7 @@ KindName,dwarf,törp
 KindName,echo,ekhó
 KindName,elemental,elementál
 KindName,elf,elf
+KindName,extradimensional,
 KindName,eye,szem
 KindName,fairy,tündér
 KindName,flayer,nyúzó
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,Tükör
 LiteralText,VIEW,NÉZET
 LiteralText,Visit the website,Weboldal meglátogatása
 LiteralText,VOID SPACE,ÜRES TÉR
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,sebezhető a következővel szemben:
 LiteralText,WAIT,VÁR
 LiteralText,Wait how many turns?,Hány kör várakozás?
@@ -3905,6 +3917,7 @@ MaterialName,ice,jég
 MaterialName,iron,vas
 MaterialName,lava,láva
 MaterialName,leather,bőr
+MaterialName,light,
 MaterialName,mithril,mithril
 MaterialName,paper,papír
 MaterialName,plastic,műanyag
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,felszentelte
 MotionPastName,ate,elfogyasztotta
 MotionPastName,captured,elfogta
 MotionPastName,chanted,kántálta
+MotionPastName,clairvu,
 MotionPastName,constructed,építette
 MotionPastName,copied,
 MotionPastName,dipped,belemártotta
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,bűvölte
 MotionPresentName,anoint,felszentelés
 MotionPresentName,capture,elfogás
 MotionPresentName,chant,kántálás
+MotionPresentName,clairvoir,
 MotionPresentName,construct,építés
 MotionPresentName,copy,
 MotionPresentName,dig,ásás
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,"Különös tünetekkel járó, rettenetes betegség sújt, és folyamatos hányingerrel küzdesz."
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",Egy szörnyekkel teli kazamatában békésen hajtod álomra fejedet.
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,"Felemészt a folyamatos étvágy, de tudod, hogy sosem lakhatsz jól."
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,"Ellenálló vagy, így semmiféle természetes vagy mágikus betegség nincs rád hatással."
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,"Felszerelésed megfelelő arra, hogy alagutakat áss, és a saját utadat járhasd a kazamatában."
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,"Meg tudod állapítani az adott tárgy töltéseinek számát azzal, ha csupán felveszed."
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,narkolepszia
 PropertyName,paralysis,bénulás
 PropertyName,petrifying,megkövülés
 PropertyName,phasing,térugrás
+PropertyName,photosensitivity,
 PropertyName,polymorph,átváltozás
 PropertyName,polymorph control,irányított átváltozás
 PropertyName,quickness,gyorsaság
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,kirekesztettség
 PunishmentName,thirst,szomjúság
 PunishmentName,wanted,körözés
 QualificationCode,c,b
+QualificationCode,d,
 QualificationCode,e,sz
 QualificationCode,m,m
 QualificationCode,p,gy
 QualificationCode,s,s
+QualificationCode,t,
 QualificationName,champion,bajnok
+QualificationName,divine,
 QualificationName,expert,szakértő
 QualificationName,master,mester
 QualificationName,proficient,jártas
 QualificationName,specialist,specialista
+QualificationName,transcendent,
 RaceName,angel//female,angyal
 RaceName,angel//male,angyal
 RaceName,angel//non-binary,angyal
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,ekhó
 RaceName,elf//female,elf
 RaceName,elf//male,elf
 RaceName,elf//non-binary,elf
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,kétfejű
 RaceName,ettin//male,kétfejű
 RaceName,ettin//non-binary,kétfejű
@@ -4579,10 +4603,12 @@ SpellName,acid stream,savlövellés
 SpellName,animate dead,holtélesztés
 SpellName,animate object,tárgyélesztés
 SpellName,bind undead,élőholt kötelezése
+SpellName,blessing,
 SpellName,blinking,elillanás
 SpellName,cancellation,érvénytelenítés
 SpellName,charm,elbűvölés
 SpellName,clairvoyance,látnoki képesség
+SpellName,clairvoyance reading,
 SpellName,cone of cold,dértölcsér
 SpellName,confusion,zavartság
 SpellName,create familiar,bizalmaskodás
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,láthatatlanok érzékelése
 SpellName,dig,ásás
 SpellName,disintegrate,bomlasztás
 SpellName,drain life,életelszívás
+SpellName,enchantment,
 SpellName,extra healing,extra gyógyítás
 SpellName,fear,félelem
 SpellName,finger of death,halál ujja
@@ -4624,6 +4651,7 @@ SpellName,polymorph,átváltozás
 SpellName,raise dead,halott-támasztás
 SpellName,regenerate,regenerálódás
 SpellName,remove curse,átoklevétel
+SpellName,replication,
 SpellName,restoration,helyreállítás
 SpellName,shocking sphere,sokkoló gömb
 SpellName,sleep,alvás
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,áztató gömb
 SpellName,summoning,megidézés
 SpellName,telekinesis,telekinézis
 SpellName,teleport away,elteleportálás
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,méregpermet
 SpellName,turn undead,élőholttá változtatás
 SpellName,walling,falazás

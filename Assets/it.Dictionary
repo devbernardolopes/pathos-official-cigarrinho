@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,smanettone
 ClassName,tourist//female,turista
 ClassName,tourist//male,turista
 ClassName,tourist//non-binary,turista
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,valchiria
 ClassName,valkyrie//male,valchiria
 ClassName,valkyrie//non-binary,valchiria
@@ -836,6 +839,7 @@ CounterName,boons,vantaggi
 CounterName,captures,cattura
 CounterName,casts,lancia
 CounterName,chants,canta
+CounterName,clairvoirs,
 CounterName,constructs,costruisce
 CounterName,copies,
 CounterName,crafts,crea
@@ -950,6 +954,7 @@ DietName,lithivore,lithivoro
 DietName,metalivore,metallivoro
 DietName,omnivore,onnivoro
 DietName,organivore,organivoro
+DietName,photoautotroph,
 DietName,xylophagy,xylofagia
 EffectProperty,afflictions,afflizioni
 EffectProperty,all kind,tutti i tipi
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,incanta risorsa
 EffectType,engulf,inghiottire
 EffectType,enlightenment,illuminazione
 EffectType,exchange,scambio
+EffectType,extinguish spill,
 EffectType,gain level,guadagnare livello
 EffectType,gain skill,acquisire abilità
 EffectType,genocide,genocidio
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,Completa resist
 ElementDescription,Complete resistance to electric and shock damage.,Completa resistenza ai danni elettrici e agli urti.
 ElementDescription,Complete resistance to fire and heat damage.,Completa resistenza al fuoco e al calore.
 ElementDescription,Complete resistance to life and mana draining effects.,Resistenza completa agli effetti di risucchio di vita e mana.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,Completa resistenza agli effetti di pietrificazione.
 ElementDescription,Complete resistance to poison damage.,Completa resistenza ai danni da veleno.
 ElementDescription,Protects you against pure magical effects.,Ti protegge dagli effetti magici puri.
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,disintegrazione
 ElementName,drain,drenare
 ElementName,fire,fuoco
 ElementName,force,forza
+ElementName,light,
 ElementName,magical,magico
 ElementName,necrotic,necrotico
 ElementName,petrify,pietrificare
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Esseri astrali che sono un vaso per lo spirito indomabile di un avventuriero sconfitto. Non avendo motivazioni proprie, sono felici di permettere il possesso; per l'avventuriero deceduto, è una seconda possibilità di vendetta o redenzione. Nati dalla materia astrale, sono leggermente costruiti, traslucidi e possono muoversi liberamente attraverso ostacoli fisici."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Bellissimi esseri ultraterreni caratterizzati dalla loro caratteristica aureola e ali piumate. Fortemente in sintonia con la lotta tra il bene e il male, percepiscono la divinità all'interno di tutto ciò che tengono."
 EntityDescription,Beware this clockwork machine of war.,Fai molta attenzione attorno a questa macchina a orologeria guerriera.
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Creature fatate legate da potenti spiriti della natura per alimentare le loro buffonate. Sono tarchiate con corpi inferiori pelosi, zoccoli fessi di capra e corna arricciate di ariete. Ribaldi e intelligenti, conducono allegramente scappatelle edonistiche di bere, ballare e combattere."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Grandi rettili carnivori i cui antenati bestiali dominavano il mondo molto prima della nascita della civiltà. Sono predatori temibili, capaci di saltare a distanze impressionanti e di respingere molti attacchi con le loro spesse pelli squamose."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",Creature perverse con molte aberrazioni ma sempre con la pelle e le corna cremisi. La loro semplice presenza costringe gli altri a mettere in atto i loro desideri più oscuri e violenti.
@@ -1362,6 +1371,7 @@ EntityName,Elwing,Elwing
 EntityName,embalmer,imbalsamatore
 EntityName,energy vortex,vortice energetico
 EntityName,erinys,erinni
+EntityName,ethereal,
 EntityName,ettin,ettin
 EntityName,ettin mummy,ettin mummia
 EntityName,ettin zombie,ettin zombie
@@ -3036,6 +3046,7 @@ KindName,dwarf,nano
 KindName,echo,echo
 KindName,elemental,elementale
 KindName,elf,elfo
+KindName,extradimensional,
 KindName,eye,occhio
 KindName,fairy,fata
 KindName,flayer,flayer
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,Vanità
 LiteralText,VIEW,VISUALIZZA
 LiteralText,Visit the website,Visita il sito web
 LiteralText,VOID SPACE,SPAZIO VUOTO
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,vulnerabile a
 LiteralText,WAIT,ASPETTA
 LiteralText,Wait how many turns?,Aspetti per quanti turni?
@@ -3905,6 +3917,7 @@ MaterialName,ice,ghiaccio
 MaterialName,iron,ferro
 MaterialName,lava,lava
 MaterialName,leather,pelle
+MaterialName,light,
 MaterialName,mithril,mithril
 MaterialName,paper,carta
 MaterialName,plastic,plastica
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,ha unto
 MotionPastName,ate,ha mangiato
 MotionPastName,captured,ha catturato
 MotionPastName,chanted,ha salmodiato
+MotionPastName,clairvu,
 MotionPastName,constructed,ha costruito
 MotionPastName,copied,
 MotionPastName,dipped,ha immerso
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,ha lanciato
 MotionPresentName,anoint,ungi
 MotionPresentName,capture,cattura
 MotionPresentName,chant,salmodia
+MotionPresentName,clairvoir,
 MotionPresentName,construct,costruisci
 MotionPresentName,copy,
 MotionPresentName,dig,scava
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Sei afflitto da una terribile malattia con strani sintomi e devi sedare l'istinto di vomitare.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",Stai dormendo. In un dungeon pieno di mostri.
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,Sei consumato dall'impulso di mangiare senza la possibilità di sentirti mai sazio.
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Sei estremamente resiliente e non hanno effetto su di te malattie magiche e non.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Riesci a scavare tunnel nel dungeon.
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,Capisci il numero di cariche possedute da un oggetto prendendolo in mano.
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,narcolessia
 PropertyName,paralysis,paralisi
 PropertyName,petrifying,pietrificazione
 PropertyName,phasing,incorporeità
+PropertyName,photosensitivity,
 PropertyName,polymorph,metamorfosi
 PropertyName,polymorph control,controllo della metamorfosi
 PropertyName,quickness,rapidità
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,ostracismo divino
 PunishmentName,thirst,sete
 PunishmentName,wanted,ricercato
 QualificationCode,c,n
+QualificationCode,d,
 QualificationCode,e,e
 QualificationCode,m,m
 QualificationCode,p,c
 QualificationCode,s,s
+QualificationCode,t,
 QualificationName,champion,campione
+QualificationName,divine,
 QualificationName,expert,esperto
 QualificationName,master,maestro
 QualificationName,proficient,competente
 QualificationName,specialist,specialista
+QualificationName,transcendent,
 RaceName,angel//female,angelo
 RaceName,angel//male,angelo
 RaceName,angel//non-binary,angelo
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,echo
 RaceName,elf//female,elfa
 RaceName,elf//male,elfo
 RaceName,elf//non-binary,elfo
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,ettin
 RaceName,ettin//male,ettin
 RaceName,ettin//non-binary,ettin
@@ -4579,10 +4603,12 @@ SpellName,acid stream,flusso acido
 SpellName,animate dead,animare i morti
 SpellName,animate object,animare oggetti
 SpellName,bind undead,lega non morto
+SpellName,blessing,
 SpellName,blinking,ubiquità
 SpellName,cancellation,cancellazione
 SpellName,charm,affascino
 SpellName,clairvoyance,chiaroveggenza
+SpellName,clairvoyance reading,
 SpellName,cone of cold,cono di freddo
 SpellName,confusion,confusione
 SpellName,create familiar,crea famiglio
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,rivela l'invisibile
 SpellName,dig,scavare
 SpellName,disintegrate,disintegrazione
 SpellName,drain life,risucchio vitale
+SpellName,enchantment,
 SpellName,extra healing,guarigione aggiuntiva
 SpellName,fear,paura
 SpellName,finger of death,dito della morte
@@ -4624,6 +4651,7 @@ SpellName,polymorph,metamorfosi
 SpellName,raise dead,anima non-morti
 SpellName,regenerate,rigenerazione
 SpellName,remove curse,rimuovi maledizione
+SpellName,replication,
 SpellName,restoration,ripristina abilità
 SpellName,shocking sphere,palla-shock
 SpellName,sleep,sonno
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,sfera d'acqua
 SpellName,summoning,evocazione
 SpellName,telekinesis,telecinesi
 SpellName,teleport away,teletrasporto
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,spruzzo acido
 SpellName,turn undead,scacciare i non morti
 SpellName,walling,crea muro

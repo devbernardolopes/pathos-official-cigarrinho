@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,땜장이
 ClassName,tourist//female,관광객
 ClassName,tourist//male,관광객
 ClassName,tourist//non-binary,관광객
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,발키리
 ClassName,valkyrie//male,발키리
 ClassName,valkyrie//non-binary,발키리
@@ -836,6 +839,7 @@ CounterName,boons,은혜
 CounterName,captures,붙잡음
 CounterName,casts,주문 시전
 CounterName,chants,찬송
+CounterName,clairvoirs,
 CounterName,constructs,구조물
 CounterName,copies,
 CounterName,crafts,제작
@@ -950,6 +954,7 @@ DietName,lithivore,석식성
 DietName,metalivore,금속식성
 DietName,omnivore,잡식성
 DietName,organivore,자연식성
+DietName,photoautotroph,
 DietName,xylophagy,목식성
 EffectProperty,afflictions,감염
 EffectProperty,all kind,전 종류
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,아이템 강화
 EffectType,engulf,삼키기
 EffectType,enlightenment,깨달음
 EffectType,exchange,교환
+EffectType,extinguish spill,
 EffectType,gain level,레벨 증가
 EffectType,gain skill,숙련도 획득
 EffectType,genocide,몰살
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,분해 공격�
 ElementDescription,Complete resistance to electric and shock damage.,전기와 쇼크 공격에 완전한 저항력을 얻는다.
 ElementDescription,Complete resistance to fire and heat damage.,화염과 열기 공격에 완전한 저항력을 얻는다.
 ElementDescription,Complete resistance to life and mana draining effects.,체력과 마나 흡수에 완전한 저항력을 얻는다.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,석화 효과에 완전한 저항력을 얻는다.
 ElementDescription,Complete resistance to poison damage.,독 피해에 완전한 저항력을 얻는다.
 ElementDescription,Protects you against pure magical effects.,순수한 마법효과로 부터 보호한다.
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,분해
 ElementName,drain,흡수
 ElementName,fire,화염
 ElementName,force,포스
+ElementName,light,
 ElementName,magical,마법
 ElementName,necrotic,괴저
 ElementName,petrify,석화
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","스러진 모험가의 불굴의 영혼을 담는 영적인 그릇. 스스로는 움직이지 않으며, 모험가의 영혼에게 기꺼이 몸을 내어 복수 또는 속죄를 위한 두 번째 기회를 준다. 영적 물질로 만들어진 자그마한 몸은 투명하며 물리적 장애물을 통과할 수 있다."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",빛나는 후광과 깃털난 날개가 특징인 아름다운 초월적 존재. 선과 악의 대결에 단련된 그들은 손에 쥐는 모든 것들에서 성스러움을 느낀다.
 EntityDescription,Beware this clockwork machine of war.,이 시계테엽으로 만들어진 전쟁기계를 조심하라.
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","자연의 강력한 정령과 이어져 있는 익살스러운 장난꾼. 다부진 하반신은 털로 덮여 있고, 염소의 발굽과 양의 뿔을 가졌다. 상스럽고 영리한 이들은 마시고, 춤추고, 싸우며 경쾌하게 향락을 즐긴다."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","거대한 육식 도마뱀. 그들의 흉포한 조상은 문명이 탄생하기 훨씬 전에 세상을 지배했었다. 무시무시한 포식자인 그들은, 상당한 거리를 도약할 수 있고 두꺼운 비늘로 수많은 공격을 막을 수 있다."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",핏빛 피부와 뿔이 달린 매우 기괴하고 뒤틀린 생명체. 존재 만으로도 타인을 가장 어둡고 폭력적인 욕망에 따라 움직이게 만든다.
@@ -1362,6 +1371,7 @@ EntityName,Elwing,엘윙
 EntityName,embalmer,미라 제작자
 EntityName,energy vortex,에너지 소용돌이
 EntityName,erinys,에리니에스
+EntityName,ethereal,
 EntityName,ettin,에틴
 EntityName,ettin mummy,에틴 미라
 EntityName,ettin zombie,에틴 좀비
@@ -3036,6 +3046,7 @@ KindName,dwarf,드워프
 KindName,echo,메아리
 KindName,elemental,정령
 KindName,elf,엘프
+KindName,extradimensional,
 KindName,eye,눈
 KindName,fairy,요정
 KindName,flayer,플레이어
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,장식
 LiteralText,VIEW,시야
 LiteralText,Visit the website,웹사이트를 방문합니다.
 LiteralText,VOID SPACE,공허
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,약점 :
 LiteralText,WAIT,대기
 LiteralText,Wait how many turns?,몇 턴 동안 대기합니까?
@@ -3905,6 +3917,7 @@ MaterialName,ice,얼음
 MaterialName,iron,철
 MaterialName,lava,용암
 MaterialName,leather,가죽
+MaterialName,light,
 MaterialName,mithril,미스릴
 MaterialName,paper,종이
 MaterialName,plastic,플라스틱
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,발랐다
 MotionPastName,ate,먹었다
 MotionPastName,captured,붙잡은
 MotionPastName,chanted,낭송했다
+MotionPastName,clairvu,
 MotionPastName,constructed,만들었다
 MotionPastName,copied,
 MotionPastName,dipped,담궜다
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,발동했다
 MotionPresentName,anoint,바르기
 MotionPresentName,capture,붙잡기
 MotionPresentName,chant,찬송하기
+MotionPresentName,clairvoir,
 MotionPresentName,construct,만들었다
 MotionPresentName,copy,
 MotionPresentName,dig,땅파기
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,심각한 질병에 걸려 구토와 이상한 증상들에 시달린다.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",당신은 몬스터로 가득 찬 던전에서 편안히 자고 있다.
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,극복할 수 없는 식욕에 시달려 아무리 많이 먹어도 만족할 수 없을 것 같다.
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,모든 종류의 질병에 면역이 되고 영향받지 않는다.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,던전에서 길을 뚫고 다닐 수 있을 만큼 장비를 잘 갖추었습니다.
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,아이템을 습득 하기만 하여도 충전된 횟수를 알 수 있다.
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,기면증
 PropertyName,paralysis,마비
 PropertyName,petrifying,석화중
 PropertyName,phasing,투과
+PropertyName,photosensitivity,
 PropertyName,polymorph,폴리모프
 PropertyName,polymorph control,폴리모프 통제
 PropertyName,quickness,가속화
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,손가락질
 PunishmentName,thirst,갈증
 PunishmentName,wanted,현상수배
 QualificationCode,c,챔피
+QualificationCode,d,
 QualificationCode,e,전문
 QualificationCode,m,달인
 QualificationCode,p,초보
 QualificationCode,s,숙련
+QualificationCode,t,
 QualificationName,champion,챔피언
+QualificationName,divine,
 QualificationName,expert,전문가
 QualificationName,master,달인
 QualificationName,proficient,초보자
 QualificationName,specialist,숙련자
+QualificationName,transcendent,
 RaceName,angel//female,천사
 RaceName,angel//male,천사
 RaceName,angel//non-binary,천사
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,메아리
 RaceName,elf//female,엘프
 RaceName,elf//male,엘프
 RaceName,elf//non-binary,엘프
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,에틴
 RaceName,ettin//male,에틴
 RaceName,ettin//non-binary,에틴
@@ -4579,10 +4603,12 @@ SpellName,acid stream,산성 줄기
 SpellName,animate dead,사자소생
 SpellName,animate object,사물 생동화
 SpellName,bind undead,언데드 구속
+SpellName,blessing,
 SpellName,blinking,점멸
 SpellName,cancellation,무효화
 SpellName,charm,매혹
 SpellName,clairvoyance,투시
+SpellName,clairvoyance reading,
 SpellName,cone of cold,냉기 원뿔
 SpellName,confusion,혼란
 SpellName,create familiar,패밀리어 생성
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,투명화 탐지
 SpellName,dig,굴착
 SpellName,disintegrate,분해
 SpellName,drain life,생명력 흡수
+SpellName,enchantment,
 SpellName,extra healing,향상된 치유
 SpellName,fear,공포
 SpellName,finger of death,죽음의 손가락
@@ -4624,6 +4651,7 @@ SpellName,polymorph,폴리모프
 SpellName,raise dead,부활
 SpellName,regenerate,재생
 SpellName,remove curse,저주 해제
+SpellName,replication,
 SpellName,restoration,능력치 복구
 SpellName,shocking sphere,찌릿한 구체
 SpellName,sleep,수면
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,적시는 구체
 SpellName,summoning,소환
 SpellName,telekinesis,염동력
 SpellName,teleport away,텔레포트
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,산성 분출
 SpellName,turn undead,언데드 퇴치
 SpellName,walling,벽 건설

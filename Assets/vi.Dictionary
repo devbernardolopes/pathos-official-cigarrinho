@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,thợ rèn lưỡng tính
 ClassName,tourist//female,du khách
 ClassName,tourist//male,du khách
 ClassName,tourist//non-binary,du khách lưỡng tính
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,Valkyrie
 ClassName,valkyrie//male,Valkyrie
 ClassName,valkyrie//non-binary,Valkyrie lưỡng tính
@@ -836,6 +839,7 @@ CounterName,boons,số lần nhờ vả
 CounterName,captures,số lần bắt giữ
 CounterName,casts,số phép đã niệm
 CounterName,chants,số phép đã tụng
+CounterName,clairvoirs,
 CounterName,constructs,số
 CounterName,copies,
 CounterName,crafts,số vật phẩm chế tạo
@@ -950,6 +954,7 @@ DietName,lithivore,ăn đá
 DietName,metalivore,ăn kim loại
 DietName,omnivore,ăn tạp
 DietName,organivore,ăn chất hữu cơ
+DietName,photoautotroph,
 DietName,xylophagy,ăn gỗ
 EffectProperty,afflictions,ảnh hưởng
 EffectProperty,all kind,mọi loại
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,phù phép vật
 EffectType,engulf,nuốt chửng
 EffectType,enlightenment,khai sáng
 EffectType,exchange,trao đổi
+EffectType,extinguish spill,
 EffectType,gain level,lên cấp
 EffectType,gain skill,mở kĩ năng
 EffectType,genocide,diệt chủng
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,Hoàn toàn kh�
 ElementDescription,Complete resistance to electric and shock damage.,Hoàn toàn kháng điện và sát thương sốc.
 ElementDescription,Complete resistance to fire and heat damage.,Hoàn toàn kháng lửa và sát thương nhiệt.
 ElementDescription,Complete resistance to life and mana draining effects.,Hoàn toàn kháng hiệu ứng hút sinh lực và ma pháp.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,Hoàn toàn kháng hiệu ứng hóa đá.
 ElementDescription,Complete resistance to poison damage.,Hoàn toàn kháng độc.
 ElementDescription,Protects you against pure magical effects.,Bảo vệ bạn khỏi hiệu ứng ma thuật tinh khiết.
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,phân rã
 ElementName,drain,hút
 ElementName,fire,lửa
 ElementName,force,lực
+ElementName,light,
 ElementName,magical,ma thuật
 ElementName,necrotic,hoại tử
 ElementName,petrify,hóa đá
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Những thực thể thần thánh, là vỏ bọc cho những linh hồn bất khuất của những nhà thám hiểm. Chúng không có mục tiêu, luôn sẵn lòng cho mượn lấy cơ thể của mình; đối với những nhà thám hiểm đã chết, đây chính là cơ hội thứ hai để trả thù hoặc chuộc lỗi. Được tạo ra từ vật chất thiên thạch, chúng rất mỏng, trong suốt và có thể bay lượn tự do xuyên qua vật chất."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Xinh đẹp, những thực thể siêu nhiên này nổi bật với đặc điểm như vầng hào quang hay cánh lông vũ. Rất hòa hợp với cuộc chiến giữa cái thiện và cái ác, họ có thể cảm nhận được tính thánh hóa của mọi vật họ chạm vào."
 EntityDescription,Beware this clockwork machine of war.,Hãy coi chừng cỗ máy của chiến tranh.
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Những sinh vật thần tiên, được kết nối bởi linh hồn thiên nhiên mạnh mẽ để tiếp nối những trò hề của họ. Cơ thể chắc nịch, phần dưới có lông, có móng vuốt giống loài dê và sừng xoắn ốc giống loài cừu. Dâm tục và thông minh, họ vui vẻ dẫn dắt những tù nhân của sự khoái lạc vào việc uống, nhảy múa và đánh nhau."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","To lớn, những người bò sát ăn thịt mà tổ tiên của họ đã từng thống trị thế giới trước khi nền văn minh ra đời. Họ là những sát thủ ăn thịt đáng sợ, có thể nhảy vọt với khoảng cách rất xa và chống lại rất nhiều đòn tấn công với vảy cứng của họ."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Những sinh vật biến thái lầm lạc nhưng luôn có màu da đỏ thắm và mọc sừng. Sự xuất hiện của chúng khiến tất cả bộc lộ những tham vọng, trụy lạc đen tối và bạo lực nhất."
@@ -1362,6 +1371,7 @@ EntityName,Elwing,Elwing
 EntityName,embalmer,người ướp xác
 EntityName,energy vortex,cuộn xoáy năng lượng
 EntityName,erinys,nữ thần báo thù
+EntityName,ethereal,
 EntityName,ettin,ettin
 EntityName,ettin mummy,xác ướp ettin
 EntityName,ettin zombie,thây ma ettin
@@ -3036,6 +3046,7 @@ KindName,dwarf,người lùn
 KindName,echo,vong hồn
 KindName,elemental,nguyên tố
 KindName,elf,elf
+KindName,extradimensional,
 KindName,eye,con mắt
 KindName,fairy,tinh linh
 KindName,flayer,kẻ ăn não
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,Danh hiệu
 LiteralText,VIEW,NHÌN
 LiteralText,Visit the website,Đến trang web của chúng tôi
 LiteralText,VOID SPACE,HƯ VÔ
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,bị khắc chế bởi
 LiteralText,WAIT,CHỜ
 LiteralText,Wait how many turns?,Chờ trong bao nhiêu lượt?
@@ -3905,6 +3917,7 @@ MaterialName,ice,băng
 MaterialName,iron,sắt
 MaterialName,lava,dung nham
 MaterialName,leather,da
+MaterialName,light,
 MaterialName,mithril,mithril
 MaterialName,paper,giấy
 MaterialName,plastic,nhựa
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,đã bôi
 MotionPastName,ate,đã ăn
 MotionPastName,captured,đã bắt
 MotionPastName,chanted,đã niệm
+MotionPastName,clairvu,
 MotionPastName,constructed,đã xây
 MotionPastName,copied,
 MotionPastName,dipped,đã nhúng
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,đã vụt
 MotionPresentName,anoint,bôi
 MotionPresentName,capture,bắt
 MotionPresentName,chant,niệm
+MotionPresentName,clairvoir,
 MotionPresentName,construct,xây
 MotionPresentName,copy,
 MotionPresentName,dig,đào
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Bạn bị nhiễm một loại bệnh với triệu chứng kỳ lạ và luôn luôn buồn nôn.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Bạn đang ngủ, một cách ngon lành. Trong một hầm ngục đầy rẫy quái vật."
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,Bạn bị sự đói khát nuốt chửng và không thể cưỡng lại ham muốn ăn tất cả những gì bạn thấy. Bạn biết bạn sẽ chẳng bao giờ có thể no được cả.
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Cơ thể bạn cứng cáp và hoàn toàn kháng các loại bệnh tự nhiên hay phép thuật.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Bạn có thể đào hầm và tự tạo cho mình đường đi trong hầm ngục.
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,Bạn biết được số lần sử dụng của vật phẩm chỉ bằng cách nhặt nó lên.
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,ngủ rũ
 PropertyName,paralysis,tê liệt
 PropertyName,petrifying,hóa đá
 PropertyName,phasing,xuyên tường
+PropertyName,photosensitivity,
 PropertyName,polymorph,biến hình
 PropertyName,polymorph control,điều khiển biến hình
 PropertyName,quickness,nhanh nhẹn
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,xa lánh
 PunishmentName,thirst,khát
 PunishmentName,wanted,truy nã
 QualificationCode,c,c
+QualificationCode,d,
 QualificationCode,e,e
 QualificationCode,m,m
 QualificationCode,p,p
 QualificationCode,s,s
+QualificationCode,t,
 QualificationName,champion,vô địch
+QualificationName,divine,
 QualificationName,expert,bậc thầy
 QualificationName,master,lão luyện
 QualificationName,proficient,thành thạo
 QualificationName,specialist,chuyên gia
+QualificationName,transcendent,
 RaceName,angel//female,thiên thần nữ
 RaceName,angel//male,thiên thần nam
 RaceName,angel//non-binary,thiên thần lưỡng tính
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,vong hồn lưỡng tính
 RaceName,elf//female,elf nữ
 RaceName,elf//male,elf nam
 RaceName,elf//non-binary,elf lưỡng tính
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,ettin nữ
 RaceName,ettin//male,ettin nam
 RaceName,ettin//non-binary,ettin lưỡng tính
@@ -4579,10 +4603,12 @@ SpellName,acid stream,tia axit
 SpellName,animate dead,tái sinh người chết
 SpellName,animate object,tái sinh vật vô tri
 SpellName,bind undead,trói buộc người chết
+SpellName,blessing,
 SpellName,blinking,nhấp nháy
 SpellName,cancellation,phép loại bỏ
 SpellName,charm,quyến rũ
 SpellName,clairvoyance,thấu thị
+SpellName,clairvoyance reading,
 SpellName,cone of cold,nón lạnh
 SpellName,confusion,rối loạn
 SpellName,create familiar,tạo sứ ma
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,tìm vô hình
 SpellName,dig,đào
 SpellName,disintegrate,phân rã
 SpellName,drain life,hút máu
+SpellName,enchantment,
 SpellName,extra healing,siêu hồi phục
 SpellName,fear,sợ hãi
 SpellName,finger of death,cú chạm tử thần
@@ -4624,6 +4651,7 @@ SpellName,polymorph,biến hình
 SpellName,raise dead,tái sinh xác sống
 SpellName,regenerate,tái tạo
 SpellName,remove curse,loại bỏ lời nguyền
+SpellName,replication,
 SpellName,restoration,khôi phục
 SpellName,shocking sphere,cầu sấm
 SpellName,sleep,ru ngủ
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,khối cầu nước
 SpellName,summoning,triệu hồi
 SpellName,telekinesis,chuyển động từ xa
 SpellName,teleport away,dịch chuyển ra xa
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,phun độc
 SpellName,turn undead,hóa thây ma
 SpellName,walling,tạo tường

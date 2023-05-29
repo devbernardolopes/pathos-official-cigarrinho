@@ -38,17 +38,6 @@
     <ProjectReference Include="..\PathosLibrary\PathosLibrary.csproj" />
     <ProjectReference Include="..\PathosEngine\PathosEngine.csproj" />
   </ItemGroup>
-  <ItemGroup Condition=" '$(PathosDeveloper)' == 'OpenSource' ">
-    <Reference Include="InvLibrary">
-      <HintPath>$(PathosInstallation)\Inv.Library.dll</HintPath>
-    </Reference>
-    <Reference Include="PathosLibrary">
-      <HintPath>$(PathosInstallation)\PathosLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="PathosEngine">
-      <HintPath>$(PathosInstallation)\PathosEngine.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Include="Codex\PathosAfflictions.cs" />
@@ -111,6 +100,8 @@
     <Compile Include="Codex\PathosVolatiles.cs" />
     <Compile Include="Codex\PathosWarnings.cs" />
     <Compile Include="Codex\PathosZoos.cs" />
+    <Compile Include="Extensions\KindEditorExtensions.cs" />
+    <Compile Include="Extensions\KindExtensions.cs" />
     <Compile Include="Modules\PathosDhak.cs" />
     <Compile Include="Modules\PathosNethack.cs" />
     <Compile Include="Modules\PathosSandbox.cs" />
@@ -135,6 +126,18 @@
     <EmbeddedResource Include="Resources\Pathos.InvResourcePackage.rs">
       <DependentUpon>Pathos.InvResourcePackage</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Inv.Library">
+      <HintPath>C:\Games\Pathos\Inv.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="PathosEngine">
+      <HintPath>C:\Games\Pathos\PathosEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="PathosLibrary">
+      <HintPath>C:\Games\Pathos\PathosLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <Import Condition=" '$(PathosDeveloper)' != 'OpenSource'" Project="..\Pathos.targets" />

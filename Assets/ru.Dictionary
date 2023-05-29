@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,ремесленник
 ClassName,tourist//female,турист
 ClassName,tourist//male,турист
 ClassName,tourist//non-binary,турист
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,валькирия
 ClassName,valkyrie//male,валькирия
 ClassName,valkyrie//non-binary,валькирия
@@ -836,6 +839,7 @@ CounterName,boons,дары
 CounterName,captures,пойманный
 CounterName,casts,заклинания
 CounterName,chants,распевания
+CounterName,clairvoirs,
 CounterName,constructs,создания
 CounterName,copies,
 CounterName,crafts,мастерить
@@ -950,6 +954,7 @@ DietName,lithivore,камнеядный
 DietName,metalivore,металоядный
 DietName,omnivore,всеядный
 DietName,organivore,биоядный
+DietName,photoautotroph,
 DietName,xylophagy,древоядный
 EffectProperty,afflictions,болезни
 EffectProperty,all kind,все виды
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,зачаровывает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,узнаёт
 EffectType,exchange,заменяет
+EffectType,extinguish spill,
 EffectType,gain level,получает уровень
 EffectType,gain skill,получает навык
 EffectType,genocide,истребляет
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,Обеспеч�
 ElementDescription,Complete resistance to electric and shock damage.,Обеспечивает сопротивлением к урону электричеством и шоком.
 ElementDescription,Complete resistance to fire and heat damage.,Обеспечивает сопротивлением к урону огнём и жаром.
 ElementDescription,Complete resistance to life and mana draining effects.,Обеспечивает защитой от вытягивания жизненных сил и маны.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,Обеспечивает сопротивлением к окаменению.
 ElementDescription,Complete resistance to poison damage.,Обеспечивает сопротивлением к урону ядом.
 ElementDescription,Protects you against pure magical effects.,Защищает вас от полностью волшебных эффектов.
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,распад
 ElementName,drain,вытягивание сил
 ElementName,fire,огонь
 ElementName,force,сила
+ElementName,light,
 ElementName,magical,магия
 ElementName,necrotic,некротический
 ElementName,petrify,окаменение
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.","Астральные существа, которые являются сосудом для неукротимого духа побеждённого приключенца. Не имея собственных мотивов, они рады разрешить овладеть собой. Для умершего приключенца это второй шанс отомстить или искупить свою вину. Рождённые из астральной материи, они слабо сложены, полупрозрачны и могут свободно перемещаться через физические препятствия."
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Прекрасные, потусторонние существа, отличающиеся своим характерным ореолом и оперёнными крыльями. Будучи твёрдо приверженными борьбе между добром и злом, они чувствуют божественность внутри всего, что они держат."
 EntityDescription,Beware this clockwork machine of war.,Бойтесь этой заводной машины войны.
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.","Могущественные духи природы, связанные с этими волшебными существами, подпитывают их шалости. Они коренастые, с мохнатой нижней частью тела, раздвоенными копытами козла и загнутыми рогами барана. Грубые и умные, они весело проводят шалости с выпивкой, танцами и драками."
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Крупные, плотоядные рептилии, чьи дикие предки господствовали в мире задолго до рождения цивилизации. Это страшные хищники, способные прыгать на внушительные расстояния и отражать множество атак своими толстыми чешуйчатыми шкурами."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Извращённые существа многих аберраций, но всегда с багровой кожей и рогами. Само их присутствие заставляет других действовать в своих самых мрачных, самых жестоких желаниях."
@@ -1362,6 +1371,7 @@ EntityName,Elwing,Эльвинг
 EntityName,embalmer,бальзамировщик
 EntityName,energy vortex,энергетический вихрь
 EntityName,erinys,эриния
+EntityName,ethereal,
 EntityName,ettin,эттин
 EntityName,ettin mummy,мумия-эттин
 EntityName,ettin zombie,зомби-эттин
@@ -3036,6 +3046,7 @@ KindName,dwarf,дварфы
 KindName,echo,подражатели
 KindName,elemental,элементали
 KindName,elf,эльфы
+KindName,extradimensional,
 KindName,eye,злобоглазы
 KindName,fairy,феи
 KindName,flayer,свежеватели
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,Гордость
 LiteralText,VIEW,ОБЗОР
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,Сколько ждать ходов?
@@ -3905,6 +3917,7 @@ MaterialName,ice,лёд
 MaterialName,iron,железо
 MaterialName,lava,лава
 MaterialName,leather,кожа
+MaterialName,light,
 MaterialName,mithril,мифрил
 MaterialName,paper,бумага
 MaterialName,plastic,пластик
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,помазал
 MotionPastName,ate,съел
 MotionPastName,captured,поймал в
 MotionPastName,chanted,пропел
+MotionPastName,clairvu,
 MotionPastName,constructed,создал
 MotionPastName,copied,
 MotionPastName,dipped,окунул
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,махнул
 MotionPresentName,anoint,помазание
 MotionPresentName,capture,поймать
 MotionPresentName,chant,распевать
+MotionPresentName,clairvoir,
 MotionPresentName,construct,создать
 MotionPresentName,copy,
 MotionPresentName,dig,копать
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Вы поражены ужасной болезнью со странными симптомами и подавляете желание к тошноте.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Вы засыпаете и мирно отдыхаете. В подземелье, полном монстров."
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,"Вы стремитесь съесть как можно больше и знаете, что никогда не будете удовлетворены."
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Вы жизнестойки и на вас не действуют никакие болезни магического или природного происхождения.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Вы хорошо экипированы для рытья тоннелей и готовы проложить свой путь сквозь подземелье.
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,"Вы определяете количество зарядов в предмете, просто подняв его."
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,нарколепсия
 PropertyName,paralysis,оцепенение
 PropertyName,petrifying,окаменение
 PropertyName,phasing,фазирование
+PropertyName,photosensitivity,
 PropertyName,polymorph,превращение
 PropertyName,polymorph control,контроль превращения
 PropertyName,quickness,проворство
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,отверженность
 PunishmentName,thirst,жажда
 PunishmentName,wanted,розыск
 QualificationCode,c,ч
+QualificationCode,d,
 QualificationCode,e,э
 QualificationCode,m,м
 QualificationCode,p,у
 QualificationCode,s,с
+QualificationCode,t,
 QualificationName,champion,чемпион
+QualificationName,divine,
 QualificationName,expert,эксперт
 QualificationName,master,мастер
 QualificationName,proficient,умелый
 QualificationName,specialist,специалист
+QualificationName,transcendent,
 RaceName,angel//female,ангел
 RaceName,angel//male,ангел
 RaceName,angel//non-binary,ангел
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,подражатель
 RaceName,elf//female,эльф
 RaceName,elf//male,эльф
 RaceName,elf//non-binary,эльф
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,эттин
 RaceName,ettin//male,эттин
 RaceName,ettin//non-binary,эттин
@@ -4579,10 +4603,12 @@ SpellName,acid stream,поток кислоты
 SpellName,animate dead,оживление мертвецов
 SpellName,animate object,оживление предметов
 SpellName,bind undead,подчинение нежити
+SpellName,blessing,
 SpellName,blinking,мерцание
 SpellName,cancellation,очищение
 SpellName,charm,очарование
 SpellName,clairvoyance,подсматривание
+SpellName,clairvoyance reading,
 SpellName,cone of cold,конус холода
 SpellName,confusion,смятение
 SpellName,create familiar,создание фамильяра
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,обнаружение невидимого
 SpellName,dig,копание
 SpellName,disintegrate,распад
 SpellName,drain life,вытягивание жизни
+SpellName,enchantment,
 SpellName,extra healing,большое лечение
 SpellName,fear,ужас
 SpellName,finger of death,перст смерти
@@ -4624,6 +4651,7 @@ SpellName,polymorph,превращение
 SpellName,raise dead,возвращение к жизни
 SpellName,regenerate,регенерация
 SpellName,remove curse,снятие проклятия
+SpellName,replication,
 SpellName,restoration,восстановление
 SpellName,shocking sphere,шоковая сфера
 SpellName,sleep,усыпление
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,водяная сфера
 SpellName,summoning,призыв
 SpellName,telekinesis,телекинез
 SpellName,teleport away,телепортация
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,токсичные брызги
 SpellName,turn undead,отпугивание нежити
 SpellName,walling,возведение стены

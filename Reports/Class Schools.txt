@@ -26,5 +26,6 @@ shaman      : abjuration, divination, enchantment, evocation, necromancy
 templar     : clerical
 tinker      : abjuration, divination, enchantment, evocation, transmutation
 tourist     : abjuration
+trickster   : abjuration, clerical, divination, necromancy, transmutation
 valkyrie    : 
 wizard      : abjuration, divination, enchantment, evocation, necromancy, transmutation

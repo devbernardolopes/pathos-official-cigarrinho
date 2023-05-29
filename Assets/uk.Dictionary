@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,майстер
 ClassName,tourist//female,туристка
 ClassName,tourist//male,турист
 ClassName,tourist//non-binary,турист
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,Валькірія
 ClassName,valkyrie//male,Валькірія
 ClassName,valkyrie//non-binary,Валькірія
@@ -836,6 +839,7 @@ CounterName,boons,дари
 CounterName,captures,захоплює
 CounterName,casts,підраховує
 CounterName,chants,співає
+CounterName,clairvoirs,
 CounterName,constructs,зконструювує
 CounterName,copies,
 CounterName,crafts,створює
@@ -950,6 +954,7 @@ DietName,lithivore,камнеядний
 DietName,metalivore,металоядний
 DietName,omnivore,всеїдний
 DietName,organivore,їсть органіку
+DietName,photoautotroph,
 DietName,xylophagy,древоядний
 EffectProperty,afflictions,пороблено
 EffectProperty,all kind,всі види
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,заклинає цінність
 EffectType,engulf,проковтує
 EffectType,enlightenment,просвітлює
 EffectType,exchange,обміняти
+EffectType,extinguish spill,
 EffectType,gain level,отримує рівень
 EffectType,gain skill,отримує вміння:
 EffectType,genocide,винищує
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,Повна ст
 ElementDescription,Complete resistance to electric and shock damage.,Повна стійкість до ушкоджень електрикою і струсом.
 ElementDescription,Complete resistance to fire and heat damage.,Повна стійкість до ушкоджень вогнем і жаром.
 ElementDescription,Complete resistance to life and mana draining effects.,Повна стійкість до витягування життєвих сил і мани.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,Повна стійкість до скам'яніння.
 ElementDescription,Complete resistance to poison damage.,Повна стійкість до ушкоджень отрутою.
 ElementDescription,Protects you against pure magical effects.,Захищає вас від повністю чарівних ефектів.
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,дезінтеграція
 ElementName,drain,витягування
 ElementName,fire,вогонь
 ElementName,force,сила
+ElementName,light,
 ElementName,magical,магія
 ElementName,necrotic,некротичний
 ElementName,petrify,скам’яніння
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.","Прекрасні, потойбічні істоти характеризуються ореолом підпису та пернатих крил. Сильно налаштовані на боротьбі між добром і злом, вони відчувають божественність у всьому, що їм належить."
 EntityDescription,Beware this clockwork machine of war.,
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.","Великі хижі рептилії, чиї предки-звірі панували у світі задовго до народження цивілізації. Вони є страхітливими хижаками, що здатні стрибати на довжелезні відстані і відштовхуватися від атак своїми густими лускатими шкурами."
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.","Перекручені істоти багатьох аберацій, але завжди з малиновою шкірою та рогами. Сама їх присутність змушує інших виконувати свої найтемніші, найжорстокіші бажання."
@@ -1362,6 +1371,7 @@ EntityName,Elwing,Ельвінг
 EntityName,embalmer,бальзаматор
 EntityName,energy vortex,енергетичний вихор
 EntityName,erinys,Ерін
+EntityName,ethereal,
 EntityName,ettin,еттін
 EntityName,ettin mummy,мумія еттіна
 EntityName,ettin zombie,зомбі-еттін
@@ -3036,6 +3046,7 @@ KindName,dwarf,дварфи
 KindName,echo,ехо
 KindName,elemental,елементалі
 KindName,elf,ельфи
+KindName,extradimensional,
 KindName,eye,злоокі
 KindName,fairy,феї
 KindName,flayer,пожирачі
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,Марнославство
 LiteralText,VIEW,ОГЛЯД
 LiteralText,Visit the website,Відвідайте вебсайт
 LiteralText,VOID SPACE,ПУСТИЙ ПРОСТІР
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,вразливий до
 LiteralText,WAIT,ЧЕКАТИ
 LiteralText,Wait how many turns?,Чекати скільки ходів?
@@ -3905,6 +3917,7 @@ MaterialName,ice,лід
 MaterialName,iron,залізо
 MaterialName,lava,лава
 MaterialName,leather,шкіра
+MaterialName,light,
 MaterialName,mithril,міфріл
 MaterialName,paper,папір
 MaterialName,plastic,пластик
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,помазав
 MotionPastName,ate,з'їв
 MotionPastName,captured,захоплено
 MotionPastName,chanted,виспівав
+MotionPastName,clairvu,
 MotionPastName,constructed,побудований
 MotionPastName,copied,
 MotionPastName,dipped,занурив
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,махнув:
 MotionPresentName,anoint,помазання
 MotionPresentName,capture,захопити
 MotionPresentName,chant,виспівати
+MotionPresentName,clairvoir,
 MotionPresentName,construct,будувати
 MotionPresentName,copy,
 MotionPresentName,dig,копати
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Ви вражені жахливою хворобою з дивними симптомами і ледь стримуєте нудоту.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Ви мирно засинаєте і відпочиваєте. В підземеллі, повному монстрів."
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,"Ви прагнете з'їсти якомога більше і знаєте, що ніколи не будете задоволені."
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Ви дуже життєздатні і на вас не діють ніякі хвороби магічного або природного походження.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Ви добре підготовлені до копання тоннелів і прокладання власного шляху кріз підземелля.
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,"Ви оцінюєте кількість зарядів в предметі, просто підіймаючи його."
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,нарколепсії
 PropertyName,paralysis,заціпеніння
 PropertyName,petrifying,скам'яніння
 PropertyName,phasing,фазування
+PropertyName,photosensitivity,
 PropertyName,polymorph,перетворення
 PropertyName,polymorph control,контроль перетворення
 PropertyName,quickness,швидкість
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,відлучення
 PunishmentName,thirst,спрага
 PunishmentName,wanted,в розшуку
 QualificationCode,c,ч
+QualificationCode,d,
 QualificationCode,e,е
 QualificationCode,m,м
 QualificationCode,p,у
 QualificationCode,s,з
+QualificationCode,t,
 QualificationName,champion,чемпіони
+QualificationName,divine,
 QualificationName,expert,експерт
 QualificationName,master,майстер
 QualificationName,proficient,умілий
 QualificationName,specialist,фахівець
+QualificationName,transcendent,
 RaceName,angel//female,янголиця
 RaceName,angel//male,янгол
 RaceName,angel//non-binary,янгол
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,ехо
 RaceName,elf//female,ельфка
 RaceName,elf//male,ельф
 RaceName,elf//non-binary,ельф
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,еттіна
 RaceName,ettin//male,еттін
 RaceName,ettin//non-binary,еттін
@@ -4579,10 +4603,12 @@ SpellName,acid stream,потік кислоти
 SpellName,animate dead,анімація трупа
 SpellName,animate object,анімувати об’єкт
 SpellName,bind undead,зковати немертвого
+SpellName,blessing,
 SpellName,blinking,телепортування
 SpellName,cancellation,відміна
 SpellName,charm,причаровування
 SpellName,clairvoyance,ясновидіння
+SpellName,clairvoyance reading,
 SpellName,cone of cold,конус холоду
 SpellName,confusion,сум'яття
 SpellName,create familiar,створення фамільяра
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,виявлення невидимого
 SpellName,dig,копання
 SpellName,disintegrate,дезінтеграція
 SpellName,drain life,витягування життя
+SpellName,enchantment,
 SpellName,extra healing,велике лікування
 SpellName,fear,жах
 SpellName,finger of death,палець смерті
@@ -4624,6 +4651,7 @@ SpellName,polymorph,перетворення
 SpellName,raise dead,підняти мерця
 SpellName,regenerate,регенерувати
 SpellName,remove curse,зняття прокляття
+SpellName,replication,
 SpellName,restoration,відновлення характеристик
 SpellName,shocking sphere,шокуюча сфера
 SpellName,sleep,сон
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,
 SpellName,summoning,заклик
 SpellName,telekinesis,
 SpellName,teleport away,телепорт
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,токсічний виприск
 SpellName,turn undead,відлякування нежиті
 SpellName,walling,будування стін

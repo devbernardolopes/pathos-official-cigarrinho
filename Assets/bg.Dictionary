@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,
 ClassName,tourist//female,турист
 ClassName,tourist//male,турист
 ClassName,tourist//non-binary,турист
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,валькирия
 ClassName,valkyrie//male,валькирия
 ClassName,valkyrie//non-binary,валькирия
@@ -836,6 +839,7 @@ CounterName,boons,
 CounterName,captures,
 CounterName,casts,
 CounterName,chants,
+CounterName,clairvoirs,
 CounterName,constructs,
 CounterName,copies,
 CounterName,crafts,
@@ -950,6 +954,7 @@ DietName,lithivore,камнеядный
 DietName,metalivore,металоядный
 DietName,omnivore,всеядный
 DietName,organivore,
+DietName,photoautotroph,
 DietName,xylophagy,древоядный
 EffectProperty,afflictions,
 EffectProperty,all kind,все виды
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,заклинает ценность
 EffectType,engulf,проглатывает
 EffectType,enlightenment,просвещает
 EffectType,exchange,
+EffectType,extinguish spill,
 EffectType,gain level,получи уровень
 EffectType,gain skill,получи умение
 EffectType,genocide,истребляет
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,Пълна ус
 ElementDescription,Complete resistance to electric and shock damage.,Пълна устойчивост щети электричеством и шоком.
 ElementDescription,Complete resistance to fire and heat damage.,Пълна устойчивост щети огнём и жаром.
 ElementDescription,Complete resistance to life and mana draining effects.,Обеспечивает защитой от вытягивания жизненных сил и маны.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,Пълна устойчивост окаменению.
 ElementDescription,Complete resistance to poison damage.,Обеспечивает сопротивление щети ядом.
 ElementDescription,Protects you against pure magical effects.,Защищает Вас от полностью волшебных эффектов.
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,распад
 ElementName,drain,
 ElementName,fire,огън
 ElementName,force,сила
+ElementName,light,
 ElementName,magical,магия
 ElementName,necrotic,некротический
 ElementName,petrify,
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",
 EntityDescription,Beware this clockwork machine of war.,
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",
@@ -1362,6 +1371,7 @@ EntityName,Elwing,Эльвинг
 EntityName,embalmer,бальзамировщик
 EntityName,energy vortex,энергетический вихрь
 EntityName,erinys,эриния
+EntityName,ethereal,
 EntityName,ettin,эттин
 EntityName,ettin mummy,мумия эттина
 EntityName,ettin zombie,зомби-эттин
@@ -3036,6 +3046,7 @@ KindName,dwarf,дварфы
 KindName,echo,
 KindName,elemental,элементали
 KindName,elf,елфы
+KindName,extradimensional,
 KindName,eye,злобоглазы
 KindName,fairy,
 KindName,flayer,пожиратели
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,Посетить сайт
 LiteralText,VOID SPACE,ПУСТОЕ ПРОСТРАНСТВО
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,уязвим к
 LiteralText,WAIT,ЖДАТЬ
 LiteralText,Wait how many turns?,
@@ -3905,6 +3917,7 @@ MaterialName,ice,лёд
 MaterialName,iron,железо
 MaterialName,lava,лава
 MaterialName,leather,кожа
+MaterialName,light,
 MaterialName,mithril,мифрил
 MaterialName,paper,бумага
 MaterialName,plastic,пластик
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,помазал
 MotionPastName,ate,съел
 MotionPastName,captured,
 MotionPastName,chanted,
+MotionPastName,clairvu,
 MotionPastName,constructed,
 MotionPastName,copied,
 MotionPastName,dipped,окунул
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,махнул
 MotionPresentName,anoint,помазание
 MotionPresentName,capture,
 MotionPresentName,chant,
+MotionPresentName,clairvoir,
 MotionPresentName,construct,
 MotionPresentName,copy,
 MotionPresentName,dig,копать
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Вие поражены ужасной болезнью со странными симптомами и подавляете желание к тошноте.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.","Вие засыпаете и мирно отдыхаете. В подземелье, полном монстров."
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,"Вие стремитесь сьесть как можно больше и знаете, что никогато не будете удовлеткрадецены."
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Вие жизнестойки и на Вас не действуют никакие болезни магического или природного происхождения.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Вие хорошо экипированы для рытья тоннелей и готовы проложить свой путь сквозь подземелье.
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,"Вие оцениваете количество зарядов в предмете, просто поднимая его."
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,нарколепсия
 PropertyName,paralysis,оцепенение
 PropertyName,petrifying,окаменение
 PropertyName,phasing,
+PropertyName,photosensitivity,
 PropertyName,polymorph,превращение
 PropertyName,polymorph control,контроль превращения
 PropertyName,quickness,прокрадецство
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,
 PunishmentName,thirst,жажда
 PunishmentName,wanted,
 QualificationCode,c,ч
+QualificationCode,d,
 QualificationCode,e,э
 QualificationCode,m,м
 QualificationCode,p,у
 QualificationCode,s,с
+QualificationCode,t,
 QualificationName,champion,чемпионы
+QualificationName,divine,
 QualificationName,expert,эксперт
 QualificationName,master,мастер
 QualificationName,proficient,умелый
 QualificationName,specialist,специалист
+QualificationName,transcendent,
 RaceName,angel//female,
 RaceName,angel//male,
 RaceName,angel//non-binary,
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,
 RaceName,elf//female,елф
 RaceName,elf//male,елф
 RaceName,elf//non-binary,
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,
 RaceName,ettin//male,
 RaceName,ettin//non-binary,
@@ -4579,10 +4603,12 @@ SpellName,acid stream,поток кислоты
 SpellName,animate dead,
 SpellName,animate object,
 SpellName,bind undead,
+SpellName,blessing,
 SpellName,blinking,
 SpellName,cancellation,отмена
 SpellName,charm,очарование
 SpellName,clairvoyance,подсматривание
+SpellName,clairvoyance reading,
 SpellName,cone of cold,конус холода
 SpellName,confusion,смятение
 SpellName,create familiar,создание фамильяра
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,обнаружение невидимого
 SpellName,dig,копание
 SpellName,disintegrate,распад
 SpellName,drain life,вытягивание жизни
+SpellName,enchantment,
 SpellName,extra healing,большое лечение
 SpellName,fear,ужас
 SpellName,finger of death,перст смерти
@@ -4624,6 +4651,7 @@ SpellName,polymorph,превращение
 SpellName,raise dead,оживление
 SpellName,regenerate,
 SpellName,remove curse,снятие проклятия
+SpellName,replication,
 SpellName,restoration,восстановление характеристик
 SpellName,shocking sphere,
 SpellName,sleep,усыпление
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,
 SpellName,summoning,призыв
 SpellName,telekinesis,
 SpellName,teleport away,телепортация
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,
 SpellName,turn undead,отпугивание нежити
 SpellName,walling,

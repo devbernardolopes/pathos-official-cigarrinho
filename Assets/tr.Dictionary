@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,tamirci
 ClassName,tourist//female,turist
 ClassName,tourist//male,turist
 ClassName,tourist//non-binary,turist
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,valkür
 ClassName,valkyrie//male,valkür
 ClassName,valkyrie//non-binary,valkür
@@ -836,6 +839,7 @@ CounterName,boons,lütfeder
 CounterName,captures,yakalar
 CounterName,casts,kullanır
 CounterName,chants,ilahi
+CounterName,clairvoirs,
 CounterName,constructs,inşa
 CounterName,copies,
 CounterName,crafts,üretir
@@ -950,6 +954,7 @@ DietName,lithivore,kristalobur
 DietName,metalivore,metalobur
 DietName,omnivore,hepçil
 DietName,organivore,organikobur
+DietName,photoautotroph,
 DietName,xylophagy,ağaçobur
 EffectProperty,afflictions,belalar
 EffectProperty,all kind,her türler
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,varlığı efsunla
 EffectType,engulf,yut
 EffectType,enlightenment,aydınlat
 EffectType,exchange,değiş
+EffectType,extinguish spill,
 EffectType,gain level,seviye kazan
 EffectType,gain skill,beceri kazan
 EffectType,genocide,soykırım
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,Ufalanmaya tam 
 ElementDescription,Complete resistance to electric and shock damage.,Elektriğe ve şok hasarına tam dayanıklık.
 ElementDescription,Complete resistance to fire and heat damage.,Ateşe ve ısı hasarına tam daynıklık.
 ElementDescription,Complete resistance to life and mana draining effects.,Can ve mana çalan etkilere tam dayanıklık.
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,Taşlaşma etkilerine tam dayanıklık
 ElementDescription,Complete resistance to poison damage.,Zehir hasarına tam dayanıklık.
 ElementDescription,Protects you against pure magical effects.,Seni saf büyü etkilerine karşı korur..
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,ufalama
 ElementName,drain,tahliye
 ElementName,fire,ateş
 ElementName,force,güç
+ElementName,light,
 ElementName,magical,büyülü
 ElementName,necrotic,hayat büyüsü
 ElementName,petrify,taşa dönüştür
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",
 EntityDescription,Beware this clockwork machine of war.,
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",
@@ -1362,6 +1371,7 @@ EntityName,Elwing,Elwing
 EntityName,embalmer,mumyalayıcı
 EntityName,energy vortex,enerji fırtınası
 EntityName,erinys,erinye
+EntityName,ethereal,
 EntityName,ettin,ettin
 EntityName,ettin mummy,mumya ettin
 EntityName,ettin zombie,zombi ettin
@@ -3036,6 +3046,7 @@ KindName,dwarf,bodur
 KindName,echo,
 KindName,elemental,elementsel
 KindName,elf,elf
+KindName,extradimensional,
 KindName,eye,göz
 KindName,fairy,
 KindName,flayer,zihin hırsızı
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,
 LiteralText,VIEW,
 LiteralText,Visit the website,İnternet sayfasını ziyaret et
 LiteralText,VOID SPACE,BOŞLUK
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,karşısında savunmasız
 LiteralText,WAIT,BEKLE
 LiteralText,Wait how many turns?,
@@ -3905,6 +3917,7 @@ MaterialName,ice,buz
 MaterialName,iron,demir
 MaterialName,lava,lava
 MaterialName,leather,deri
+MaterialName,light,
 MaterialName,mithril,mitril
 MaterialName,paper,kağıt
 MaterialName,plastic,plastik
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,yağladı
 MotionPastName,ate,yedi
 MotionPastName,captured,
 MotionPastName,chanted,büyüle
+MotionPastName,clairvu,
 MotionPastName,constructed,
 MotionPastName,copied,
 MotionPastName,dipped,bandırdı
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,şokladı
 MotionPresentName,anoint,yağla
 MotionPresentName,capture,
 MotionPresentName,chant,kutsa
+MotionPresentName,clairvoir,
 MotionPresentName,construct,
 MotionPresentName,copy,
 MotionPresentName,dig,kaz
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,Seni garip etkilere ve kusma isteğine maruz bırakan berbat bir hastalığa yakalandın.
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",Huzur içinde uyuyorsun. Canavarlarla dolu bir zindanda.
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,Yeme dürtüsü seni alıp götürür ve asla tatmin olmayacağını bilirsin.
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,Her türlü büyülü veya doğal hastalığa dayanıklısın ve etkilenmezsin.
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,Tüneller kazıp zindanda kendi yolunu açabilmek için yeterince kuşandın.
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,Bir eşyanın kullanım limitini eline aldığında anlarsın.
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,uykusuzluk
 PropertyName,paralysis,felç
 PropertyName,petrifying,taşlaşma
 PropertyName,phasing,
+PropertyName,photosensitivity,
 PropertyName,polymorph,şekil değiştirme
 PropertyName,polymorph control,şekil değiştirme kontrolü
 PropertyName,quickness,çabukluk
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,sakınma
 PunishmentName,thirst,susuzluk
 PunishmentName,wanted,
 QualificationCode,c,ş
+QualificationCode,d,
 QualificationCode,e,u
 QualificationCode,m,ü
 QualificationCode,p,e
 QualificationCode,s,ö
+QualificationCode,t,
 QualificationName,champion,şampiyon
+QualificationName,divine,
 QualificationName,expert,usta
 QualificationName,master,üstat
 QualificationName,proficient,etkili
 QualificationName,specialist,öğrenci
+QualificationName,transcendent,
 RaceName,angel//female,
 RaceName,angel//male,
 RaceName,angel//non-binary,
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,
 RaceName,elf//female,elf
 RaceName,elf//male,elf
 RaceName,elf//non-binary,elf
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,
 RaceName,ettin//male,
 RaceName,ettin//non-binary,
@@ -4579,10 +4603,12 @@ SpellName,acid stream,asit akıntısı
 SpellName,animate dead,
 SpellName,animate object,
 SpellName,bind undead,yürüyen ölü tasmalama kitabı
+SpellName,blessing,
 SpellName,blinking,
 SpellName,cancellation,iptalleme
 SpellName,charm,cezbetme
 SpellName,clairvoyance,basiret
+SpellName,clairvoyance reading,
 SpellName,cone of cold,buz konisi
 SpellName,confusion,kafa karışıklığı
 SpellName,create familiar,koruyucu ruh yarat
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,görülmeyeni sapta
 SpellName,dig,kaz
 SpellName,disintegrate,ufala
 SpellName,drain life,can em
+SpellName,enchantment,
 SpellName,extra healing,fazladan iyileştirme
 SpellName,fear,korkut
 SpellName,finger of death,ölümcül parmak
@@ -4624,6 +4651,7 @@ SpellName,polymorph,şekil değiştir
 SpellName,raise dead,ölüyü canlandırma
 SpellName,regenerate,
 SpellName,remove curse,lanet kaldırma
+SpellName,replication,
 SpellName,restoration,kabiliyeti geri kazanma
 SpellName,shocking sphere,
 SpellName,sleep,uyku
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,
 SpellName,summoning,çağırma
 SpellName,telekinesis,
 SpellName,teleport away,ıraklara ışınlama
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,zehir püskürtme
 SpellName,turn undead,zombileştirme
 SpellName,walling,duvar yaratma

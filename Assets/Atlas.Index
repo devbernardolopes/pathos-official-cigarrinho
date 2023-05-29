@@ -293,6 +293,7 @@ black wand
 black warning
 black wasp
 blaze
+blessing spell
 blindfold
 blindness property
 blinking eye
@@ -395,6 +396,7 @@ chieftain
 chromatic dragon
 circular amulet
 clairvoyance property
+clairvoyance reading spell
 clairvoyance spell
 clarity property
 clay boulder
@@ -692,6 +694,7 @@ elven spear
 embalmer
 emerald potion
 emerald ring
+enchantment spell
 encumbrance icon
 energy strike
 energy vortex
@@ -719,6 +722,7 @@ equip shirt
 equip suit
 erinys
 etched helmet
+ethereal
 ettin
 ettin mummy
 ettin zombie
@@ -1264,6 +1268,7 @@ life regeneration property
 lifesaving property
 light blue book
 light brown book
+light element
 light explosion bottom center
 light explosion bottom left
 light explosion bottom right
@@ -1591,6 +1596,7 @@ phase spider
 phase worm
 phasing property
 phasing spell
+photosensitivity property
 physical element
 pickaxe
 piece of cloth
@@ -1712,6 +1718,7 @@ reflection property
 reflux affliction
 regenerate spell
 remove curse spell
+replication spell
 reroll icon
 rest icon
 restoration spell
@@ -2019,6 +2026,8 @@ telekinesis spell
 telepathy property
 teleport away spell
 teleport control property
+teleport down spell
+teleport up spell
 teleportation property
 teleporter
 tengu

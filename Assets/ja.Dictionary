@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,冶金術師
 ClassName,tourist//female,旅行者
 ClassName,tourist//male,旅行者
 ClassName,tourist//non-binary,旅行者
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,ヴァルキリー
 ClassName,valkyrie//male,ヴァルキリー
 ClassName,valkyrie//non-binary,ヴァルキリー
@@ -836,6 +839,7 @@ CounterName,boons,恩恵を受けた回数
 CounterName,captures,捕獲した回数
 CounterName,casts,呪文を使った回数
 CounterName,chants,詠唱した回数
+CounterName,clairvoirs,
 CounterName,constructs,組み立てた回数
 CounterName,copies,
 CounterName,crafts,制作した回数
@@ -950,6 +954,7 @@ DietName,lithivore,鉱物食
 DietName,metalivore,金属食
 DietName,omnivore,雑食
 DietName,organivore,有機食
+DietName,photoautotroph,
 DietName,xylophagy,木食
 EffectProperty,afflictions,災難
 EffectProperty,all kind,同種すべて
@@ -1038,6 +1043,7 @@ EffectType,enchant asset,アイテムの修正値
 EffectType,engulf,丸呑み
 EffectType,enlightenment,アイテムの知識を得る
 EffectType,exchange,交換する
+EffectType,extinguish spill,
 EffectType,gain level,レベルアップ
 EffectType,gain skill,スキルレベル上昇
 EffectType,genocide,根絶
@@ -1109,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,崩壊ダメー
 ElementDescription,Complete resistance to electric and shock damage.,電撃によるダメージへの耐性。
 ElementDescription,Complete resistance to fire and heat damage.,火や熱によるダメージへの耐性。
 ElementDescription,Complete resistance to life and mana draining effects.,ライフとマナの吸収効果への耐性。
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,石化効果への耐性。
 ElementDescription,Complete resistance to poison damage.,毒への耐性。
 ElementDescription,Protects you against pure magical effects.,純粋な魔力への耐性。
@@ -1120,6 +1127,7 @@ ElementName,disintegrate,崩壊
 ElementName,drain,吸収
 ElementName,fire,火
 ElementName,force,衝撃
+ElementName,light,
 ElementName,magical,魔力
 ElementName,necrotic,壊死
 ElementName,petrify,石化
@@ -1148,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",死してなお不屈たる冒険者の魂の依り代となる霊界の存在。自らの目的や欲といったようなものを持たず、依り代となることを厭わない彼らとの出会いは、無念の死を遂げた冒険者にとって魂の安らぎを得る二度目のチャンスとなる。霊界の物質の産物である彼らの姿形はおぼろげで向こうが透けて見え、物理的な障害を自由に通り抜けることができる。
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",光輪と羽毛に覆われた翼が特徴的な、別世界の美しい住人達。善と悪の闘争との関係は深く、触れるもの全てに神の威光を見出す。
 EntityDescription,Beware this clockwork machine of war.,この殺戮マシーンには気をつけろ。
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",強大な自然界の精霊たちとの結びつきによって得られる力を愚行のために注ぎ込む妖精界の住人達。下半身を覆う毛皮とヤギの割れた蹄、牡羊の渦巻いた角とずんぐりとした体形を特徴とする。この頭の回る助兵衛共の頭の中は快楽の二字で埋まっており、悪乗りの過ぎた酒や踊りや喧嘩のバカ騒ぎに日々明け暮れている。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",文明の誕生よりもはるか昔に世界を支配していた、大きな二足歩行の肉食爬虫類。恐るべき狩人であり、驚くほどの跳躍力と、強固な鱗と厚い皮による堅固な防護を誇る。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",邪道を地で行く生物。姿は様々ではあるが深紅の肌と角は彼ら共通の特徴である。彼らと同じ空気を吸う者はそれだけでドス黒い暴力への欲求に服従することになる。
@@ -1362,6 +1371,7 @@ EntityName,Elwing,『エルウィング』
 EntityName,embalmer,遺体整復師
 EntityName,energy vortex,魔力の渦
 EntityName,erinys,エリニス
+EntityName,ethereal,
 EntityName,ettin,双頭の巨人
 EntityName,ettin mummy,エティンのミイラ
 EntityName,ettin zombie,エティンのゾンビ
@@ -3036,6 +3046,7 @@ KindName,dwarf,ドワーフ
 KindName,echo,エーコー
 KindName,elemental,精霊
 KindName,elf,エルフ
+KindName,extradimensional,
 KindName,eye,目・球体
 KindName,fairy,妖精
 KindName,flayer,マインドフレイヤー
@@ -3849,6 +3860,7 @@ LiteralText,Vanity,プロフ
 LiteralText,VIEW,表示
 LiteralText,Visit the website,ウェブサイトにアクセス
 LiteralText,VOID SPACE,ボイドスペース
+LiteralText,VOLATILES,
 LiteralText,vulnerable to,弱点
 LiteralText,WAIT,待つ
 LiteralText,Wait how many turns?,何ターン待ちますか？
@@ -3905,6 +3917,7 @@ MaterialName,ice,氷
 MaterialName,iron,鉄
 MaterialName,lava,溶岩
 MaterialName,leather,革
+MaterialName,light,
 MaterialName,mithril,ミスリル
 MaterialName,paper,紙
 MaterialName,plastic,プラスチック
@@ -3923,6 +3936,7 @@ MotionPastName,anointed,を注いだ
 MotionPastName,ate,を食べた
 MotionPastName,captured,を開いて捕まえた
 MotionPastName,chanted,で詠唱した
+MotionPastName,clairvu,
 MotionPastName,constructed,を組み立てた
 MotionPastName,copied,
 MotionPastName,dipped,を浸した
@@ -3957,6 +3971,7 @@ MotionPastName,zapped,を振った
 MotionPresentName,anoint,注ぐ
 MotionPresentName,capture,捕まえる
 MotionPresentName,chant,詠唱する
+MotionPresentName,clairvoir,
 MotionPresentName,construct,組み立てる
 MotionPresentName,copy,
 MotionPresentName,dig,掘削する
@@ -4045,6 +4060,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,何らかの、明らかにひどい病気に罹り、未知の症状と吐き気に苦しめられる。
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",眠りに落ち、穏やかな休息をとっている。モンスターでいっぱいのダンジョンで。
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,決して満たされることのない食欲に取りつかれている。
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,精気に満ち溢れ、いかなる病気とも無縁である。
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,ダンジョンの壁を掘削し、新たな道を作りだすことができる。
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,拾いあげて一見しただけでアイテムの使用可能回数が分かる。
@@ -4097,6 +4113,7 @@ PropertyName,narcolepsy,睡眠発作
 PropertyName,paralysis,麻痺
 PropertyName,petrifying,石化
 PropertyName,phasing,幽体化
+PropertyName,photosensitivity,
 PropertyName,polymorph,変化
 PropertyName,polymorph control,変化制御
 PropertyName,quickness,加速
@@ -4142,15 +4159,19 @@ PunishmentName,shunning,破門
 PunishmentName,thirst,暴飲
 PunishmentName,wanted,指名手配
 QualificationCode,c,天
+QualificationCode,d,
 QualificationCode,e,熟
 QualificationCode,m,達
 QualificationCode,p,技
 QualificationCode,s,専
+QualificationCode,t,
 QualificationName,champion,天下第一
+QualificationName,divine,
 QualificationName,expert,熟練者
 QualificationName,master,達人
 QualificationName,proficient,技能者
 QualificationName,specialist,専門家
+QualificationName,transcendent,
 RaceName,angel//female,天使
 RaceName,angel//male,天使
 RaceName,angel//non-binary,天使
@@ -4169,6 +4190,9 @@ RaceName,echo//non-binary,エーコー
 RaceName,elf//female,エルフ
 RaceName,elf//male,エルフ
 RaceName,elf//non-binary,エルフ
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,エティン
 RaceName,ettin//male,エティン
 RaceName,ettin//non-binary,エティン
@@ -4579,10 +4603,12 @@ SpellName,acid stream,酸の嵐
 SpellName,animate dead,反魂
 SpellName,animate object,入魂
 SpellName,bind undead,死霊束縛
+SpellName,blessing,
 SpellName,blinking,転位
 SpellName,cancellation,魔法除去
 SpellName,charm,魅了
 SpellName,clairvoyance,千里眼
+SpellName,clairvoyance reading,
 SpellName,cone of cold,冷風
 SpellName,confusion,混乱
 SpellName,create familiar,使い魔生成
@@ -4597,6 +4623,7 @@ SpellName,detect unseen,不可視探知
 SpellName,dig,掘削
 SpellName,disintegrate,崩壊
 SpellName,drain life,生命力吸収
+SpellName,enchantment,
 SpellName,extra healing,大回復
 SpellName,fear,恐慌
 SpellName,finger of death,死神の指
@@ -4624,6 +4651,7 @@ SpellName,polymorph,変化
 SpellName,raise dead,蘇生
 SpellName,regenerate,再生
 SpellName,remove curse,解呪
+SpellName,replication,
 SpellName,restoration,能力回復
 SpellName,shocking sphere,火花散る球
 SpellName,sleep,催眠
@@ -4632,6 +4660,8 @@ SpellName,soaking sphere,濡れそぼつ球
 SpellName,summoning,召喚
 SpellName,telekinesis,念動力
 SpellName,teleport away,強制転移
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,酸の矢
 SpellName,turn undead,死霊退散
 SpellName,walling,造壁
