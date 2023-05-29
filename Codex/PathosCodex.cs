@@ -714,19 +714,7 @@ namespace Pathos
           else if (!Entity.IsUnique && char.IsUpper(Entity.Name[0]))
             Record($"Entity {Entity.Name} name must have a common name when marked as non-unique.");
 
-          //if (Entity.HasReactions())
-          if (Entity.Reactions != null && Entity.Reactions.Count > 0)
-          {
-            //foreach (var Reaction in Entity.GetReactions())
-            foreach (var Reaction in Entity.Reactions)
-            {
-              foreach (var Effect in Reaction.Apply.GetEffects())
-              {
-                if (Effect is HarmEffect && (Effect as HarmEffect).Element == Reaction.Element)
-                  Record($"Entity {Entity.Name} reaction to {Reaction.Element} should not harm with the same element.");
-              }
-            }
-          }
+          CheckReactions(Entity.Reactions, () => $"Entity {Entity.Name}");
 
           AttackIndex++;
         }
@@ -876,10 +864,11 @@ namespace Pathos
         {
           foreach (var Item in Kit.Items)
           {
-            var Skill = Item.GetSkill();
-
-            if (Skill != null && !Class.Startup.HasSkill(Skill))
-              Record($"Class {Class.Name} can start with an item that requires skill in {Skill.Name} (but is unskilled)");
+            foreach (var Skill in Item.GetSkills())
+            {
+              if (Skill != null && !Class.Startup.HasSkill(Skill))
+                Record($"Class {Class.Name} can start with an item that requires skill in {Skill.Name} (but is unskilled)");
+            }
           }
         }
 
@@ -955,7 +944,23 @@ namespace Pathos
           Record($"Trick {Trick.Name} must have apply effects");
       }
 
+      #region Grounds
       Base.UniqueCheck("Ground", Manifest.Grounds.List, I => I.Name);
+
+      foreach (var Ground in Manifest.Grounds.List)
+      {
+        CheckReactions(Ground.Reactions, () => $"Ground {Ground.Name}");
+      }
+      #endregion
+
+      #region Volatiles
+      Base.UniqueCheck("Volatile", Manifest.Volatiles.List, I => I.Name);
+
+      foreach (var Volatile in Manifest.Volatiles.List)
+      {
+        CheckReactions(Volatile.Reactions, () => $"Volatile {Volatile.Name}");
+      }
+      #endregion
 
       Base.UniqueCheck("Motion", Manifest.Motions.List, I => I.PastName);
       Base.UniqueCheck("Motion", Manifest.Motions.List, I => I.PresentName);
@@ -1174,6 +1179,21 @@ namespace Pathos
       #endregion
     }
 
+    private void CheckReactions(IReadOnlyList<Reaction> ReactionList, Func<string> Function)
+    {
+      var Title = Function();
+
+      Base.UniqueCheck(Title + "Reactions", ReactionList, I => I.Element);
+
+      foreach (var Reaction in ReactionList)
+      {
+        foreach (var Effect in Reaction.Apply.GetEffects())
+        {
+          if (Effect is HarmEffect && (Effect as HarmEffect).Element == Reaction.Element)
+            Record($"{Title} reaction to {Reaction.Element} should not harm with the same element to prevent endless cycles of 'harm'.");
+        }
+      }
+    }
     private void CheckApply(Apply Apply, Func<string> Function)
     {
       foreach (var Effect in Apply.GetEffects())

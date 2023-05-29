@@ -3465,6 +3465,7 @@ LiteralText,INSCRIBE,НАНЕСЕНИЕ
 LiteralText,INSCRIBE ITEM,НАНЕСИТЕ НА ВЕЩЬ
 LiteralText,inscription?,надпись?
 LiteralText,INSTRUCT,ПРИКАЗЫ
+LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,НЕДОСТАТОЧНО ЗОЛОТА
 LiteralText,insulation,изоляция
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Интересные комнаты и тайны ждут вас, но не медлите - спуститесь или умрите. Основано на генерации карт Shattered Pixel Dungeon."
@@ -4713,6 +4714,8 @@ TraversalPresentName,ascend,поднимается
 TraversalPresentName,descend,спускается
 TraversalPresentName,travel,перемещается
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,иллюзия
 WallStructureName,permanent,не рушимая

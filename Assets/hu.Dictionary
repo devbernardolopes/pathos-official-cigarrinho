@@ -3465,6 +3465,7 @@ LiteralText,INSCRIBE,BELEÍR
 LiteralText,INSCRIBE ITEM,TÁRGYBA BELEÍRÁS
 LiteralText,inscription?,beleírás?
 LiteralText,INSTRUCT,UTASÍT
+LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,NINCS ELÉG ARANY
 LiteralText,insulation,szigetelés
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Érdekes termek és titkok várnak rád, ám ne habozz; ereszkedj egyre lejjebb, hogy túléld a kalandot. Ez a mód a Shattered Pixel Dungeon pályagenerálásán alapszik."
@@ -4713,6 +4714,8 @@ TraversalPresentName,ascend,felmegy
 TraversalPresentName,descend,leereszkedik
 TraversalPresentName,travel,utazik
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,illúzió
 WallStructureName,permanent,állandó

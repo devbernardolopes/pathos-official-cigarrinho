@@ -3465,6 +3465,7 @@ LiteralText,INSCRIBE,INSCRIRE
 LiteralText,INSCRIBE ITEM,INSCRIRE l'ÉLÉMENT
 LiteralText,inscription?,inscription?
 LiteralText,INSTRUCT,COMMANDER
+LiteralText,instruct each character,
 LiteralText,INSUFFICIENT GOLD,OR INSUFFISANT
 LiteralText,insulation,isolation
 LiteralText,Interesting rooms and secrets await but do not linger; you must descend or die. Based on the map generation from Shattered Pixel Dungeon.,"Des salles intéressantes et des secrets vous attendent, mais ne traînez pas: vous devez descendre ou mourir. Basé sur la génération de carte de Shattered Pixel Dungeon."
@@ -4713,6 +4714,8 @@ TraversalPresentName,ascend,monte
 TraversalPresentName,descend,descend
 TraversalPresentName,travel,voyage
 VolatileName,blaze,
+VolatileName,electricity,
+VolatileName,freeze,
 VolatileName,steam,
 WallStructureName,illusionary,illusion
 WallStructureName,permanent,permanent

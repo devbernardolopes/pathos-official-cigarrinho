@@ -664,6 +664,7 @@ electric explosion middle right
 electric explosion top center
 electric explosion top left
 electric explosion top right
+electricity
 elephant
 elf
 elf female priest
@@ -859,6 +860,7 @@ fountain
 fox
 frag grenade
 free action property
+freeze
 freezing sphere spell
 frost binder
 frost giant
@@ -1771,10 +1773,12 @@ satyr female reaver
 satyr female shaman
 satyr female wizard
 satyr male bard
+satyr male caveman
 satyr male convict
 satyr male druid
 satyr male explorer
 satyr male gladiator
+satyr male gunslinger
 satyr male jester
 satyr male knight
 satyr male necromancer
@@ -1783,6 +1787,7 @@ satyr male pirate
 satyr male ranger
 satyr male reaver
 satyr male shaman
+satyr male tinker
 satyr male wizard
 sawnoff shotgun
 scale mail
