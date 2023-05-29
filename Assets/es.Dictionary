@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,Desmayo por falta de comida.
 PropertyDescription,Fly above the ground to avoid many types of traps.,Vuela por encima del suelo para evitar muchos tipos de trampas.
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,La torpeza hace que sueltes tu arma durante el combate y te caigas por las escaleras.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Los ataques de mirada y rayo son reflejados de vuelta hacia el lanzador.
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Te da una advertencia previa de los monstruos cercanos y su nivel aproximado de amenaza.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"Atenazado por el terror, no puedes atacar y debes huir."
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
@@ -4117,6 +4118,7 @@ PropertyName,phasing,cambio de fase
 PropertyName,photosensitivity,
 PropertyName,polymorph,polimorfismo
 PropertyName,polymorph control,control de polimorfismo
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,celeridad
 PropertyName,rage,rabia
 PropertyName,reflection,reflexion

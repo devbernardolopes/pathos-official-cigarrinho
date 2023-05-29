@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,Svenimento per mancanza di cibo.
 PropertyDescription,Fly above the ground to avoid many types of traps.,Fluttua sopra il terreno per evitare molti tipi di trappole.
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Avere mani di burro ti fa scivolare dalle mani le tue armi durante i combattimenti e cadere quando ti avvicini alle scale (occhio a non farti male!)
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Alcuni attacchi come raggi laser e pietrificazione alla vista sono rimandati al mittente.
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Ti accorgi in anticipo dei nemici vicino a te e capisci quanto siano pericolosi.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Preso dal terrore e dallo sconforto non riesci ad attaccare e vuoi solo fuggire.
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
@@ -4117,6 +4118,7 @@ PropertyName,phasing,incorporeità
 PropertyName,photosensitivity,
 PropertyName,polymorph,metamorfosi
 PropertyName,polymorph control,controllo della metamorfosi
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,rapidità
 PropertyName,rage,ira
 PropertyName,reflection,immagine riflessa

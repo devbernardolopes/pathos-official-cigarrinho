@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,açlıktan bayılmak.
 PropertyDescription,Fly above the ground to avoid many types of traps.,Birçok tuzak türünden sıyrılmak için havada süzülerek git.
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Sakarlık çatışma sırasında silahını düşürmene ve merdivenlerden yuvarlanmana yol açar.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Bakış ve ışın saldırıları kaynağına yansıtılır.
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Yakındaki canavarlar ve ortalama tehlike seviyeleri hakkında önceden uyarı verir.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,Dehşet düşerek saldırma yetini kaybedersin ve kaçmalısın.
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
@@ -4117,6 +4118,7 @@ PropertyName,phasing,
 PropertyName,photosensitivity,
 PropertyName,polymorph,şekil değiştirme
 PropertyName,polymorph control,şekil değiştirme kontrolü
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,çabukluk
 PropertyName,rage,öfke
 PropertyName,reflection,yansıtma

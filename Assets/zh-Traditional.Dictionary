@@ -813,6 +813,9 @@ ClassName,tinker//non-binary,修補匠
 ClassName,tourist//female,遊客
 ClassName,tourist//male,遊客
 ClassName,tourist//non-binary,遊客
+ClassName,trickster//female,
+ClassName,trickster//male,
+ClassName,trickster//non-binary,
 ClassName,valkyrie//female,女武神
 ClassName,valkyrie//male,武神
 ClassName,valkyrie//non-binary,武神
@@ -836,6 +839,7 @@ CounterName,boons,福利
 CounterName,captures,捕捉
 CounterName,casts,施法
 CounterName,chants,吟唱
+CounterName,clairvoirs,
 CounterName,constructs,製造
 CounterName,copies,複製
 CounterName,crafts,製作
@@ -950,6 +954,7 @@ DietName,lithivore,石食性
 DietName,metalivore,金屬食性
 DietName,omnivore,雜食性
 DietName,organivore,有機食品食性
+DietName,photoautotroph,
 DietName,xylophagy,木食性
 EffectProperty,afflictions,感染
 EffectProperty,all kind,所有種類
@@ -1110,6 +1115,7 @@ ElementDescription,Complete resistance to disintegration damage.,對解離傷害
 ElementDescription,Complete resistance to electric and shock damage.,對雷電與電擊傷害的完全抗性。
 ElementDescription,Complete resistance to fire and heat damage.,對烈焰與高溫傷害的完全抗性。
 ElementDescription,Complete resistance to life and mana draining effects.,對生命吸取與魔力吸取的完全抗性。
+ElementDescription,Complete resistance to luminous damage.,
 ElementDescription,Complete resistance to petrification effects.,對石化的完全抗性。
 ElementDescription,Complete resistance to poison damage.,對毒素傷害的完全抗性。
 ElementDescription,Protects you against pure magical effects.,對於純粹魔法效果的保護。
@@ -1121,6 +1127,7 @@ ElementName,disintegrate,解離
 ElementName,drain,吸取
 ElementName,fire,火焰
 ElementName,force,力場
+ElementName,light,
 ElementName,magical,魔法
 ElementName,necrotic,死靈
 ElementName,petrify,石化
@@ -1149,6 +1156,7 @@ EntityDescription,"An ancient race of towering recluses. Their terrifying size g
 EntityDescription,"Astral beings who are a vessel for the indomitable spirit of a vanquished adventurer. Having no motivations of their own, they are glad to permit the possession; for the deceased adventurer, it is a second chance at revenge or redemption. Born from astral matter, they are slightly built, translucent and can move freely through physical obstacles.",已故冒險者殘留在世間的靈魂。他們已經沒有了那種世俗的慾望，因此很樂意與他人分享。對於這些已故的冒險者來說，這是他們的第二次機會，讓他們能夠繼續自己的復仇或是尋求救贖。作為一種靈體，他們體型較大，呈半透明狀，並且可以在牆壁中穿梭。
 EntityDescription,"Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.",美麗且與俗世隔絕的生物，謠傳他們帶有標誌型的光圈與帶羽毛的翅膀。 他們能在善惡分辨中從容自如，並且能在一切所持的物品中感覺到神性。
 EntityDescription,Beware this clockwork machine of war.,當心這個發條控制的戰爭機器。
+EntityDescription,Extradimensional beings that feed on light.,
 EntityDescription,"Fey creatures linked by powerful nature spirits to fuel their antics. They are stocky with furry lower bodies, cloven hooves of a goat and curled horns of a ram. Ribald and clever, they cheerfully lead hedonistic escapades of drinking, dancing and fighting.",受到自然之靈祝福的異族生物，擁有魁梧的身軀，毛茸茸的下半身，山羊的蹄子和公羊的角。他們野蠻而又聰明，過著每天喝酒跳舞打架的快樂生活。
 EntityDescription,"Large, carnivorous reptilians whose bestial ancestors dominated the world long before the birth of civilisation. They are fearsome predators, capable of leaping impressive distances and warding off many attacks with their thick scaly hides.",大型食肉爬行動物其祖先在文明出現前就已統治世界許久。他們是令人恐懼的掠食者，可以跳躍很遠、用厚皮抵擋許多攻擊。
 EntityDescription,"Perverse creatures of many aberrations but always with crimson skin and horns. Their mere presence compels others to act out their darkest, most violent desires.",雖然是所有邪惡生物的簡稱，但總長著赤紅的皮膚以及長角。 僅僅是迫使他人就能使他們展現出最黑暗且殘暴的慾望。
@@ -1363,6 +1371,7 @@ EntityName,Elwing,愛爾溫
 EntityName,embalmer,斂屍者
 EntityName,energy vortex,能量旋風
 EntityName,erinys,厄裡倪厄斯
+EntityName,ethereal,
 EntityName,ettin,雙頭巨人
 EntityName,ettin mummy,雙頭巨人木乃伊
 EntityName,ettin zombie,雙頭巨人殭屍
@@ -3037,6 +3046,7 @@ KindName,dwarf,矮人
 KindName,echo,殘像
 KindName,elemental,元素
 KindName,elf,精靈
+KindName,extradimensional,
 KindName,eye,眼球
 KindName,fairy,妖精
 KindName,flayer,奪心魔
@@ -3908,6 +3918,7 @@ MaterialName,ice,冰
 MaterialName,iron,鐵
 MaterialName,lava,岩漿
 MaterialName,leather,皮革
+MaterialName,light,
 MaterialName,mithril,秘銀
 MaterialName,paper,紙
 MaterialName,plastic,塑料
@@ -3926,6 +3937,7 @@ MotionPastName,anointed,洗滌了
 MotionPastName,ate,食用了
 MotionPastName,captured,捕捉了
 MotionPastName,chanted,吟唱了
+MotionPastName,clairvu,
 MotionPastName,constructed,創造了
 MotionPastName,copied,複製了
 MotionPastName,dipped,浸泡了
@@ -3960,6 +3972,7 @@ MotionPastName,zapped,發射了
 MotionPresentName,anoint,洗滌
 MotionPresentName,capture,捕捉
 MotionPresentName,chant,吟唱
+MotionPresentName,clairvoir,
 MotionPresentName,construct,創造
 MotionPresentName,copy,複製
 MotionPresentName,dig,挖掘
@@ -4019,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,因為食物的缺乏造成的�
 PropertyDescription,Fly above the ground to avoid many types of traps.,從地面上空飛行而過，避免接觸多種陷阱。
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,笨拙的行動讓你在戰鬥中脫手你的武器，也可以讓你錯誤地上下樓。
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,凝視與射線被反射回施加者身上。
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,給予你對於附近怪物以及他們危險程度的預先警告。
 PropertyDescription,Gripped by terror you cannot attack and should flee.,你被恐懼攫住，無法攻擊，應該逃離。
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",在這種醉醺醺的狀態下，你大大增強的自信心無法掩蓋判斷力嚴重受損的事實。
@@ -4048,6 +4062,7 @@ PropertyDescription,"When stunned you are unable to walk in a straight line or p
 PropertyDescription,You are afflicted with a terrible sickness with strange symptoms and have to quell the urge to vomit.,你得了一種症狀奇怪的嚴重疾病，需要忍受嘔吐的慾望。
 PropertyDescription,"You are asleep, resting peacefully. In a dungeon full of monsters.",你矇矓欲睡，平靜而眠——在一個充滿怪物的地牢裡。
 PropertyDescription,You are consumed by the urge to eat and know that you will never be fully satisfied.,你被巨大的進食慾望控制，並且知道你永遠不會滿足。
+PropertyDescription,You are harmed in the presence of intense light.,
 PropertyDescription,You are resilient and unaffected by any type of natural or magical sickness.,你的適應性很強，不會受到大多數自然或魔法的疾病影響。
 PropertyDescription,You are well equipped to dig tunnels and make your own path through the dungeon.,你攜帶了足以讓你挖出過道的裝備，可以在地牢裡開闢自己的道路。
 PropertyDescription,You assess the number of charges in an item simply by picking it up.,你只要把物品撿起來就可以得知它可以被使用多少次。
@@ -4100,8 +4115,10 @@ PropertyName,narcolepsy,嗜睡
 PropertyName,paralysis,麻痺
 PropertyName,petrifying,石化
 PropertyName,phasing,相位轉移
+PropertyName,photosensitivity,
 PropertyName,polymorph,變形
 PropertyName,polymorph control,變形控制
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,迅捷
 PropertyName,rage,暴怒
 PropertyName,reflection,反射
@@ -4145,15 +4162,19 @@ PunishmentName,shunning,神棄
 PunishmentName,thirst,飢渴
 PunishmentName,wanted,被通緝
 QualificationCode,c,冠軍
+QualificationCode,d,
 QualificationCode,e,專家
 QualificationCode,m,大師
 QualificationCode,p,熟練
 QualificationCode,s,精通
+QualificationCode,t,
 QualificationName,champion,冠軍
+QualificationName,divine,
 QualificationName,expert,專家
 QualificationName,master,大師
 QualificationName,proficient,熟練
 QualificationName,specialist,精通
+QualificationName,transcendent,
 RaceName,angel//female,天使
 RaceName,angel//male,天使
 RaceName,angel//non-binary,天使
@@ -4172,6 +4193,9 @@ RaceName,echo//non-binary,靈魂
 RaceName,elf//female,精靈
 RaceName,elf//male,精靈
 RaceName,elf//non-binary,精靈
+RaceName,ethereal//female,
+RaceName,ethereal//male,
+RaceName,ethereal//non-binary,
 RaceName,ettin//female,雙頭巨人
 RaceName,ettin//male,雙頭巨人
 RaceName,ettin//non-binary,雙頭巨人
@@ -4582,10 +4606,12 @@ SpellName,acid stream,強酸之流
 SpellName,animate dead,腐化術
 SpellName,animate object,活化物件
 SpellName,bind undead,死靈役使
+SpellName,blessing,
 SpellName,blinking,閃現
 SpellName,cancellation,撤銷
 SpellName,charm,魅惑
 SpellName,clairvoyance,洞察力
+SpellName,clairvoyance reading,
 SpellName,cone of cold,寒冰錐
 SpellName,confusion,混亂
 SpellName,create familiar,侍靈創造
@@ -4600,6 +4626,7 @@ SpellName,detect unseen,不可見偵測
 SpellName,dig,挖掘
 SpellName,disintegrate,解離術
 SpellName,drain life,生命吸取
+SpellName,enchantment,
 SpellName,extra healing,強效治療
 SpellName,fear,恐懼
 SpellName,finger of death,死亡之指
@@ -4627,6 +4654,7 @@ SpellName,polymorph,變形
 SpellName,raise dead,亡靈再起
 SpellName,regenerate,生命恢復
 SpellName,remove curse,詛咒移除
+SpellName,replication,
 SpellName,restoration,能力恢復
 SpellName,shocking sphere,閃電球侍靈
 SpellName,sleep,睡眠
@@ -4635,6 +4663,8 @@ SpellName,soaking sphere,水球侍靈
 SpellName,summoning,召喚
 SpellName,telekinesis,念力控制
 SpellName,teleport away,傳送
+SpellName,teleport down,
+SpellName,teleport up,
 SpellName,toxic spray,毒液噴射
 SpellName,turn undead,死靈驅散
 SpellName,walling,造牆術

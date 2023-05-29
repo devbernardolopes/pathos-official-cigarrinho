@@ -190,6 +190,81 @@ namespace Pathos
       #endregion
 
       #region base entities
+      ethereal = AddBaseEntity(Kinds.extradimensional, Races.ethereal, "ethereal", E =>
+      {
+        E.Description = "Extradimensional beings that feed on light.";
+        E.Glyph = Glyphs.ethereal;
+        E.Level = 0;
+        E.Challenge = 0;
+        E.Difficulty = 0;
+        E.Frequency = 0;
+        E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
+        E.SetDiet(Diets.photoautotroph);
+        E.Speed = Speed.S7_5;
+        E.Size = Size.Medium;
+        E.Strategy = Strategy.Attack;
+        E.Weight = Weight.FromUnits(150);
+        E.Figure.Set
+        (
+          Material: Materials.ether,
+          Head: true,
+          Mind: true,
+          Voice: true,
+          Eyes: false,
+          Ears: false,
+          Hands: false,
+          Limbs: false,
+          Feet: false,
+          Thermal: false,
+          Blood: false,
+          Mounted: false,
+          Amorphous: false
+        );
+
+        E.LifeAdvancement.Set(2, Dice.Fixed(+1));
+        E.ManaAdvancement.Set(6, Dice.Fixed(+4));
+
+        E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
+        E.LimitForm.Set(STR: 10, DEX: 26, CON: 12, INT: 30, WIS: 30, CHA: 12);
+
+        E.SetGender(Genders.nonbinary);
+
+        E.Startup.SetTalent
+        (
+          Properties.flight,
+          Properties.clairvoyance,
+          Properties.dark_vision,
+          Properties.see_invisible,
+          Properties.telekinesis,
+          Properties.telepathy,
+          Properties.warning,
+          Properties.teleport_control,
+          Properties.teleportation,
+          Properties.mana_regeneration,
+          Properties.phasing,
+          Properties.vitality,
+          Properties.quickness
+        );
+
+        E.Startup.SetResistance
+        (
+            Elements.sleep,
+            Elements.magical,
+            Elements.poison,
+            Elements.light,
+            Elements.cold
+        );
+
+        //E.Startup.SetSkill(Qualifications.master, Skills.abjuration);
+        E.Startup.SetSkill(Qualifications.divine, Skills.abjuration);
+
+        E.Startup.AddGrimoire(Dice.One, Spells.light);
+
+        E.Startup.SetRecognition(Items.scroll_of_light, Items.book_of_light, Items.wand_of_light);
+
+        E.SetCorpse(Chance.Never);
+      });
+
       angel = AddBaseEntity(Kinds.angel, Races.angel, "angel", E =>
       {
         E.Description = "Beautiful, otherworldly beings characterised by their signature halo and feathered wings. Strongly attuned to the struggle between good and evil, they sense the divinity within anything they hold.";
@@ -35068,5 +35143,6 @@ namespace Pathos
     public readonly Entity keystone_sergeant;
     public readonly Entity keystone_lieutenant;
     public readonly Entity keystone_captain;
-  }
+    public readonly Entity ethereal;
+    }
 }

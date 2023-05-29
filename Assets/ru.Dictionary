@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,Обморок от недост
 PropertyDescription,Fly above the ground to avoid many types of traps.,"Летайте над землёй, чтобы избежать большинства типов ловушек."
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Неловкость заставляет вас ронять оружие во время боя и падать с лестниц.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Взгляд и лучевые атаки отражаются обратно на заклинателя.
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Даёт своевременное предупреждение о приближающихся монстрах и их уровне угрозы.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"Охваченный ужасом, вы не можете атаковать и должны бежать."
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","В состоянии алкогольного опьянения, ваша резко возросшая самоуверенность компенсируется только вашим сильно нарушенным чувством здравого смысла."
@@ -4117,6 +4118,7 @@ PropertyName,phasing,фазирование
 PropertyName,photosensitivity,
 PropertyName,polymorph,превращение
 PropertyName,polymorph control,контроль превращения
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,проворство
 PropertyName,rage,ярость
 PropertyName,reflection,отражение

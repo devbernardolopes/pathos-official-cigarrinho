@@ -27,7 +27,7 @@ namespace Pathos
                     Debug.Assert(P.Glyph != null, P.Name + " property must have a glyph.");
 
                     CodexRecruiter.Enrol(() => EditorAction(P));
-                    CodexRecruiter.Enrol(() => new Action<FigureEditor>(;
+                    //CodexRecruiter.Enrol(() => new Action<FigureEditor>(;
                 });
             }
 

@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,Éhség okozta ájulás.
 PropertyDescription,Fly above the ground to avoid many types of traps.,"Repülj a talaj fölé, hogy elkerüld a rád leselkedő csapdákat."
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,"Az ügyetlenség miatt harc közben elejted fegyvereidet, valamint megbotlasz a lépcsőkben."
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,A sugár- és a tekintettel indított támadások visszaverődnek a támadóra.
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,"Előzetes figyelmeztetést ad a közelben leselkedő szörnyekről, és azok hozzávetőleges veszélyességi szintjéről."
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"A rémület szorításában képtelen vagy támadni, így hát menekülőre kell fognod."
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
@@ -4117,6 +4118,7 @@ PropertyName,phasing,térugrás
 PropertyName,photosensitivity,
 PropertyName,polymorph,átváltozás
 PropertyName,polymorph control,irányított átváltozás
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,gyorsaság
 PropertyName,rage,düh
 PropertyName,reflection,visszaverődés

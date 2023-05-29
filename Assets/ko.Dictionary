@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,음식 부족으로 기절한다
 PropertyDescription,Fly above the ground to avoid many types of traps.,비행하여 지면의 많은 함정을 피한다.
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,실수로 전투중에 무기를 떨어트리고 계단을 오르내릴때 넘어진다.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,응시와 광선 공격이 시전자에게 반사된다.
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,사전에 몬스터의 위치와 위험도를 경고한다.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,공포에 질려 공격할 수 없고 도망쳐야만한다.
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","술에 열광적으로 취한 상태, 당신의 야만적인 용기는 최악의 선택과 동행하게된다."
@@ -4117,6 +4118,7 @@ PropertyName,phasing,투과
 PropertyName,photosensitivity,
 PropertyName,polymorph,폴리모프
 PropertyName,polymorph control,폴리모프 통제
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,가속화
 PropertyName,rage,분노
 PropertyName,reflection,반사

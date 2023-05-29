@@ -2550,8 +2550,21 @@ namespace Pathos
     public readonly Glyph freeze;
     public readonly Glyph electricity;
     public readonly Glyph steam;
+
+    public readonly Glyph ethereal;
+    public readonly Glyph blessing_spell;
+    public readonly Glyph replication_spell;
+    public readonly Glyph enchantment_spell;
+    public readonly Glyph teleport_up_spell;
+    public readonly Glyph teleport_down_spell;
+    public readonly Glyph photosensitivity_property;
+    public readonly Glyph light_element;
+    public readonly Glyph clairvoyance_reading_spell;
+    public readonly Glyph protoplasmatic_hands_spell;
+    public readonly Glyph protoplasmatic_hands_property;
+
 #pragma warning restore 0649
 
-    public Glyph Add(string Name) => Register.Add(Name);
+        public Glyph Add(string Name) => Register.Add(Name);
   }
 }

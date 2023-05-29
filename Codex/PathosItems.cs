@@ -3698,6 +3698,19 @@ namespace Pathos
         else
           Item.SetWeakness(BookWeakness);
         Item.AddLearnSpellUse(Motions.study, Delay.FromTurns(Spell.Level * 10), Sonics.magic, Attributes.intelligence, Skills.literacy, Spell);
+        Item.AddObviousUse
+        (
+          Motions.clairvoir, new Utility(Purpose.LearnSpell), Delay.FromTurns(Spell.Level * 10), Sonics.magic, 
+          A => A.Apply.WhenSourceHasProperty
+          (
+            Properties.clairvoyance,
+            B => 
+            {
+              B.LearnSpell(Attributes.intelligence, Skills.literacy, Spell);
+              B.DestroySourceAsset(Dice.One);
+            }
+          )
+        );
       }
 
       book_of_blank_paper = AddBook("book of blank paper", I =>

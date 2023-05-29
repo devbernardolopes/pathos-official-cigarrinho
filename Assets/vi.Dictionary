@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,Bạn ngất đi vì quá đói.
 PropertyDescription,Fly above the ground to avoid many types of traps.,Bay trên không trung giúp bạn tránh được vô số cạm bẫy.
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,Hậu đậu khiến cho bạn thường xuyên làm rơi vũ khí trong giao tranh và khiến bạn ngã khi leo cầu thang.
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,Tia phép và phép lườm bị phản lại về phía người niệm phép.
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,Cảnh báo bạn về những quái vật ở gần và ước tính độ nguy hiểm của chúng.
 PropertyDescription,Gripped by terror you cannot attack and should flee.,"Co rúm lại vì hoảng sợ, bạn không thể tấn công và chạy trốn khỏi đó."
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.","Trong trạng thái say khướt này, sự tự tin ngày càng tăng cao của bạn sẽ chỉ được bù đắp bằng khả năng phán đoán bị suy giảm nghiêm trọng của bạn."
@@ -4117,6 +4118,7 @@ PropertyName,phasing,xuyên tường
 PropertyName,photosensitivity,
 PropertyName,polymorph,biến hình
 PropertyName,polymorph control,điều khiển biến hình
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,nhanh nhẹn
 PropertyName,rage,tức giận
 PropertyName,reflection,phản quang

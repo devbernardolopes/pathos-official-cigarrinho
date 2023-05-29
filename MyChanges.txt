@@ -1,0 +1,26 @@
+20230529_1 WIP:
+- new entity "ethereal"
+
+- new race "ethereal"
+
+- new kind "extradimensional"
+
+- new kind mechanic: extended Kind and KindEditor to set a new Kind array for the kind "extradimensional"
+
+- new diet "photoautophagy"
+
+- new class "trickster"
+
+- new element "light"
+
+- new material "light"
+
+- new motion "clairvoir"
+
+- new property "photosensitivity"
+
+- new qualifications "transcendent" and "divine"
+
+- new spells "replication", "blessing", "enchantment", "clairvoyance reading", "teleport up" and "teleport down"
+
+- new spells qualifications mechanics for "detect treasure", "darkness", "light" and "magic mapping"

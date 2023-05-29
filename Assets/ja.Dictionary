@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,飢えによって気を失っ�
 PropertyDescription,Fly above the ground to avoid many types of traps.,空中を移動することによって、地面に仕掛けられた罠を回避できる。
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,「滑り」は戦闘中にあなたが武器を落としたり、階段を勝手に昇降する原因となります。
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,睨みやビームによる攻撃を使用者に反射する。
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,前もって近くにいるモンスターの存在とそのおおよその危険度を知ることができる。
 PropertyDescription,Gripped by terror you cannot attack and should flee.,恐怖に取りつかれ、攻撃できず逃げることしか考えられない状態。
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",こんなに酔っぱらった状態では、酒の勢いなんて著しく低下した判断力の足しにはならない。
@@ -4117,6 +4118,7 @@ PropertyName,phasing,幽体化
 PropertyName,photosensitivity,
 PropertyName,polymorph,変化
 PropertyName,polymorph control,変化制御
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,加速
 PropertyName,rage,激昂
 PropertyName,reflection,反射

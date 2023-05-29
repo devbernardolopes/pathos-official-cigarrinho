@@ -4032,6 +4032,7 @@ PropertyDescription,Fainting from lack of food.,
 PropertyDescription,Fly above the ground to avoid many types of traps.,
 PropertyDescription,Fumbling causes you to drop your weapon during combat and fall up and down the stairs.,
 PropertyDescription,Gaze and beam attacks are reflected back at the caster.,
+PropertyDescription,Gives you a protoplasmatic pair of hands.,
 PropertyDescription,Gives you advance warning of nearby monsters and their approximate threat level.,
 PropertyDescription,Gripped by terror you cannot attack and should flee.,
 PropertyDescription,"In this heady state of intoxication, your wildly increased confidence is only offset by your badly impaired judgement.",
@@ -4117,6 +4118,7 @@ PropertyName,phasing,ทะลุผ่าน
 PropertyName,photosensitivity,
 PropertyName,polymorph,กลายร่าง
 PropertyName,polymorph control,ควบคุมการกลายร่าง
+PropertyName,protoplasmatic hands,
 PropertyName,quickness,รวดเร็ว
 PropertyName,rage,โกรธ
 PropertyName,reflection,สะท้อน
