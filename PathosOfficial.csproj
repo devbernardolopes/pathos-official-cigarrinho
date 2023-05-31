@@ -129,15 +129,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PathosEngine\PathosEngine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Inv.Library">
       <HintPath>C:\Games\Pathos\Inv.Library.dll</HintPath>
-    </Reference>
-    <Reference Include="PathosEngine">
-      <HintPath>C:\Games\Pathos\PathosEngine.dll</HintPath>
     </Reference>
     <Reference Include="PathosLibrary">
       <HintPath>C:\Games\Pathos\PathosLibrary.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Binaries\" />
   </ItemGroup>
 
   <Import Condition=" '$(PathosDeveloper)' != 'OpenSource'" Project="..\Pathos.targets" />
@@ -145,11 +150,12 @@
   <!-- Automatically regenerates the Resources files -->
   <Target Name="OuterPreBuild" BeforeTargets="DispatchToInnerBuilds">
     <Exec Condition=" '$(PathosDeveloper)' == 'OpenSource' " Command="&quot;$(PathosInstallation)\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
+    <Exec Condition=" '$(PathosDeveloper)' == 'OpenSource' " Command="&quot;$(SolutionDir)Binaries\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
     <Exec Condition=" '$(PathosDeveloper)' != 'OpenSource' " Command="&quot;$(ProjectDir)..\..\..\Forge\Inv\InvGen\bin\Debug\net48\InvGen.exe&quot; &quot;$(ProjectDir)Resources\Pathos.InvResourcePackage&quot;" />
   </Target>
   
   <!-- Make the Atlases and Albums -->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(TargetFramework)|$(PathosDeveloper)' == 'net48|OpenSource' ">
-    <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; $(ProjectDir) &quot;$(TargetDir)$(AssemblyName).dll&quot;" />
+    <Exec Command="$(PathosInstallation)\PathosMaker.exe &quot;$(PathosInstallation)&quot; $(ProjectDir) &quot;$(TargetDir)$(AssemblyName).dll&quot;&#xD;&#xA;$(SolutionDir)Binaries\PathosMaker.exe &quot;$(SolutionDir)Binaries\\&quot; $(ProjectDir) &quot;$(TargetDir)$(AssemblyName).dll&quot;&#xD;&#xA;&#xD;&#xA;copy /Y $(TargetDir)$(AssemblyName).dll $(PathosInstallation)\&#xD;&#xA;&#xD;&#xA;copy /Y $(SolutionDir)Assets\*.* $(SolutionDir)Binaries\Assets\&#xD;&#xA;copy /Y $(SolutionDir)Assets\*.* $(PathosInstalation)\Assets\&#xD;&#xA;copy /Y $(PathosInstallation)\*.exe $(SolutionDir)Binaries\&#xD;&#xA;copy /Y $(PathosInstallation)\*.dll $(SolutionDir)Binaries\" />
   </Target>
 </Project>

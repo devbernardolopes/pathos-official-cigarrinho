@@ -1262,12 +1262,13 @@ namespace Pathos
       trickster = AddClass(C =>
       {
         C.Name = "trickster";
-        C.Description = "";
+        C.Description = "A swift jack-of-all-trades who exhibits a great degree of intellect and wisdom.";
         C.Backpack = Items.Backpack;
-        C.LifeAdvancement.Set(1000, 1.d4());
-        //C.ManaAdvancement.Set(6, 3.d2());
-        C.ManaAdvancement.Set(1000, 3.d2());
-        C.SetDistribution(Attributes.intelligence, Attributes.strength, Attributes.wisdom, Attributes.dexterity, Attributes.charisma, Attributes.constitution);
+        C.LifeAdvancement.Set(4, 2.d4());
+        //C.LifeAdvancement.Set(1000, 1.d4());
+        C.ManaAdvancement.Set(3, 2.d2());
+        //C.ManaAdvancement.Set(1000, 3.d2());
+        C.SetDistribution(Attributes.intelligence, Attributes.wisdom, Attributes.strength, Attributes.dexterity, Attributes.charisma, Attributes.constitution);
 
         C.AddAvatar(Races.ethereal, Genders.nonbinary, Glyphs.ethereal);
         C.AddAvatar(Genders.male, Glyphs.male_jester);
@@ -1284,17 +1285,21 @@ namespace Pathos
         C.AddAvatar(Races.lizardman, Genders.female, Glyphs.lizardman_female_jester);
 
         C.AddFeat(2, Properties.quickness);
-        C.AddFeat(3, Properties.free_action);
-        C.AddFeat(4, Elements.sleep);
-        C.AddFeat(5, Elements.petrify);
-        C.AddFeat(6, Properties.teleport_control);
-        C.AddFeat(7, Properties.polymorph_control);
+        C.AddFeat(4, Properties.free_action);
+        C.AddFeat(6, Elements.sleep);
+        C.AddFeat(8, Elements.petrify);
+        C.AddFeat(10, Properties.teleport_control);
+        C.AddFeat(12, Properties.polymorph_control);
+        C.AddFeat(14, Properties.teleportation);
+        C.AddFeat(16, Properties.polymorph);
+        C.AddFeat(18, Properties.searching);
 
         C.Startup.SetSkill
         (
-          Qualifications.specialist,
+          Qualifications.proficient,
           Skills.bartering,
           Skills.crafting,
+          Skills.traps,
           Skills.dual_wielding
         );
 
@@ -1303,58 +1308,61 @@ namespace Pathos
           Qualifications.proficient,
           Skills.literacy,
           Skills.swimming,
-          //Skills.divination,
+          Skills.divination,
           Skills.light_armour,
           Skills.whip
         );
 
-        C.Startup.SetSkill
-        (
-          Qualifications.transcendent,
-          Skills.transmutation
-        );
+        //C.Startup.SetSkill
+        //(
+        //  Qualifications.transcendent,
+        //  Skills.transmutation
+        //);
 
-        C.Startup.SetSkill
-        (
-          Qualifications.proficient,
-          Skills.necromancy
-        );
+        //C.Startup.SetSkill
+        //(
+        //  Qualifications.proficient,
+        //  Skills.necromancy
+        //);
 
-        C.Startup.SetSkill
-        (
-          Qualifications.divine,
-          Skills.divination,
-          Skills.clerical,
-          Skills.abjuration
-        );
+        //C.Startup.SetSkill
+        //(
+        //  Qualifications.divine,
+        //  Skills.divination,
+        //  Skills.clerical,
+        //  Skills.abjuration
+        //);
 
         C.Startup.AddGrimoire(Dice.One, Spells.identify);
-        C.Startup.AddGrimoire(Dice.One, Spells.replication);
-        C.Startup.AddGrimoire(Dice.One, Spells.magic_mapping);
-        C.Startup.AddGrimoire(Dice.One, Spells.blessing);
-        C.Startup.AddGrimoire(Dice.One, Spells.enchantment);
-        C.Startup.AddGrimoire(Dice.One, Spells.darkness);
-        C.Startup.AddGrimoire(Dice.One, Spells.teleport_up);
-        C.Startup.AddGrimoire(Dice.One, Spells.teleport_down);
-        C.Startup.AddGrimoire(Dice.One, Spells.light);
-        C.Startup.AddGrimoire(Dice.One, Spells.detect_treasure);
-        C.Startup.AddGrimoire(Dice.One, Spells.clairvoyance_reading);
+        //C.Startup.AddGrimoire(Dice.One, Spells.replication);
+        //C.Startup.AddGrimoire(Dice.One, Spells.magic_mapping);
+        //C.Startup.AddGrimoire(Dice.One, Spells.blessing);
+        //C.Startup.AddGrimoire(Dice.One, Spells.enchantment);
+        //C.Startup.AddGrimoire(Dice.One, Spells.darkness);
+        //C.Startup.AddGrimoire(Dice.One, Spells.detect_treasure);
+        //C.Startup.AddGrimoire(Dice.One, Spells.clairvoyance_reading);
+        C.Startup.AddGrimoire(Dice.One, DesireableSpellArray(C));
 
 
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.mithril_whip);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.cloak_of_displacement);
         C.Startup.Loot.AddKit(Chance.Always, Items.magic_candle);
+        //C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus2, Items.Ring_of_Bia_Vis);
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.amulet_of_life_saving);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Sanctities.Blessed, Items.potion_of_water);
+        //C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Sanctities.Blessed, Items.potion_of_gain_ability);
+        //C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Sanctities.Uncursed, Items.potion_of_gain_level);
+        //C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Sanctities.Uncursed, Items.potion_of_gain_energy);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(6), Sanctities.Blessed, Items.scroll_of_blank_paper);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(6), Sanctities.Blessed, Items.scroll_of_enchantment);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Items.potion_of_healing);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(1), Items.potion_of_speed);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(5), Items.fortune_cookie);
         C.Startup.Loot.AddKit(Chance.Always, Items.magic_marker);
-        C.Startup.Loot.AddKit(Chance.Always, Items.book_of_acid_stream);
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_light);
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Uncursed, Items.wand_of_light);
-        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Cursed, Items.wand_of_light);
+        //C.Startup.Loot.AddKit(Chance.Always, Items.book_of_acid_stream);
+        //C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.wand_of_light);
+        //C.Startup.Loot.AddKit(Chance.Always, Sanctities.Uncursed, Items.wand_of_light);
+        //C.Startup.Loot.AddKit(Chance.Always, Sanctities.Cursed, Items.wand_of_light);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Items.lembas_wafer);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(1), Items.banana);
         C.Startup.Loot.AddKit(Chance.Always, 2.d25() + 77, Items.gold_coin);

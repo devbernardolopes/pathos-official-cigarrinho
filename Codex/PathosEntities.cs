@@ -34,6 +34,8 @@ namespace Pathos
       var Sonics = Codex.Sonics;
       var AttackTypes = Codex.AttackTypes;
       var Anatomies = Codex.Anatomies;
+      var Afflictions = Codex.Afflictions;
+      var Punishments = Codex.Punishments;
 
       CodexStocks Stocks = null;
       CodexItems Items = null;
@@ -192,7 +194,7 @@ namespace Pathos
       #region base entities
       ethereal = AddBaseEntity(Kinds.extradimensional, Races.ethereal, "ethereal", E =>
       {
-        E.Description = "Extradimensional beings that feed on light.";
+        E.Description = "Mysterious extradimensionals protoplasmatic lifeforms that feed on light. They live between matter and energy, hence materially frail. Their superior minds creates a physical vessel, albeit without hands, feet, limbs or eyes.";
         E.Glyph = Glyphs.ethereal;
         E.Level = 0;
         E.Challenge = 0;
@@ -202,8 +204,8 @@ namespace Pathos
         E.SetDiet(Diets.photoautotroph);
         E.Speed = Speed.S7_5;
         E.Size = Size.Medium;
-        E.Strategy = Strategy.Attack;
-        E.Weight = Weight.FromUnits(150);
+        E.Strategy = Strategy.Escape;
+        E.Weight = Weight.FromUnits(75);
         E.Figure.Set
         (
           Material: Materials.ether,
@@ -222,10 +224,10 @@ namespace Pathos
         );
 
         E.LifeAdvancement.Set(2, Dice.Fixed(+1));
-        E.ManaAdvancement.Set(6, Dice.Fixed(+4));
+        E.ManaAdvancement.Set(6, Dice.Fixed(+6));
 
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
-        E.LimitForm.Set(STR: 10, DEX: 26, CON: 12, INT: 30, WIS: 30, CHA: 12);
+        E.LimitForm.Set(STR: 10, DEX: 28, CON: 12, INT: 30, WIS: 30, CHA: 10);
 
         E.SetGender(Genders.nonbinary);
 
@@ -243,6 +245,9 @@ namespace Pathos
           Properties.mana_regeneration,
           Properties.phasing,
           Properties.vitality,
+          Properties.deflection,
+          Properties.reflection,
+          Properties.clarity,
           Properties.quickness
         );
 
@@ -255,12 +260,19 @@ namespace Pathos
             Elements.cold
         );
 
-        //E.Startup.SetSkill(Qualifications.master, Skills.abjuration);
-        E.Startup.SetSkill(Qualifications.divine, Skills.abjuration);
+        E.Startup.SetSkill(Qualifications.specialist, Skills.abjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.transmutation);
+        //E.Startup.SetSkill(Qualifications.transcendent, Skills.conjuration);
 
         E.Startup.AddGrimoire(Dice.One, Spells.light);
+        E.Startup.AddGrimoire(Dice.One, Spells.teleport_up);
+        E.Startup.AddGrimoire(Dice.One, Spells.teleport_down);
+        E.Startup.AddGrimoire(Dice.One, Spells.protoplasmatic_hands);
+        //E.Startup.AddGrimoire(Dice.One, Spells.absorption);
 
-        E.Startup.SetRecognition(Items.scroll_of_light, Items.book_of_light, Items.wand_of_light);
+        E.Startup.SetRecognition(Items.scroll_of_light, Items.book_of_light, Items.wand_of_light, Items.magic_lamp, Items.oil_lamp, Items.oil_lamp, Items.magic_candle, Items.wax_candle);
+
+        E.Startup.SetAcquisition(Properties.blindness);
 
         E.SetCorpse(Chance.Never);
       });

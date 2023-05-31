@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Inv.PlatformS</name>
+    </assembly>
+    <members>
+        <member name="T:Inv.ServerShell">
+            <summary>
+            Implementation for client-server remote applications.
+            The server-side process is executing the application.
+            The client is interacting with a remote projection of the application.
+            The client interprets a continuous stream of delta updates to the user interface from the server.
+            </summary>
+        </member>
+        <member name="P:Inv.ServerShell.SocketHost">
+            <summary>
+            Name or IP address of the host.
+            </summary>
+        </member>
+        <member name="P:Inv.ServerShell.SocketPort">
+            <summary>
+            Port number of the listening host.
+            </summary>
+        </member>
+        <member name="P:Inv.ServerShell.FrameDurationMilliseconds">
+            <summary>
+            Expected duration of each frame (eg. 60FPS ~16ms per frame).
+            </summary>
+        </member>
+        <member name="M:Inv.ServerShell.NewEngine(Inv.Application,System.Action{System.Guid,Inv.Application})">
+            <summary>
+            Create a server engine to accept tenants (client connections).
+            </summary>
+            <param name="HostApplication"></param>
+            <param name="InvAction"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Inv.ServerEngine">
+            <summary>
+            Manage the connected tenants.
+            </summary>
+        </member>
+        <member name="P:Inv.ServerEngine.HostApplication">
+            <summary>
+            The base application for the host.
+            </summary>
+        </member>
+        <member name="E:Inv.ServerEngine.AcceptEvent">
+            <summary>
+            Handle to be notified when a tenant is accepted.
+            </summary>
+        </member>
+        <member name="E:Inv.ServerEngine.RejectEvent">
+            <summary>
+            Handle to be notified when a tenant is rejected.
+            </summary>
+        </member>
+        <member name="E:Inv.ServerEngine.ProcessEvent">
+            <summary>
+            Handle to run code each execution frame.
+            </summary>
+        </member>
+        <member name="M:Inv.ServerEngine.Start">
+            <summary>
+            Start the engine to listen for tenants.
+            </summary>
+        </member>
+        <member name="M:Inv.ServerEngine.Stop">
+            <summary>
+            Stop the engine and disconnect all tenants.
+            </summary>
+        </member>
+        <member name="M:Inv.ServerEngine.GetTenants">
+            <summary>
+            Enumerate the tenants.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Inv.ServerTenant">
+            <summary>
+            Represents a connected client and their application.
+            </summary>
+        </member>
+        <member name="P:Inv.ServerTenant.InvApplication">
+            <summary>
+            The tenant's server-side application.
+            </summary>
+        </member>
+        <member name="T:Inv.ServerApplication">
+            <summary>
+            The tenant's client-side application.
+            </summary>
+        </member>
+        <member name="M:Inv.ServerApplication.#ctor(Inv.Application,System.Guid)">
+            <summary>
+            Create a new server application.
+            </summary>
+            <param name="Base"></param>
+            <param name="Identity"></param>
+        </member>
+        <member name="P:Inv.ServerApplication.Identity">
+            <summary>
+            Unique identity of this client.
+            </summary>
+        </member>
+        <member name="P:Inv.ServerApplication.IsActive">
+            <summary>
+            Ask if the application is started.
+            </summary>
+        </member>
+        <member name="E:Inv.ServerApplication.ExitEvent">
+            <summary>
+            Handle to be notified when the application exits.
+            </summary>
+        </member>
+        <member name="M:Inv.ServerApplication.Start">
+            <summary>
+            Start the application and connect to the server.
+            </summary>
+        </member>
+        <member name="M:Inv.ServerApplication.Stop">
+            <summary>
+            Stop the application and disconnect from the server.
+            </summary>
+        </member>
+    </members>
+</doc>

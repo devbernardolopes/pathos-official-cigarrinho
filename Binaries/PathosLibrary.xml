@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PathosLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:Pathos.Weight.FromUnits(System.Int64)">
+            <summary>
+            1 unit = 0.01 lbs = 0.005 kg.
+            </summary>
+            <param name="Units"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Pathos.Weight.GetKilograms">
+            <summary>
+            Pounds to Kilogram conversion.
+            
+            NOTE: The actual conversion is 0.45359237F.
+                  BUT, this is prohibitive to mental maths, eg. banded mail is 15.88 kg
+                  So we use the 0.5 approximation.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Pathos.Chance.ThreeIn20">
+            <summary>
+            15% chance.
+            </summary>
+        </member>
+        <member name="F:Pathos.Dice.Number">
+            <summary>
+            Number of dice to roll. eg. 3d?
+            </summary>
+        </member>
+        <member name="F:Pathos.Dice.Base">
+            <summary>
+            The number of sides on the dice. eg. ?d6
+            </summary>
+        </member>
+        <member name="F:Pathos.Dice.Bonus">
+            <summary>
+            The number to add or subtract from the dice roll.
+            </summary>
+        </member>
+        <member name="M:Pathos.Meter.IsFull">
+            <summary>
+            Meter is at 100%
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Pathos.Meter.Reset">
+            <summary>
+            Reset the Points to the Total.
+            </summary>
+        </member>
+        <member name="M:Pathos.Meter.Assign(Pathos.Meter)">
+            <summary>
+            Copy from another meter.
+            </summary>
+            <param name="Meter"></param>
+        </member>
+        <member name="M:Pathos.Meter.GetPercent">
+            <summary>
+            Percentage remaining between 0.0F and 1.0F.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Pathos.Meter.Set(System.Int32,System.Int32)">
+            <summary>
+            Set Points and Total.
+            </summary>
+            <param name="Points"></param>
+            <param name="Total"></param>
+        </member>
+        <member name="M:Pathos.Meter.Set(System.Int32)">
+            <summary>
+            Set Points.
+            </summary>
+            <param name="Points"></param>
+        </member>
+        <member name="M:Pathos.Meter.SetPercent(System.Single,System.Int32)">
+            <summary>
+            Set Points.
+            </summary>
+            <param name="Points"></param>
+        </member>
+        <member name="M:Pathos.Meter.Increment(System.Int32)">
+            <summary>
+            Increase Points.
+            </summary>
+            <param name="Value"></param>
+        </member>
+        <member name="M:Pathos.Meter.Decrement(System.Int32)">
+            <summary>
+            Decrease Points.
+            </summary>
+            <param name="Value"></param>
+        </member>
+        <member name="M:Pathos.Meter.Advance(System.Int32)">
+            <summary>
+            Increase Total.
+            </summary>
+            <param name="Value"></param>
+        </member>
+        <member name="M:Pathos.Meter.Regress(System.Int32)">
+            <summary>
+            Decrease Total.
+            </summary>
+            <param name="Value"></param>
+        </member>
+        <member name="F:Pathos.Rules.WarningSquareRadius">
+            <summary>
+            Warning radius in squares.
+            </summary>
+        </member>
+    </members>
+</doc>

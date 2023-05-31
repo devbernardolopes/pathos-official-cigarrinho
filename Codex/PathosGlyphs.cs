@@ -2562,9 +2562,11 @@ namespace Pathos
     public readonly Glyph clairvoyance_reading_spell;
     public readonly Glyph protoplasmatic_hands_spell;
     public readonly Glyph protoplasmatic_hands_property;
+    public readonly Glyph Ring_of_Bia_Vis;
+    public readonly Glyph absorption_spell;
 
 #pragma warning restore 0649
 
-        public Glyph Add(string Name) => Register.Add(Name);
+    public Glyph Add(string Name) => Register.Add(Name);
   }
 }

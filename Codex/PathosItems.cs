@@ -403,7 +403,7 @@ namespace Pathos
         I.SetEquip(EquipAction.Ready, Delay.FromTurns(10), Sonics.tool)
          .SetTalent(Properties.stealth, Properties.quickness, Properties.dark_vision);
       });
-      
+
       Miserus = AddItem(Stocks.scroll, ItemType.Scroll, "Miserus", I =>
       {
         I.Description = null;
@@ -528,7 +528,7 @@ namespace Pathos
         I.DefaultSanctity = Sanctities.Cursed;
         I.SetEquip(EquipAction.Wear, Delay.FromTurns(10), Sonics.armour)
          .SetTalent(Properties.displacement, Properties.stealth, Properties.invisibility, Properties.phasing, Properties.free_action, Properties.conflict, Properties.fear, Properties.silence, Properties.hunger)
-         .SetBoostAttribute(Attributes.dexterity)  
+         .SetBoostAttribute(Attributes.dexterity)
          .SetSpeedBoost();
         I.SetArmour(Skills.light_armour, 1);
       });
@@ -678,7 +678,7 @@ namespace Pathos
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1200);
         I.SetIllumination(3);
-        I.SetEquip(EquipAction.Employ, Delay.FromTurns(10), Sonics.tool) 
+        I.SetEquip(EquipAction.Employ, Delay.FromTurns(10), Sonics.tool)
          .SetTalent(Properties.see_invisible);
         I.AddObviousUse(Motions.flash, Delay.FromTurns(10), Sonics.flash, Use =>
         {
@@ -1180,7 +1180,7 @@ namespace Pathos
         I.Material = Materials.animal;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1800);
-        I.SetEquip(EquipAction.Wear, Delay.FromTurns(90), Sonics.armour) 
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(90), Sonics.armour)
          .SetBoostAttribute(Attributes.constitution)
          .SetTalent(Properties.vitality)
          .SetResistance(Elements.petrify, Elements.poison);
@@ -1262,6 +1262,28 @@ namespace Pathos
         I.SetArmour(Skills.heavy_armour, 2);
       });
 
+      Ring_of_Bia_Vis = AddRing("Ring of Bia-Vis", I =>
+      {
+        I.Description = "A source of godly power and strength is emanated from this object.";
+        I.Appearance = null;
+        I.Glyph = Glyphs.Ring_of_Bia_Vis;
+        I.Sonic = Sonics.ring;
+        I.Grade = Grades.artifact;
+        I.Series = null;
+        I.Rarity = ArtifactRarity;
+        I.Size = Size.Small;
+        I.Weight = Weight.FromUnits(100);
+        I.Material = Materials.stone;
+        I.Essence = ArtifactEssence;
+        I.Price = Gold.FromCoins(2500);
+
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(10), Sonics.ring)
+            .SetBoostAttribute(Attributes.strength)
+            .SetAttackBoost()
+            .SetDamageBoost();
+      });
+
+
       Blinderag = AddArmour(ItemType.Helmet, "Blinderäg", I =>
       {
         I.Description = null;
@@ -1277,7 +1299,7 @@ namespace Pathos
         I.Material = Materials.iron;
         I.Essence = ArtifactEssence;
         I.Price = Gold.FromCoins(1250);
-        I.SetEquip(EquipAction.Wear, Delay.FromTurns(10), Sonics.armour) 
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(10), Sonics.armour)
          .SetAttackBoost()
          .SetDamageBoost()
          .SetCrippleAttribute(Attributes.intelligence, Attributes.wisdom, Attributes.charisma)
@@ -1531,7 +1553,7 @@ namespace Pathos
         I.Essence = ArtifactEssence;
         I.DefaultSanctity = Sanctities.Blessed;
         I.Price = Gold.FromCoins(1500);
-        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon) 
+        I.SetEquip(EquipAction.Wield, Delay.FromTurns(10), Sonics.weapon)
          .SetTalent(Properties.beatitude, Properties.clarity);
         var W = I.SetTwoHandedWeapon(Skills.heavy_blade, null, Elements.physical, DamageType.Slash, 4.d4());
         W.AddVersus(Kinds.Undead.ToArray(), Elements.physical, 1.d8());
@@ -3253,7 +3275,7 @@ namespace Pathos
         I.Material = Materials.leather;
         I.Essence = ArmourEssence6;
         I.Price = Gold.FromCoins(50);
-        I.SetEquip(EquipAction.Wear, Delay.FromTurns(20), Sonics.armour) 
+        I.SetEquip(EquipAction.Wear, Delay.FromTurns(20), Sonics.armour)
          .SetTalent(Properties.quickness)
          .SetSpeedBoost();
         I.SetArmour(Skills.medium_armour, 1);
@@ -3456,7 +3478,7 @@ namespace Pathos
 
           EditorAction(I);
         });
-        
+
         DragonScalesArmourList.Add(Result);
 
         return Result;
@@ -3661,7 +3683,7 @@ namespace Pathos
         I.Price = Gold.FromCoins(500);
         I.SetDerivative(Entities.adult_yellow_dragon);
       });
-            
+
       SetUpgradeDowngradePair(dunce_cap, cornuthaum);
 
       SetUpgradeDowngradePair(black_dragon_scales, black_dragon_scale_mail);
@@ -3700,11 +3722,11 @@ namespace Pathos
         Item.AddLearnSpellUse(Motions.study, Delay.FromTurns(Spell.Level * 10), Sonics.magic, Attributes.intelligence, Skills.literacy, Spell);
         Item.AddObviousUse
         (
-          Motions.clairvoir, new Utility(Purpose.LearnSpell), Delay.FromTurns(Spell.Level * 10), Sonics.magic, 
+          Motions.clairvoir, new Utility(Purpose.LearnSpell), Delay.FromTurns(Spell.Level * 10), Sonics.magic,
           A => A.Apply.WhenSourceHasProperty
           (
             Properties.clairvoyance,
-            B => 
+            B =>
             {
               B.LearnSpell(Attributes.intelligence, Skills.literacy, Spell);
               B.DestroySourceAsset(Dice.One);
@@ -5336,7 +5358,7 @@ namespace Pathos
       var Gem1Damage = 2.d3();
       var Gem2Damage = 2.d4();
       var BaubleImpactSonic = Sonics.broken_glass;
-      
+
       Item AddOrangeGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("orange gem", null, Price: Gold.FromCoins(325)).Indiscriminate(); EditorAction(I); }); // 3250, 200, 1
       Item AddWhiteGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("white gem", null, Price: Gold.FromCoins(450)).Indiscriminate(); EditorAction(I); }); // 4500, 4000, 800, 1
       Item AddYellowBrownGem(string Name, Action<ItemEditor> EditorAction) => AddGem(Name, I => { I.SetAppearance("yellowish brown gem", null, Price: Gold.FromCoins(100)).Indiscriminate(); EditorAction(I); }); // 1000, 900, 1
@@ -8291,7 +8313,7 @@ namespace Pathos
               E => E.DecreaseOneAbility(Dice.One)
             ),
             C => C.DecreaseAllAbilities(Dice.One)
-          );          
+          );
         });
       });
 
@@ -9728,7 +9750,7 @@ namespace Pathos
         I.Essence = ToolEssence1;
         I.Price = Gold.FromCoins(16);
         I.SetWeakness(ContainerWeakness);
-        
+
         var Storage = I.SetStorage();
         Storage.Locking = true;
         Storage.Trapping = true;
@@ -9907,7 +9929,7 @@ namespace Pathos
         {
           Use.Consume();
           Use.SetCast().FilterItem(Codex.Recipes.List.SelectMany(R => R.Items).ToArray())
-              .SetAssetIndividualised() 
+              .SetAssetIndividualised()
               .SetAudibility(5);
           Use.Apply.CreateGolem();
         });
@@ -11232,7 +11254,7 @@ namespace Pathos
         I.AddBlastUse(Motions.zap, WandZapDelay, Sonics.magic, Use =>
         {
           Use.SetCast().Strike(Strikes.spirit, 2.d6() + 2)
-             .SetAudibility(5) 
+             .SetAudibility(5)
              .SetPenetrates()
              .SetTerminates();
           Use.Apply.WithSourceSanctity
@@ -14355,7 +14377,7 @@ namespace Pathos
       });
 
       SetUpgradeDowngradePair(rubber_hose, bullwhip);
-      
+
       SetUpgradeDowngradePair(worm_tooth, crysknife);
       #endregion
 
@@ -15870,6 +15892,8 @@ namespace Pathos
     public readonly Item Philosophers_Stone;
     public readonly Item Runesword;
     public readonly Item Vorpal_Blade;
+
+    public readonly Item Ring_of_Bia_Vis;
 
     private readonly Inv.DistinctList<Item> DragonScalesArmourList;
   }

@@ -24,3 +24,27 @@
 - new spells "replication", "blessing", "enchantment", "clairvoyance reading", "teleport up" and "teleport down"
 
 - new spells qualifications mechanics for "detect treasure", "darkness", "light" and "magic mapping"
+
+
+20230531_1 WIP:
+- tons of adjustments and changes to the core mechanics...
+
+- decompiled "Pathos.dll", "PathosGame.exe" and "PathosEngine.dll" and added its sources to the solution. It was needed for me to achieve the modifications that I wanted. Other than that I was doing crazy extensions with delegates and such. Their source code are not going to be pushed to mey GitHub repo, only its updated binaries.
+
+- new item "Ring of Bia-Vis" which is an artifact
+
+- when the character has the Property "clairvoyance" he can bypass the need for "UseVision" and the "eyes" Anatomy
+
+- actually, I modified PathosOfficial.Anatomy and included a new property "Property BypassedByProperty" so that any Anatomy entity can be suprassed by any given Property that the character may possess according to the designer. The same for Motions.
+
+- new spells "absorption" and "protoplasmatic hands"
+
+- new Property "protoplasmatic hands"
+
+- added a bunch of new fields to Pathos.Format.cs and made respective changes to Pathos.HelpContext.cs so that I could accomodate the new methods that I created, mostly to support a diverse composition of casting for spells
+
+- fixed some bugs of NullReference in Pathos.dll and PathosEngine.dll
+
+- many changes in Reactor.cs, Engine.cs and Director.cs of PathosEngine.dll
+
+- probably more stuff that I`m forgetting. It`s still a work in progress...

@@ -1,0 +1,3571 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Inv.Windows</name>
+    </assembly>
+    <members>
+        <member name="T:Win32.Kernel32.FileStreamType">
+            <summary>
+            Represents the type of data in a stream.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.Unknown">
+            <summary>
+            Unknown stream type.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.Data">
+            <summary>
+            Standard data.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.ExtendedAttributes">
+            <summary>
+            Extended attribute data.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.SecurityData">
+            <summary>
+            Security data.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.AlternateDataStream">
+            <summary>
+            Alternate data stream.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.Link">
+            <summary>
+            Hard link information.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.PropertyData">
+            <summary>
+            Property data.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.ObjectId">
+            <summary>
+            Object identifiers.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.ReparseData">
+            <summary>
+            Reparse points.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.SparseBlock">
+            <summary>
+            Sparse file.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamType.TransactionData">
+            <summary>
+            Transactional data.
+            (Undocumented - BACKUP_TXFS_DATA)
+            </summary>
+        </member>
+        <member name="T:Win32.Kernel32.FileStreamAttributes">
+            <summary>
+            Represents the attributes of a file stream.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamAttributes.None">
+            <summary>
+            No attributes.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamAttributes.ModifiedWhenRead">
+            <summary>
+            Set if the stream contains data that is modified when read.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamAttributes.ContainsSecurity">
+            <summary>
+            Set if the stream contains security data.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamAttributes.ContainsProperties">
+            <summary>
+            Set if the stream contains properties.
+            </summary>
+        </member>
+        <member name="F:Win32.Kernel32.FileStreamAttributes.Sparse">
+            <summary>
+            Set if the stream is sparse.
+            </summary>
+        </member>
+        <member name="T:Win32.Kernel32.SafeHGlobalHandle">
+            <summary>
+            A <see cref="T:System.Runtime.InteropServices.SafeHandle"/> for a global memory allocation.
+            </summary>
+        </member>
+        <member name="M:Win32.Kernel32.SafeHGlobalHandle.#ctor(System.IntPtr,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Win32.Kernel32.SafeHGlobalHandle"/> class.
+            </summary>
+            <param name="toManage">
+            The initial handle value.
+            </param>
+            <param name="size">
+            The size of this memory block, in bytes.
+            </param>
+        </member>
+        <member name="M:Win32.Kernel32.SafeHGlobalHandle.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Win32.Kernel32.SafeHGlobalHandle"/> class.
+            </summary>
+        </member>
+        <member name="P:Win32.Kernel32.SafeHGlobalHandle.IsInvalid">
+            <summary>
+            Gets a value indicating whether the handle value is invalid.
+            </summary>
+            <value>
+            <see langword="true"/> if the handle value is invalid;
+            otherwise, <see langword="false"/>.
+            </value>
+        </member>
+        <member name="P:Win32.Kernel32.SafeHGlobalHandle.Size">
+            <summary>
+            Returns the size of this memory block.
+            </summary>
+            <value>
+            The size of this memory block, in bytes.
+            </value>
+        </member>
+        <member name="M:Win32.Kernel32.SafeHGlobalHandle.ReleaseHandle">
+            <summary>
+            Executes the code required to free the handle.
+            </summary>
+            <returns>
+            <see langword="true"/> if the handle is released successfully;
+            otherwise, in the event of a catastrophic failure, <see langword="false"/>.
+            In this case, it generates a releaseHandleFailed MDA Managed Debugging Assistant.
+            </returns>
+        </member>
+        <member name="M:Win32.Kernel32.SafeHGlobalHandle.Allocate(System.Int32)">
+            <summary>
+            Allocates memory from the unmanaged memory of the process using GlobalAlloc.
+            </summary>
+            <param name="bytes">
+            The number of bytes in memory required.
+            </param>
+            <returns>
+            A <see cref="T:Win32.Kernel32.SafeHGlobalHandle"/> representing the memory.
+            </returns>
+            <exception cref="T:System.OutOfMemoryException">
+            There is insufficient memory to satisfy the request.
+            </exception>
+        </member>
+        <member name="M:Win32.Kernel32.SafeHGlobalHandle.Invalid">
+            <summary>
+            Returns an invalid handle.
+            </summary>
+            <returns>
+            An invalid <see cref="T:Win32.Kernel32.SafeHGlobalHandle"/>.
+            </returns>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.cbSize">
+            <summary>
+            Size of this structure, in bytes. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.hwnd">
+            <summary>
+            Handle to the window that receives notification messages associated with an icon in the 
+            taskbar status area. The Shell uses hWnd and uID to identify which icon to operate on 
+            when Shell_NotifyIcon is invoked. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.uID">
+            <summary>
+            Application-defined identifier of the taskbar icon. The Shell uses hWnd and uID to identify 
+            which icon to operate on when Shell_NotifyIcon is invoked. You can have multiple icons 
+            associated with a single hWnd by assigning each a different uID. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.uFlags">
+            <summary>
+            Flags that indicate which of the other members contain valid data. This member can be 
+            a combination of the NIF_XXX constants.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.uCallbackMessage">
+            <summary>
+            Application-defined message identifier. The system uses this identifier to send 
+            notifications to the window identified in hWnd. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.hIcon">
+            <summary>
+            Handle to the icon to be added, modified, or deleted. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.szTip">
+            <summary>
+            String with the text for a standard ToolTip. It can have a maximum of 64 characters including 
+            the terminating NULL. For Version 5.0 and later, szTip can have a maximum of 
+            128 characters, including the terminating NULL.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.dwState">
+            <summary>
+            State of the icon. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.dwStateMask">
+            <summary>
+            A value that specifies which bits of the state member are retrieved or modified. 
+            For example, setting this member to NIS_HIDDEN causes only the item's hidden state to be retrieved. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.szInfo">
+            <summary>
+            String with the text for a balloon ToolTip. It can have a maximum of 255 characters. 
+            To remove the ToolTip, set the NIF_INFO flag in uFlags and set szInfo to an empty string. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.uVersion">
+            <summary>
+            NOTE: This field is also used for the Timeout value. Specifies whether the Shell notify 
+            icon interface should use Windows 95 or Windows 2000 
+            behavior. For more information on the differences in these two behaviors, see 
+            Shell_NotifyIcon. This member is only employed when using Shell_NotifyIcon to send an 
+            NIM_VERSION message. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.szInfoTitle">
+            <summary>
+            String containing a title for a balloon ToolTip. This title appears in boldface 
+            above the text. It can have a maximum of 63 characters. 
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.NotifyIconData.hBalloonIcon">
+            <summary>
+            Adds an icon to a balloon ToolTip. It is placed to the left of the title. If the 
+            szTitleInfo member is zero-length, the icon is not shown.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationFlags.FOF_SILENT">
+            <summary>
+            Do not show a dialog during the process
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationFlags.FOF_NOCONFIRMATION">
+            <summary>
+            Do not ask the user to confirm selection
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationFlags.FOF_ALLOWUNDO">
+            <summary>
+            Delete the file to the recycle bin.  (Required flag to send a file to the bin)
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationFlags.FOF_SIMPLEPROGRESS">
+            <summary>
+            Do not show the names of the files or folders that are being recycled.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationFlags.FOF_NOERRORUI">
+            <summary>
+            Suppress errors, if any occur during the process.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationFlags.FOF_WANTNUKEWARNING">
+            <summary>
+            Warn if files are too big to fit in the recycle bin and will need
+            to be deleted completely.
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationType.FO_MOVE">
+            <summary>
+            Move the objects
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationType.FO_COPY">
+            <summary>
+            Copy the objects
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationType.FO_DELETE">
+            <summary>
+            Delete (or recycle) the objects
+            </summary>
+        </member>
+        <member name="F:Win32.Shell32.FileOperationType.FO_RENAME">
+            <summary>
+            Rename the object(s)
+            </summary>
+        </member>
+        <member name="T:Win32.User32.TMEFlags">
+            <summary>
+            The services requested. This member can be a combination of the following values. 
+            
+            See also: http://msdn.microsoft.com/en-us/library/ms645604%28v=vs.85%29.aspx
+            </summary>
+        </member>
+        <member name="F:Win32.User32.TMEFlags.TME_CANCEL">
+            <summary>
+            The caller wants to cancel a prior tracking request. The caller should also specify the type of tracking that it wants to cancel. For example, to cancel hover tracking, the caller must pass the TME_CANCEL and TME_HOVER flags.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.TMEFlags.TME_HOVER">
+            <summary>
+            The caller wants hover notification. Notification is delivered as a WM_MOUSEHOVER message.
+            If the caller requests hover tracking while hover tracking is already active, the hover timer will be reset.
+            This flag is ignored if the mouse pointer is not over the specified window or area.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.TMEFlags.TME_LEAVE">
+            <summary>
+            The caller wants leave notification. Notification is delivered as a WM_MOUSELEAVE message. If the mouse is not over the specified window or area, a leave notification is generated immediately and no further tracking is performed.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.TMEFlags.TME_NONCLIENT">
+            <summary>
+            The caller wants hover and leave notification for the nonclient areas. Notification is delivered as WM_NCMOUSEHOVER and WM_NCMOUSELEAVE messages.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.TMEFlags.TME_QUERY">
+            <summary>
+            The function fills in the structure instead of treating it as a tracking request. The structure is filled such that had that structure been passed to TrackMouseEvent, it would generate the current tracking. The only anomaly is that the hover time-out returned is always the actual time-out and not HOVER_DEFAULT, if HOVER_DEFAULT was specified during the original TrackMouseEvent request. 
+            </summary>
+        </member>
+        <member name="M:Win32.User32.SendInput(System.UInt32,Win32.User32.INPUT[],System.Int32)">
+            <summary>
+            Synthesizes keystrokes, mouse motions, and button clicks.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LBUTTON">
+            <summary>
+            Left mouse button
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.RBUTTON">
+            <summary>
+            Right mouse button
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.CANCEL">
+            <summary>
+            Control-break processing
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MBUTTON">
+            <summary>
+            Middle mouse button (three-button mouse) - NOT contiguous with LBUTTON and RBUTTON
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.XBUTTON1">
+            <summary>
+            Windows 2000/XP: X1 mouse button - NOT contiguous with LBUTTON and RBUTTON
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.XBUTTON2">
+            <summary>
+            Windows 2000/XP: X2 mouse button - NOT contiguous with LBUTTON and RBUTTON
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BACK">
+            <summary>
+            BACKSPACE key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.TAB">
+            <summary>
+            TAB key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.CLEAR">
+            <summary>
+            CLEAR key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.RETURN">
+            <summary>
+            ENTER key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SHIFT">
+            <summary>
+            SHIFT key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.CONTROL">
+            <summary>
+            CTRL key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MENU">
+            <summary>
+            ALT key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.PAUSE">
+            <summary>
+            PAUSE key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.CAPITAL">
+            <summary>
+            CAPS LOCK key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.KANA">
+            <summary>
+            Input Method Editor (IME) Kana mode
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.HANGEUL">
+            <summary>
+            IME Hanguel mode (maintained for compatibility; use HANGUL)
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.HANGUL">
+            <summary>
+            IME Hangul mode
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.JUNJA">
+            <summary>
+            IME Junja mode
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.FINAL">
+            <summary>
+            IME final mode
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.HANJA">
+            <summary>
+            IME Hanja mode
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.KANJI">
+            <summary>
+            IME Kanji mode
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.ESCAPE">
+            <summary>
+            ESC key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.CONVERT">
+            <summary>
+            IME convert
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NONCONVERT">
+            <summary>
+            IME nonconvert
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.ACCEPT">
+            <summary>
+            IME accept
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MODECHANGE">
+            <summary>
+            IME mode change request
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SPACE">
+            <summary>
+            SPACEBAR
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.PRIOR">
+            <summary>
+            PAGE UP key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NEXT">
+            <summary>
+            PAGE DOWN key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.END">
+            <summary>
+            END key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.HOME">
+            <summary>
+            HOME key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LEFT">
+            <summary>
+            LEFT ARROW key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.UP">
+            <summary>
+            UP ARROW key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.RIGHT">
+            <summary>
+            RIGHT ARROW key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.DOWN">
+            <summary>
+            DOWN ARROW key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SELECT">
+            <summary>
+            SELECT key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.PRINT">
+            <summary>
+            PRINT key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.EXECUTE">
+            <summary>
+            EXECUTE key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SNAPSHOT">
+            <summary>
+            PRINT SCREEN key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.INSERT">
+            <summary>
+            INS key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.DELETE">
+            <summary>
+            DEL key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.HELP">
+            <summary>
+            HELP key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_0">
+            <summary>
+            0 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_1">
+            <summary>
+            1 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_2">
+            <summary>
+            2 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_3">
+            <summary>
+            3 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_4">
+            <summary>
+            4 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_5">
+            <summary>
+            5 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_6">
+            <summary>
+            6 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_7">
+            <summary>
+            7 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_8">
+            <summary>
+            8 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_9">
+            <summary>
+            9 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_A">
+            <summary>
+            A key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_B">
+            <summary>
+            B key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_C">
+            <summary>
+            C key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_D">
+            <summary>
+            D key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_E">
+            <summary>
+            E key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_F">
+            <summary>
+            F key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_G">
+            <summary>
+            G key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_H">
+            <summary>
+            H key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_I">
+            <summary>
+            I key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_J">
+            <summary>
+            J key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_K">
+            <summary>
+            K key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_L">
+            <summary>
+            L key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_M">
+            <summary>
+            M key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_N">
+            <summary>
+            N key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_O">
+            <summary>
+            O key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_P">
+            <summary>
+            P key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_Q">
+            <summary>
+            Q key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_R">
+            <summary>
+            R key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_S">
+            <summary>
+            S key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_T">
+            <summary>
+            T key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_U">
+            <summary>
+            U key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_V">
+            <summary>
+            V key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_W">
+            <summary>
+            W key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_X">
+            <summary>
+            X key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_Y">
+            <summary>
+            Y key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VK_Z">
+            <summary>
+            Z key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LWIN">
+            <summary>
+            Left Windows key (Microsoft Natural keyboard)
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.RWIN">
+            <summary>
+            Right Windows key (Natural keyboard)
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.APPS">
+            <summary>
+            Applications key (Natural keyboard)
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SLEEP">
+            <summary>
+            Computer Sleep key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD0">
+            <summary>
+            Numeric keypad 0 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD1">
+            <summary>
+            Numeric keypad 1 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD2">
+            <summary>
+            Numeric keypad 2 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD3">
+            <summary>
+            Numeric keypad 3 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD4">
+            <summary>
+            Numeric keypad 4 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD5">
+            <summary>
+            Numeric keypad 5 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD6">
+            <summary>
+            Numeric keypad 6 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD7">
+            <summary>
+            Numeric keypad 7 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD8">
+            <summary>
+            Numeric keypad 8 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMPAD9">
+            <summary>
+            Numeric keypad 9 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MULTIPLY">
+            <summary>
+            Multiply key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.ADD">
+            <summary>
+            Add key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SEPARATOR">
+            <summary>
+            Separator key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SUBTRACT">
+            <summary>
+            Subtract key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.DECIMAL">
+            <summary>
+            Decimal key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.DIVIDE">
+            <summary>
+            Divide key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F1">
+            <summary>
+            F1 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F2">
+            <summary>
+            F2 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F3">
+            <summary>
+            F3 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F4">
+            <summary>
+            F4 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F5">
+            <summary>
+            F5 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F6">
+            <summary>
+            F6 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F7">
+            <summary>
+            F7 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F8">
+            <summary>
+            F8 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F9">
+            <summary>
+            F9 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F10">
+            <summary>
+            F10 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F11">
+            <summary>
+            F11 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F12">
+            <summary>
+            F12 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F13">
+            <summary>
+            F13 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F14">
+            <summary>
+            F14 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F15">
+            <summary>
+            F15 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F16">
+            <summary>
+            F16 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F17">
+            <summary>
+            F17 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F18">
+            <summary>
+            F18 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F19">
+            <summary>
+            F19 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F20">
+            <summary>
+            F20 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F21">
+            <summary>
+            F21 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F22">
+            <summary>
+            F22 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F23">
+            <summary>
+            F23 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.F24">
+            <summary>
+            F24 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NUMLOCK">
+            <summary>
+            NUM LOCK key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.SCROLL">
+            <summary>
+            SCROLL LOCK key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LSHIFT">
+            <summary>
+            Left SHIFT key - Used only as parameters to GetAsyncKeyState() and GetKeyState()
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.RSHIFT">
+            <summary>
+            Right SHIFT key - Used only as parameters to GetAsyncKeyState() and GetKeyState()
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LCONTROL">
+            <summary>
+            Left CONTROL key - Used only as parameters to GetAsyncKeyState() and GetKeyState()
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.RCONTROL">
+            <summary>
+            Right CONTROL key - Used only as parameters to GetAsyncKeyState() and GetKeyState()
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LMENU">
+            <summary>
+            Left MENU key - Used only as parameters to GetAsyncKeyState() and GetKeyState()
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.RMENU">
+            <summary>
+            Right MENU key - Used only as parameters to GetAsyncKeyState() and GetKeyState()
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BROWSER_BACK">
+            <summary>
+            Windows 2000/XP: Browser Back key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BROWSER_FORWARD">
+            <summary>
+            Windows 2000/XP: Browser Forward key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BROWSER_REFRESH">
+            <summary>
+            Windows 2000/XP: Browser Refresh key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BROWSER_STOP">
+            <summary>
+            Windows 2000/XP: Browser Stop key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BROWSER_SEARCH">
+            <summary>
+            Windows 2000/XP: Browser Search key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BROWSER_FAVORITES">
+            <summary>
+            Windows 2000/XP: Browser Favorites key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.BROWSER_HOME">
+            <summary>
+            Windows 2000/XP: Browser Start and Home key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VOLUME_MUTE">
+            <summary>
+            Windows 2000/XP: Volume Mute key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VOLUME_DOWN">
+            <summary>
+            Windows 2000/XP: Volume Down key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.VOLUME_UP">
+            <summary>
+            Windows 2000/XP: Volume Up key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MEDIA_NEXT_TRACK">
+            <summary>
+            Windows 2000/XP: Next Track key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MEDIA_PREV_TRACK">
+            <summary>
+            Windows 2000/XP: Previous Track key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MEDIA_STOP">
+            <summary>
+            Windows 2000/XP: Stop Media key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.MEDIA_PLAY_PAUSE">
+            <summary>
+            Windows 2000/XP: Play/Pause Media key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LAUNCH_MAIL">
+            <summary>
+            Windows 2000/XP: Start Mail key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LAUNCH_MEDIA_SELECT">
+            <summary>
+            Windows 2000/XP: Select Media key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LAUNCH_APP1">
+            <summary>
+            Windows 2000/XP: Start Application 1 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.LAUNCH_APP2">
+            <summary>
+            Windows 2000/XP: Start Application 2 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_1">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the ';:' key 
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_PLUS">
+            <summary>
+            Windows 2000/XP: For any country/region, the '+' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_COMMA">
+            <summary>
+            Windows 2000/XP: For any country/region, the ',' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_MINUS">
+            <summary>
+            Windows 2000/XP: For any country/region, the '-' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_PERIOD">
+            <summary>
+            Windows 2000/XP: For any country/region, the '.' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_2">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the '/?' key 
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_3">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the '`~' key 
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_4">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the '[{' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_5">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the '\|' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_6">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the ']}' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_7">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard. Windows 2000/XP: For the US standard keyboard, the 'single-quote/double-quote' key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_8">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_102">
+            <summary>
+            Windows 2000/XP: Either the angle bracket key or the backslash key on the RT 102-key keyboard
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.PROCESSKEY">
+            <summary>
+            Windows 95/98/Me, Windows NT 4.0, Windows 2000/XP: IME PROCESS key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.PACKET">
+            <summary>
+            Windows 2000/XP: Used to pass Unicode characters as if they were keystrokes. The PACKET key is the low word of a 32-bit Virtual Key value used for non-keyboard input methods. For more information, see Remark in KEYBDINPUT, SendInput, WM_KEYDOWN, and WM_KEYUP
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.ATTN">
+            <summary>
+            Attn key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.CRSEL">
+            <summary>
+            CrSel key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.EXSEL">
+            <summary>
+            ExSel key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.EREOF">
+            <summary>
+            Erase EOF key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.PLAY">
+            <summary>
+            Play key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.ZOOM">
+            <summary>
+            Zoom key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.NONAME">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.PA1">
+            <summary>
+            PA1 key
+            </summary>
+        </member>
+        <member name="F:Win32.User32.VirtualKeyCode.OEM_CLEAR">
+            <summary>
+            Clear key
+            </summary>
+        </member>
+        <member name="T:Win32.User32.INPUT">
+            <summary>
+            Used by SendInput to store information for synthesizing input events such as keystrokes, mouse movement, and mouse clicks.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.KEYEVENTF">
+            <summary>
+            Specifies various aspects of a keystroke. This member can be certain combinations of the following values.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MonitorInfo.Size">
+            <summary>
+            The size, in bytes, of the structure. Set this member to sizeof(MONITORINFO) (40) before calling the GetMonitorInfo function. 
+            Doing so lets the function determine the type of structure you are passing to it.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MonitorInfo.Monitor">
+            <summary>
+            A RECT structure that specifies the display monitor rectangle, expressed in virtual-screen coordinates. 
+            Note that if the monitor is not the primary display monitor, some of the rectangle's coordinates may be negative values.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MonitorInfo.WorkArea">
+            <summary>
+            A RECT structure that specifies the work area rectangle of the display monitor that can be used by applications, 
+            expressed in virtual-screen coordinates. Windows uses this rectangle to maximize an application on the monitor. 
+            The rest of the area in rcMonitor contains system windows such as the task bar and side bars. 
+            Note that if the monitor is not the primary display monitor, some of the rectangle's coordinates may be negative values.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.MonitorInfo.Flags">
+            <summary>
+            The attributes of the display monitor.
+            
+            This member can be the following value:
+              1 : MONITORINFOF_PRIMARY
+            </summary>
+        </member>
+        <member name="T:Win32.User32.RectStruct">
+            <summary>
+            The RECT structure defines the coordinates of the upper-left and lower-right corners of a rectangle.
+            </summary>
+            <remarks>
+            By convention, the right and bottom edges of the rectangle are normally considered exclusive. 
+            In other words, the pixel whose coordinates are ( right, bottom ) lies immediately outside of the rectangle. 
+            For example, when RECT is passed to the FillRect function, the rectangle is filled up to, but not including, 
+            the right column and bottom row of pixels. This structure is identical to the RECTL structure.
+            
+            See http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx
+            </remarks>
+        </member>
+        <member name="F:Win32.User32.RectStruct.Left">
+            <summary>
+            The x-coordinate of the upper-left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.RectStruct.Top">
+            <summary>
+            The y-coordinate of the upper-left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.RectStruct.Right">
+            <summary>
+            The x-coordinate of the lower-right corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.RectStruct.Bottom">
+            <summary>
+            The y-coordinate of the lower-right corner of the rectangle.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_ASYNCWINDOWPOS">
+            <summary>
+                If the calling thread and the thread that owns the window are attached to different input queues, the system posts the request to the thread that owns the window. This prevents the calling thread from blocking its execution while other threads process the request.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_DEFERERASE">
+            <summary>
+                Prevents generation of the WM_SYNCPAINT message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_DRAWFRAME">
+            <summary>
+                Draws a frame (defined in the window's class description) around the window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_FRAMECHANGED">
+            <summary>
+                Applies new frame styles set using the SetWindowLong function. Sends a WM_NCCALCSIZE message to the window, even if the window's size is not being changed. If this flag is not specified, WM_NCCALCSIZE is sent only when the window's size is being changed.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_HIDEWINDOW">
+            <summary>
+                Hides the window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOACTIVATE">
+            <summary>
+                Does not activate the window. If this flag is not set, the window is activated and moved to the top of either the topmost or non-topmost group (depending on the setting of the hWndInsertAfter parameter).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOCOPYBITS">
+            <summary>
+                Discards the entire contents of the client area. If this flag is not specified, the valid contents of the client area are saved and copied back into the client area after the window is sized or repositioned.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOMOVE">
+            <summary>
+                Retains the current position (ignores X and Y parameters).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOOWNERZORDER">
+            <summary>
+                Does not change the owner window's position in the Z order.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOREDRAW">
+            <summary>
+                Does not redraw changes. If this flag is set, no repainting of any kind occurs. This applies to the client area, the nonclient area (including the title bar and scroll bars), and any part of the parent window uncovered as a result of the window being moved. When this flag is set, the application must explicitly invalidate or redraw any parts of the window and parent window that need redrawing.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOREPOSITION">
+            <summary>
+                Same as the SWP_NOOWNERZORDER flag.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOSENDCHANGING">
+            <summary>
+                Prevents the window from receiving the WM_WINDOWPOSCHANGING message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOSIZE">
+            <summary>
+                Retains the current size (ignores the cx and cy parameters).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_NOZORDER">
+            <summary>
+                Retains the current Z order (ignores the hWndInsertAfter parameter).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SetWindowPosFlags.SWP_SHOWWINDOW">
+            <summary>
+                Displays the window.
+            </summary>
+        </member>
+        <member name="M:Win32.User32.GetAncestor(System.IntPtr,Win32.User32.GetAncestorFlags)">
+            <summary>
+            Retrieves the handle to the ancestor of the specified window. 
+            </summary>
+            <param name="hwnd">A handle to the window whose ancestor is to be retrieved. 
+            If this parameter is the desktop window, the function returns NULL. </param>
+            <param name="flags">The ancestor to be retrieved.</param>
+            <returns>The return value is the handle to the ancestor window.</returns>
+        </member>
+        <member name="F:Win32.User32.GetAncestorFlags.GetParent">
+            <summary>
+            Retrieves the parent window. This does not include the owner, as it does with the GetParent function. 
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetAncestorFlags.GetRoot">
+            <summary>
+            Retrieves the root window by walking the chain of parent windows.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.GetAncestorFlags.GetRootOwner">
+            <summary>
+            Retrieves the owned root window by walking the chain of parent and owner windows returned by GetParent. 
+            </summary>
+        </member>
+        <member name="M:Win32.User32.MoveWindow(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            The MoveWindow function changes the position and dimensions of the specified window. For a top-level window, the position and dimensions are relative to the upper-left corner of the screen. For a child window, they are relative to the upper-left corner of the parent window's client area.
+            </summary>
+            <param name="hWnd">Handle to the window.</param>
+            <param name="X">Specifies the new position of the left side of the window.</param>
+            <param name="Y">Specifies the new position of the top of the window.</param>
+            <param name="nWidth">Specifies the new width of the window.</param>
+            <param name="nHeight">Specifies the new height of the window.</param>
+            <param name="bRepaint">Specifies whether the window is to be repainted. If this parameter is TRUE, the window receives a message. If the parameter is FALSE, no repainting of any kind occurs. This applies to the client area, the nonclient area (including the title bar and scroll bars), and any part of the parent window uncovered as a result of moving a child window.</param>
+            <returns>If the function succeeds, the return value is nonzero.
+            <para>If the function fails, the return value is zero. To get extended error information, call GetLastError.</para></returns>
+        </member>
+        <member name="M:Win32.User32.UnregisterClass(System.String,System.IntPtr)">
+            <summary>
+            Unregisters a window class, freeing the memory required for the class.
+            </summary>
+            <param name="lpClassName">
+            Type: LPCTSTR
+            A null-terminated string or a class atom. If lpClassName is a string, it specifies the window class name. 
+            This class name must have been registered by a previous call to the RegisterClass or RegisterClassEx function. 
+            System classes, such as dialog box controls, cannot be unregistered. If this parameter is an atom, 
+              it must be a class atom created by a previous call to the RegisterClass or RegisterClassEx function. 
+            The atom must be in the low-order word of lpClassName; the high-order word must be zero.
+            
+            </param>
+            <param name="hInstance">
+            A handle to the instance of the module that created the class.
+            
+            </param>
+            <returns>
+            Type: BOOL
+            If the function succeeds, the return value is nonzero.
+            If the class could not be found or if a window still exists that was created with the class, the return value is zero. 
+            To get extended error information, call GetLastError.
+            
+            </returns>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.ByteAlignClient">
+            <summary>
+            Aligns the window's client area on a byte boundary (in the x direction). This style affects the width of the window and its horizontal placement on the display.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.ByteAlignWindow">
+            <summary>
+            Aligns the window on a byte boundary (in the x direction). This style affects the width of the window and its horizontal placement on the display.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.ClassDC">
+            <summary>
+            Allocates one device context to be shared by all windows in the class.
+            Because window classes are process specific, it is possible for multiple threads of an application to create a window of the same class.
+            It is also possible for the threads to attempt to use the device context simultaneously. When this happens, the system allows only one thread to successfully finish its drawing operation.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.DoubleClicks">
+            <summary>
+            Sends a double-click message to the window procedure when the user double-clicks the mouse while the cursor is within a window belonging to the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.DropShadow">
+            <summary>
+            Enables the drop shadow effect on a window. The effect is turned on and off through SPI_SETDROPSHADOW.
+            Typically, this is enabled for small, short-lived windows such as menus to emphasize their Z order relationship to other windows.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.GlobalClass">
+            <summary>
+            Indicates that the window class is an application global class. For more information, see the "Application Global Classes" section of About Window Classes.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.HorizontalRedraw">
+            <summary>
+            Redraws the entire window if a movement or size adjustment changes the width of the client area.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.NoClose">
+            <summary>
+            Disables Close on the window menu.</summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.OwnDC">
+            <summary>
+            Allocates a unique device context for each window in the class.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.ParentDC">
+            <summary>
+            Sets the clipping rectangle of the child window to that of the parent window so that the child can draw on the parent.
+            A window with the CS_PARENTDC style bit receives a regular device context from the system's cache of device contexts.
+            It does not give the child the parent's device context or device context settings. Specifying CS_PARENTDC enhances an application's performance.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.SaveBits">
+            <summary>
+            Saves, as a bitmap, the portion of the screen image obscured by a window of this class.
+            When the window is removed, the system uses the saved bitmap to restore the screen image, including other windows that were obscured.
+            Therefore, the system does not send WM_PAINT messages to windows that were obscured if the memory used by the bitmap has not been discarded and if other screen actions have not invalidated the stored image.
+            This style is useful for small windows (for example, menus or dialog boxes) that are displayed briefly and then removed before other screen activity takes place.
+            This style increases the time required to display the window, because the system must first allocate memory to store the bitmap.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ClassStyles.VerticalRedraw">
+            <summary>
+            Redraws the entire window if a movement or size adjustment changes the height of the client area.
+            </summary>
+        </member>
+        <member name="M:Win32.User32.CreateWindowExW(Win32.User32.WindowStylesEx,System.String,System.String,Win32.User32.WindowStyles,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)">
+            <summary>
+            The CreateWindowEx function creates an overlapped, pop-up, or child window with an extended window style; otherwise, this function is identical to the CreateWindow function.
+            </summary>
+            <param name="dwExStyle">Specifies the extended window style of the window being created.</param>
+            <param name="lpClassName">Pointer to a null-terminated string or a class atom created by a previous call to the RegisterClass or RegisterClassEx function. The atom must be in the low-order word of lpClassName; the high-order word must be zero. If lpClassName is a string, it specifies the window class name. The class name can be any name registered with RegisterClass or RegisterClassEx, provided that the module that registers the class is also the module that creates the window. The class name can also be any of the predefined system class names.</param>
+            <param name="lpWindowName">Pointer to a null-terminated string that specifies the window name. If the window style specifies a title bar, the window title pointed to by lpWindowName is displayed in the title bar. When using CreateWindow to create controls, such as buttons, check boxes, and static controls, use lpWindowName to specify the text of the control. When creating a static control with the SS_ICON style, use lpWindowName to specify the icon name or identifier. To specify an identifier, use the syntax "#num". </param>
+            <param name="dwStyle">Specifies the style of the window being created. This parameter can be a combination of window styles, plus the control styles indicated in the Remarks section.</param>
+            <param name="x">Specifies the initial horizontal position of the window. For an overlapped or pop-up window, the x parameter is the initial x-coordinate of the window's upper-left corner, in screen coordinates. For a child window, x is the x-coordinate of the upper-left corner of the window relative to the upper-left corner of the parent window's client area. If x is set to CW_USEDEFAULT, the system selects the default position for the window's upper-left corner and ignores the y parameter. CW_USEDEFAULT is valid only for overlapped windows; if it is specified for a pop-up or child window, the x and y parameters are set to zero.</param>
+            <param name="y">Specifies the initial vertical position of the window. For an overlapped or pop-up window, the y parameter is the initial y-coordinate of the window's upper-left corner, in screen coordinates. For a child window, y is the initial y-coordinate of the upper-left corner of the child window relative to the upper-left corner of the parent window's client area. For a list box y is the initial y-coordinate of the upper-left corner of the list box's client area relative to the upper-left corner of the parent window's client area.
+            <para>If an overlapped window is created with the WS_VISIBLE style bit set and the x parameter is set to CW_USEDEFAULT, then the y parameter determines how the window is shown. If the y parameter is CW_USEDEFAULT, then the window manager calls ShowWindow with the SW_SHOW flag after the window has been created. If the y parameter is some other value, then the window manager calls ShowWindow with that value as the nCmdShow parameter.</para></param>
+            <param name="nWidth">Specifies the width, in device units, of the window. For overlapped windows, nWidth is the window's width, in screen coordinates, or CW_USEDEFAULT. If nWidth is CW_USEDEFAULT, the system selects a default width and height for the window; the default width extends from the initial x-coordinates to the right edge of the screen; the default height extends from the initial y-coordinate to the top of the icon area. CW_USEDEFAULT is valid only for overlapped windows; if CW_USEDEFAULT is specified for a pop-up or child window, the nWidth and nHeight parameter are set to zero.</param>
+            <param name="nHeight">Specifies the height, in device units, of the window. For overlapped windows, nHeight is the window's height, in screen coordinates. If the nWidth parameter is set to CW_USEDEFAULT, the system ignores nHeight.</param> <param name="hWndParent">Handle to the parent or owner window of the window being created. To create a child window or an owned window, supply a valid window handle. This parameter is optional for pop-up windows.
+            <para>Windows 2000/XP: To create a message-only window, supply HWND_MESSAGE or a handle to an existing message-only window.</para></param>
+            <param name="hMenu">Handle to a menu, or specifies a child-window identifier, depending on the window style. For an overlapped or pop-up window, hMenu identifies the menu to be used with the window; it can be NULL if the class menu is to be used. For a child window, hMenu specifies the child-window identifier, an integer value used by a dialog box control to notify its parent about events. The application determines the child-window identifier; it must be unique for all child windows with the same parent window.</param>
+            <param name="hInstance">Handle to the instance of the module to be associated with the window.</param> <param name="lpParam">Pointer to a value to be passed to the window through the CREATESTRUCT structure (lpCreateParams member) pointed to by the lParam param of the WM_CREATE message. This message is sent to the created window by this function before it returns.
+            <para>If an application calls CreateWindow to create a MDI client window, lpParam should point to a CLIENTCREATESTRUCT structure. If an MDI client window calls CreateWindow to create an MDI child window, lpParam should point to a MDICREATESTRUCT structure. lpParam may be NULL if no additional data is needed.</para></param>
+            <returns>If the function succeeds, the return value is a handle to the new window.
+            <para>If the function fails, the return value is NULL. To get extended error information, call GetLastError.</para>
+            <para>This function typically fails for one of the following reasons:</para>
+            <list type="">
+            <item>an invalid parameter value</item>
+            <item>the system class was registered by a different module</item>
+            <item>The WH_CBT hook is installed and returns a failure code</item>
+            <item>if one of the controls in the dialog template is not registered, or its window window procedure fails WM_CREATE or WM_NCCREATE</item>
+            </list></returns>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_ACCEPTFILES">
+            <summary>
+            Specifies that a window created with this style accepts drag-drop files.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_APPWINDOW">
+            <summary>
+            Forces a top-level window onto the taskbar when the window is visible.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_CLIENTEDGE">
+            <summary>
+            Specifies that a window has a border with a sunken edge.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_COMPOSITED">
+            <summary>
+            Windows XP: Paints all descendants of a window in bottom-to-top painting order using double-buffering. For more information, see Remarks. This cannot be used if the window has a class style of either CS_OWNDC or CS_CLASSDC.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_CONTEXTHELP">
+            <summary>
+            Includes a question mark in the title bar of the window. When the user clicks the question mark, the cursor changes to a question mark with a pointer. If the user then clicks a child window, the child receives a WM_HELP message. The child window should pass the message to the parent window procedure, which should call the WinHelp function using the HELP_WM_HELP command. The Help application displays a pop-up window that typically contains help for the child window.
+            WS_EX_CONTEXTHELP cannot be used with the WS_MAXIMIZEBOX or WS_MINIMIZEBOX styles.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_CONTROLPARENT">
+            <summary>
+            The window itself contains child windows that should take part in dialog box navigation. If this style is specified, the dialog manager recurses into children of this window when performing navigation operations such as handling the TAB key, an arrow key, or a keyboard mnemonic.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_DLGMODALFRAME">
+            <summary>
+            Creates a window that has a double border; the window can, optionally, be created with a title bar by specifying the WS_CAPTION style in the dwStyle parameter.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_LAYERED">
+            <summary>
+            Windows 2000/XP: Creates a layered window. Note that this cannot be used for child windows. Also, this cannot be used if the window has a class style of either CS_OWNDC or CS_CLASSDC.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_LAYOUTRTL">
+            <summary>
+            Arabic and Hebrew versions of Windows 98/Me, Windows 2000/XP: Creates a window whose horizontal origin is on the right edge. Increasing horizontal values advance to the left.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_LEFT">
+            <summary>
+            Creates a window that has generic left-aligned properties. This is the default.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_LEFTSCROLLBAR">
+            <summary>
+            If the shell language is Hebrew, Arabic, or another language that supports reading order alignment, the vertical scroll bar (if present) is to the left of the client area. For other languages, the style is ignored.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_LTRREADING">
+            <summary>
+            The window text is displayed using left-to-right reading-order properties. This is the default.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_MDICHILD">
+            <summary>
+            Creates a multiple-document interface (MDI) child window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_NOACTIVATE">
+            <summary>
+            Windows 2000/XP: A top-level window created with this style does not become the foreground window when the user clicks it. The system does not bring this window to the foreground when the user minimizes or closes the foreground window.
+            To activate the window, use the SetActiveWindow or SetForegroundWindow function.
+            The window does not appear on the taskbar by default. To force the window to appear on the taskbar, use the WS_EX_APPWINDOW style.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_NOINHERITLAYOUT">
+            <summary>
+            Windows 2000/XP: A window created with this style does not pass its window layout to its child windows.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_NOPARENTNOTIFY">
+            <summary>
+            Specifies that a child window created with this style does not send the WM_PARENTNOTIFY message to its parent window when it is created or destroyed.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_OVERLAPPEDWINDOW">
+            <summary>
+            Combines the WS_EX_CLIENTEDGE and WS_EX_WINDOWEDGE styles.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_PALETTEWINDOW">
+            <summary>
+            Combines the WS_EX_WINDOWEDGE, WS_EX_TOOLWINDOW, and WS_EX_TOPMOST styles.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_RIGHT">
+            <summary>
+            The window has generic "right-aligned" properties. This depends on the window class. This style has an effect only if the shell language is Hebrew, Arabic, or another language that supports reading-order alignment; otherwise, the style is ignored.
+            Using the WS_EX_RIGHT style for static or edit controls has the same effect as using the SS_RIGHT or ES_RIGHT style, respectively. Using this style with button controls has the same effect as using BS_RIGHT and BS_RIGHTBUTTON styles.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_RIGHTSCROLLBAR">
+            <summary>
+            Vertical scroll bar (if present) is to the right of the client area. This is the default.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_RTLREADING">
+            <summary>
+            If the shell language is Hebrew, Arabic, or another language that supports reading-order alignment, the window text is displayed using right-to-left reading-order properties. For other languages, the style is ignored.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_STATICEDGE">
+            <summary>
+            Creates a window with a three-dimensional border style intended to be used for items that do not accept user input.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_TOOLWINDOW">
+            <summary>
+            Creates a tool window; that is, a window intended to be used as a floating toolbar. A tool window has a title bar that is shorter than a normal title bar, and the window title is drawn using a smaller font. A tool window does not appear in the taskbar or in the dialog that appears when the user presses ALT+TAB. If a tool window has a system menu, its icon is not displayed on the title bar. However, you can display the system menu by right-clicking or by typing ALT+SPACE.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_TOPMOST">
+            <summary>
+            Specifies that a window created with this style should be placed above all non-topmost windows and should stay above them, even when the window is deactivated. To add or remove this style, use the SetWindowPos function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_TRANSPARENT">
+            <summary>
+            Specifies that a window created with this style should not be painted until siblings beneath the window (that were created by the same thread) have been painted. The window appears transparent because the bits of underlying sibling windows have already been painted.
+            To achieve transparency without these restrictions, use the SetWindowRgn function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStylesEx.WS_EX_WINDOWEDGE">
+            <summary>
+            Specifies that a window has a border with a raised edge.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.WindowStyles">
+            <summary>
+            Window Styles.
+            The following styles can be specified wherever a window style is required. After the control has been created, these styles cannot be modified, except as noted.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_BORDER">
+            <summary>
+            The window has a thin-line border.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_CAPTION">
+            <summary>
+            The window has a title bar (includes the WS_BORDER style).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_CHILD">
+            <summary>
+            The window is a child window. A window with this style cannot have a menu bar. This style cannot be used with the WS_POPUP style
+            .</summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_CLIPCHILDREN">
+            <summary>
+            Excludes the area occupied by child windows when drawing occurs within the parent window. This style is used when creating the parent window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_CLIPSIBLINGS">
+            <summary>
+            Clips child windows relative to each other; that is, when a particular child window receives a WM_PAINT message, the WS_CLIPSIBLINGS style clips all other overlapping child windows out of the region of the child window to be updated.
+            If WS_CLIPSIBLINGS is not specified and child windows overlap, it is possible, when drawing within the client area of a child window, to draw within the client area of a neighboring child window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_DISABLED">
+            <summary>
+            The window is initially disabled. A disabled window cannot receive input from the user. To change this after a window has been created, use the EnableWindow function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_DLGFRAME">
+            <summary>
+            The window has a border of a style typically used with dialog boxes. A window with this style cannot have a title bar.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_GROUP">
+            <summary>
+            The window is the first control of a group of controls. The group consists of this first control and all controls defined after it, up to the next control with the WS_GROUP style.
+            The first control in each group usually has the WS_TABSTOP style so that the user can move from group to group. The user can subsequently change the keyboard focus from one control in the group to the next control in the group by using the direction keys.
+            You can turn this style on and off to change dialog box navigation. To change this style after a window has been created, use the SetWindowLong function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_HSCROLL">
+            <summary>
+            The window has a horizontal scroll bar.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_MAXIMIZE">
+            <summary>
+            The window is initially maximized.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_MAXIMIZEBOX">
+            <summary>
+            The window has a maximize button. Cannot be combined with the WS_EX_CONTEXTHELP style. The WS_SYSMENU style must also be specified.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_MINIMIZE">
+            <summary>
+            The window is initially minimized.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_MINIMIZEBOX">
+            <summary>
+            The window has a minimize button. Cannot be combined with the WS_EX_CONTEXTHELP style. The WS_SYSMENU style must also be specified.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_OVERLAPPED">
+            <summary>
+            The window is an overlapped window. An overlapped window has a title bar and a border.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_OVERLAPPEDWINDOW">
+            <summary>
+            The window is an overlapped window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_POPUP">
+            <summary>
+            The window is a pop-up window. This style cannot be used with the WS_CHILD style.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_POPUPWINDOW">
+            <summary>
+            The window is a pop-up window. The WS_CAPTION and WS_POPUPWINDOW styles must be combined to make the window menu visible.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_SIZEFRAME">
+            <summary>
+            The window has a sizing border.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_SYSMENU">
+            <summary>
+            The window has a window menu on its title bar. The WS_CAPTION style must also be specified.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_TABSTOP">
+            <summary>
+            The window is a control that can receive the keyboard focus when the user presses the TAB key.
+            Pressing the TAB key changes the keyboard focus to the next control with the WS_TABSTOP style.  
+            You can turn this style on and off to change dialog box navigation. To change this style after a window has been created, use the SetWindowLong function.
+            For user-created windows and modeless dialogs to work with tab stops, alter the message loop to call the IsDialogMessage function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_VISIBLE">
+            <summary>
+            The window is initially visible. This style can be turned on and off by using the ShowWindow or SetWindowPos function.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.WindowStyles.WS_VSCROLL">
+            <summary>
+            The window has a vertical scroll bar.
+            </summary>
+        </member>
+        <member name="M:Win32.User32.DestroyWindow(System.IntPtr)">
+            <summary>
+            <para>The DestroyWindow function destroys the specified window. The function sends WM_DESTROY and WM_NCDESTROY messages to the window to deactivate it and remove the keyboard focus from it. The function also destroys the window's menu, flushes the thread message queue, destroys timers, removes clipboard ownership, and breaks the clipboard viewer chain (if the window is at the top of the viewer chain).</para>
+            <para>If the specified window is a parent or owner window, DestroyWindow automatically destroys the associated child or owned windows when it destroys the parent or owner window. The function first destroys child or owned windows, and then it destroys the parent or owner window.</para>
+            <para>DestroyWindow also destroys modeless dialog boxes created by the CreateDialog function.</para>
+            </summary>
+            <param name="hwnd">Handle to the window to be destroyed.</param>
+            <returns>If the function succeeds, the return value is nonzero. If the function fails, the return value is zero. To get extended error information, call GetLastError.</returns>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.Hide">
+            <summary>
+            Hides the window and activates another window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.Normal">
+            <summary>
+            Activates and displays a window. If the window is minimized or 
+            maximized, the system restores it to its original size and position.
+            An application should specify this flag when displaying the window 
+            for the first time.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.ShowMinimized">
+            <summary>
+            Activates the window and displays it as a minimized window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.Maximize">
+            <summary>
+            Maximizes the specified window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.ShowMaximized">
+            <summary>
+            Activates the window and displays it as a maximized window.
+            </summary>       
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.ShowNoActivate">
+            <summary>
+            Displays a window in its most recent size and position. This value 
+            is similar to <see cref="F:Win32.User32.ShowWindowCommands.Normal"/>, except 
+            the window is not activated.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.Show">
+            <summary>
+            Activates the window and displays it in its current size and position. 
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.Minimize">
+            <summary>
+            Minimizes the specified window and activates the next top-level 
+            window in the Z order.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.ShowMinNoActive">
+            <summary>
+            Displays the window as a minimized window. This value is similar to
+            <see cref="F:Win32.User32.ShowWindowCommands.ShowMinimized"/>, except the 
+            window is not activated.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.ShowNA">
+            <summary>
+            Displays the window in its current size and position. This value is 
+            similar to <see cref="F:Win32.User32.ShowWindowCommands.Show"/>, except the 
+            window is not activated.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.Restore">
+            <summary>
+            Activates and displays the window. If the window is minimized or 
+            maximized, the system restores it to its original size and position. 
+            An application should specify this flag when restoring a minimized window.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.ShowDefault">
+            <summary>
+            Sets the show state based on the SW_* value specified in the 
+            STARTUPINFO structure passed to the CreateProcess function by the 
+            program that started the application.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.ShowWindowCommands.ForceMinimize">
+            <summary>
+             <b>Windows 2000/XP:</b> Minimizes a window, even if the thread 
+            that owns the window is not responding. This flag should only be 
+            used when minimizing windows from a different thread.
+            </summary>
+        </member>
+        <member name="T:Win32.User32.SystemMetric">
+            <summary>
+            Flags used with the Windows API (User32.dll):GetSystemMetrics(SystemMetric smIndex)
+              
+            This Enum and declaration signature was written by Gabriel T. Sharp
+            ai_productions@verizon.net or osirisgothra@hotmail.com
+            Obtained on pinvoke.net, please contribute your code to support the wiki!
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_ARRANGE">
+            <summary>
+            The flags that specify how the system arranged minimized windows. For more information, see the Remarks section in this topic.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CLEANBOOT">
+            <summary>
+            The value that specifies how the system is started: 
+            0 Normal boot
+            1 Fail-safe boot
+            2 Fail-safe with network boot
+            A fail-safe boot (also called SafeBoot, Safe Mode, or Clean Boot) bypasses the user startup files.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CMONITORS">
+            <summary>
+            The number of display monitors on a desktop. For more information, see the Remarks section in this topic.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CMOUSEBUTTONS">
+            <summary>
+            The number of buttons on a mouse, or zero if no mouse is installed.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXBORDER">
+            <summary>
+            The width of a window border, in pixels. This is equivalent to the SM_CXEDGE value for windows with the 3-D look.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXCURSOR">
+            <summary>
+            The width of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXDLGFRAME">
+            <summary>
+            This value is the same as SM_CXFIXEDFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXDOUBLECLK">
+            <summary>
+            The width of the rectangle around the location of a first click in a double-click sequence, in pixels. ,
+            The second click must occur within the rectangle that is defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system
+            to consider the two clicks a double-click. The two clicks must also occur within a specified time.
+            To set the width of the double-click rectangle, call SystemParametersInfo with SPI_SETDOUBLECLKWIDTH.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXDRAG">
+            <summary>
+            The number of pixels on either side of a mouse-down point that the mouse pointer can move before a drag operation begins. 
+            This allows the user to click and release the mouse button easily without unintentionally starting a drag operation. 
+            If this value is negative, it is subtracted from the left of the mouse-down point and added to the right of it.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXEDGE">
+            <summary>
+            The width of a 3-D border, in pixels. This metric is the 3-D counterpart of SM_CXBORDER.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXFIXEDFRAME">
+            <summary>
+            The thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels.
+            SM_CXFIXEDFRAME is the height of the horizontal border, and SM_CYFIXEDFRAME is the width of the vertical border.
+            This value is the same as SM_CXDLGFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXFOCUSBORDER">
+            <summary>
+            The width of the left and right edges of the focus rectangle that the DrawFocusRectdraws. 
+            This value is in pixels. 
+            Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXFRAME">
+            <summary>
+            This value is the same as SM_CXSIZEFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXFULLSCREEN">
+            <summary>
+            The width of the client area for a full-screen window on the primary display monitor, in pixels. 
+            To get the coordinates of the portion of the screen that is not obscured by the system taskbar or by application desktop toolbars, 
+            call the SystemParametersInfofunction with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXHSCROLL">
+            <summary>
+            The width of the arrow bitmap on a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXHTHUMB">
+            <summary>
+            The width of the thumb box in a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXICON">
+            <summary>
+            The default width of an icon, in pixels. The LoadIcon function can load only icons with the dimensions 
+            that SM_CXICON and SM_CYICON specifies.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXICONSPACING">
+            <summary>
+            The width of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size 
+            SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CXICON.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMAXIMIZED">
+            <summary>
+            The default width, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMAXTRACK">
+            <summary>
+            The default maximum width of a window that has a caption and sizing borders, in pixels. 
+            This metric refers to the entire desktop. The user cannot drag the window frame to a size larger than these dimensions. 
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMENUCHECK">
+            <summary>
+            The width of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMENUSIZE">
+            <summary>
+            The width of menu bar buttons, such as the child window close button that is used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMIN">
+            <summary>
+            The minimum width of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMINIMIZED">
+            <summary>
+            The width of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMINSPACING">
+            <summary>
+            The width of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged. 
+            This value is always greater than or equal to SM_CXMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXMINTRACK">
+            <summary>
+            The minimum tracking width of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions. 
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXPADDEDBORDER">
+            <summary>
+            The amount of border padding for captioned windows, in pixels. Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXSCREEN">
+            <summary>
+            The width of the screen of the primary display monitor, in pixels. This is the same value obtained by calling 
+            GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, HORZRES).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXSIZE">
+            <summary>
+            The width of a button in a window caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXSIZEFRAME">
+            <summary>
+            The thickness of the sizing border around the perimeter of a window that can be resized, in pixels. 
+            SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border. 
+            This value is the same as SM_CXFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXSMICON">
+            <summary>
+            The recommended width of a small icon, in pixels. Small icons typically appear in window captions and in small icon view.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXSMSIZE">
+            <summary>
+            The width of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXVIRTUALSCREEN">
+            <summary>
+            The width of the virtual screen, in pixels. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_XVIRTUALSCREEN metric is the coordinates for the left side of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CXVSCROLL">
+            <summary>
+            The width of a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYBORDER">
+            <summary>
+            The height of a window border, in pixels. This is equivalent to the SM_CYEDGE value for windows with the 3-D look.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYCAPTION">
+            <summary>
+            The height of a caption area, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYCURSOR">
+            <summary>
+            The height of a cursor, in pixels. The system cannot create cursors of other sizes.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYDLGFRAME">
+            <summary>
+            This value is the same as SM_CYFIXEDFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYDOUBLECLK">
+            <summary>
+            The height of the rectangle around the location of a first click in a double-click sequence, in pixels. 
+            The second click must occur within the rectangle defined by SM_CXDOUBLECLK and SM_CYDOUBLECLK for the system to consider 
+            the two clicks a double-click. The two clicks must also occur within a specified time. To set the height of the double-click 
+            rectangle, call SystemParametersInfo with SPI_SETDOUBLECLKHEIGHT.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYDRAG">
+            <summary>
+            The number of pixels above and below a mouse-down point that the mouse pointer can move before a drag operation begins. 
+            This allows the user to click and release the mouse button easily without unintentionally starting a drag operation. 
+            If this value is negative, it is subtracted from above the mouse-down point and added below it.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYEDGE">
+            <summary>
+            The height of a 3-D border, in pixels. This is the 3-D counterpart of SM_CYBORDER.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYFIXEDFRAME">
+            <summary>
+            The thickness of the frame around the perimeter of a window that has a caption but is not sizable, in pixels. 
+            SM_CXFIXEDFRAME is the height of the horizontal border, and SM_CYFIXEDFRAME is the width of the vertical border. 
+            This value is the same as SM_CYDLGFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYFOCUSBORDER">
+            <summary>
+            The height of the top and bottom edges of the focus rectangle drawn byDrawFocusRect. 
+            This value is in pixels. 
+            Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYFRAME">
+            <summary>
+            This value is the same as SM_CYSIZEFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYFULLSCREEN">
+            <summary>
+            The height of the client area for a full-screen window on the primary display monitor, in pixels. 
+            To get the coordinates of the portion of the screen not obscured by the system taskbar or by application desktop toolbars,
+            call the SystemParametersInfo function with the SPI_GETWORKAREA value.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYHSCROLL">
+            <summary>
+            The height of a horizontal scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYICON">
+            <summary>
+            The default height of an icon, in pixels. The LoadIcon function can load only icons with the dimensions SM_CXICON and SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYICONSPACING">
+            <summary>
+            The height of a grid cell for items in large icon view, in pixels. Each item fits into a rectangle of size 
+            SM_CXICONSPACING by SM_CYICONSPACING when arranged. This value is always greater than or equal to SM_CYICON.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYKANJIWINDOW">
+            <summary>
+            For double byte character set versions of the system, this is the height of the Kanji window at the bottom of the screen, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMAXIMIZED">
+            <summary>
+            The default height, in pixels, of a maximized top-level window on the primary display monitor.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMAXTRACK">
+            <summary>
+            The default maximum height of a window that has a caption and sizing borders, in pixels. This metric refers to the entire desktop. 
+            The user cannot drag the window frame to a size larger than these dimensions. A window can override this value by processing 
+            the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMENU">
+            <summary>
+            The height of a single-line menu bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMENUCHECK">
+            <summary>
+            The height of the default menu check-mark bitmap, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMENUSIZE">
+            <summary>
+            The height of menu bar buttons, such as the child window close button that is used in the multiple document interface, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMIN">
+            <summary>
+            The minimum height of a window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMINIMIZED">
+            <summary>
+            The height of a minimized window, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMINSPACING">
+            <summary>
+            The height of a grid cell for a minimized window, in pixels. Each minimized window fits into a rectangle this size when arranged. 
+            This value is always greater than or equal to SM_CYMINIMIZED.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYMINTRACK">
+            <summary>
+            The minimum tracking height of a window, in pixels. The user cannot drag the window frame to a size smaller than these dimensions. 
+            A window can override this value by processing the WM_GETMINMAXINFO message.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYSCREEN">
+            <summary>
+            The height of the screen of the primary display monitor, in pixels. This is the same value obtained by calling 
+            GetDeviceCaps as follows: GetDeviceCaps( hdcPrimaryMonitor, VERTRES).
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYSIZE">
+            <summary>
+            The height of a button in a window caption or title bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYSIZEFRAME">
+            <summary>
+            The thickness of the sizing border around the perimeter of a window that can be resized, in pixels. 
+            SM_CXSIZEFRAME is the width of the horizontal border, and SM_CYSIZEFRAME is the height of the vertical border. 
+            This value is the same as SM_CYFRAME.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYSMCAPTION">
+            <summary>
+            The height of a small caption, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYSMICON">
+            <summary>
+            The recommended height of a small icon, in pixels. Small icons typically appear in window captions and in small icon view.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYSMSIZE">
+            <summary>
+            The height of small caption buttons, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYVIRTUALSCREEN">
+            <summary>
+            The height of the virtual screen, in pixels. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_YVIRTUALSCREEN metric is the coordinates for the top of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYVSCROLL">
+            <summary>
+            The height of the arrow bitmap on a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_CYVTHUMB">
+            <summary>
+            The height of the thumb box in a vertical scroll bar, in pixels.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_DBCSENABLED">
+            <summary>
+            Nonzero if User32.dll supports DBCS; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_DEBUG">
+            <summary>
+            Nonzero if the debug version of User.exe is installed; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_DIGITIZER">
+            <summary>
+            Nonzero if the current operating system is Windows 7 or Windows Server 2008 R2 and the Tablet PC Input 
+            service is started; otherwise, 0. The return value is a bitmask that specifies the type of digitizer input supported by the device. 
+            For more information, see Remarks. 
+            Windows Server 2008, Windows Vista, and Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_IMMENABLED">
+            <summary>
+            Nonzero if Input Method Manager/Input Method Editor features are enabled; otherwise, 0. 
+            SM_IMMENABLED indicates whether the system is ready to use a Unicode-based IME on a Unicode application. 
+            To ensure that a language-dependent IME works, check SM_DBCSENABLED and the system ANSI code page.
+            Otherwise the ANSI-to-Unicode conversion may not be performed correctly, or some components like fonts
+            or registry settings may not be present.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_MAXIMUMTOUCHES">
+            <summary>
+            Nonzero if there are digitizers in the system; otherwise, 0. SM_MAXIMUMTOUCHES returns the aggregate maximum of the 
+            maximum number of contacts supported by every digitizer in the system. If the system has only single-touch digitizers, 
+            the return value is 1. If the system has multi-touch digitizers, the return value is the number of simultaneous contacts 
+            the hardware can provide. Windows Server 2008, Windows Vista, and Windows XP/2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_MEDIACENTER">
+            <summary>
+            Nonzero if the current operating system is the Windows XP, Media Center Edition, 0 if not.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_MENUDROPALIGNMENT">
+            <summary>
+            Nonzero if drop-down menus are right-aligned with the corresponding menu-bar item; 0 if the menus are left-aligned.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_MIDEASTENABLED">
+            <summary>
+            Nonzero if the system is enabled for Hebrew and Arabic languages, 0 if not.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_MOUSEPRESENT">
+            <summary>
+            Nonzero if a mouse is installed; otherwise, 0. This value is rarely zero, because of support for virtual mice and because 
+            some systems detect the presence of the port instead of the presence of a mouse.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_MOUSEHORIZONTALWHEELPRESENT">
+            <summary>
+            Nonzero if a mouse with a horizontal scroll wheel is installed; otherwise 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_MOUSEWHEELPRESENT">
+            <summary>
+            Nonzero if a mouse with a vertical scroll wheel is installed; otherwise 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_NETWORK">
+            <summary>
+            The least significant bit is set if a network is present; otherwise, it is cleared. The other bits are reserved for future use.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_PENWINDOWS">
+            <summary>
+            Nonzero if the Microsoft Windows for Pen computing extensions are installed; zero otherwise.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_REMOTECONTROL">
+            <summary>
+            This system metric is used in a Terminal Services environment to determine if the current Terminal Server session is 
+            being remotely controlled. Its value is nonzero if the current session is remotely controlled; otherwise, 0. 
+            You can use terminal services management tools such as Terminal Services Manager (tsadmin.msc) and shadow.exe to 
+            control a remote session. When a session is being remotely controlled, another user can view the contents of that session 
+            and potentially interact with it.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_REMOTESESSION">
+            <summary>
+            This system metric is used in a Terminal Services environment. If the calling process is associated with a Terminal Services 
+            client session, the return value is nonzero. If the calling process is associated with the Terminal Services console session, 
+            the return value is 0. 
+            Windows Server 2003 and Windows XP:  The console session is not necessarily the physical console. 
+            For more information, seeWTSGetActiveConsoleSessionId.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_SAMEDISPLAYFORMAT">
+            <summary>
+            Nonzero if all the display monitors have the same color format, otherwise, 0. Two displays can have the same bit depth, 
+            but different color formats. For example, the red, green, and blue pixels can be encoded with different numbers of bits, 
+            or those bits can be located in different places in a pixel color value.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_SECURE">
+            <summary>
+            This system metric should be ignored; it always returns 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_SERVERR2">
+            <summary>
+            The build number if the system is Windows Server 2003 R2; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_SHOWSOUNDS">
+            <summary>
+            Nonzero if the user requires an application to present information visually in situations where it would otherwise present 
+            the information only in audible form; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_SHUTTINGDOWN">
+            <summary>
+            Nonzero if the current session is shutting down; otherwise, 0. Windows 2000:  This value is not supported.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_SLOWMACHINE">
+            <summary>
+            Nonzero if the computer has a low-end (slow) processor; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_STARTER">
+            <summary>
+            Nonzero if the current operating system is Windows 7 Starter Edition, Windows Vista Starter, or Windows XP Starter Edition; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_SWAPBUTTON">
+            <summary>
+            Nonzero if the meanings of the left and right mouse buttons are swapped; otherwise, 0.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_TABLETPC">
+            <summary>
+            Nonzero if the current operating system is the Windows XP Tablet PC edition or if the current operating system is Windows Vista
+            or Windows 7 and the Tablet PC Input service is started; otherwise, 0. The SM_DIGITIZER setting indicates the type of digitizer 
+            input supported by a device running Windows 7 or Windows Server 2008 R2. For more information, see Remarks.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_XVIRTUALSCREEN">
+            <summary>
+            The coordinates for the left side of the virtual screen. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_CXVIRTUALSCREEN metric is the width of the virtual screen.
+            </summary>
+        </member>
+        <member name="F:Win32.User32.SystemMetric.SM_YVIRTUALSCREEN">
+            <summary>
+            The coordinates for the top of the virtual screen. The virtual screen is the bounding rectangle of all display monitors. 
+            The SM_CYVIRTUALSCREEN metric is the height of the virtual screen.
+            </summary>
+        </member>
+        <member name="T:Inv.SystemMouseHook">
+            Low-level mouse intercept hook.
+        </member>
+        <member name="M:Inv.DynamicLibrary.WrapDelegate(System.Type)">
+             <summary>
+             Create a new delegate type that wraps the specified delegate with a HRESULT, correctly
+             rewriting return values into out parameters
+            
+             i.e.
+             delegate int SomeDelegate(bool a, out string b)
+             ->
+             delegate HRESULT SomeDelegateWrapper(bool a, out string b, out int retval);
+            
+             </summary>
+             <param name="delegateType">The delegate type you wish to wrap</param>
+             <returns>A Type corresponding to the wrapper delegate.</returns>
+        </member>
+        <member name="T:Inv.Printer">
+            <summary>
+            Represents a printer attached to the system.
+            </summary>
+        </member>
+        <member name="M:Inv.Printer.#ctor(System.String)">
+            <summary>
+            Initialize a new <see cref="T:Inv.Printer"/> object with the given print settings.
+            </summary>
+            <param name="PrintSettings">The printer settings to use.</param>
+        </member>
+        <member name="P:Inv.Printer.FullName">
+            <summary>
+            Gets the full name of this <see cref="T:Inv.Printer"/>.
+            </summary>
+        </member>
+        <member name="P:Inv.Printer.IsDefault">
+            <summary>
+            Gets a value indicating whether this is the system default printer.
+            </summary>
+        </member>
+        <member name="P:Inv.Printer.PaperSources">
+            <summary>
+            Gets a collection of paper sources supported by this printer.
+            </summary>
+        </member>
+        <member name="P:Inv.Printer.PrintableArea">
+            <summary>
+            Gets the bounds of the printable area of the page for the printer.
+            </summary>
+            <returns>A System.Drawing.RectangleF representing the length and width, in hundredths of an inch, of the area the printer is capable of printing in.</returns>
+        </member>
+        <member name="P:Inv.Printer.MaximumCopies">
+            <summary>
+            Gets the maximum number of copies that the printer enables the user to print at a time.
+            </summary>
+        </member>
+        <member name="P:Inv.Printer.PagesPerSheetCapability">
+            <summary>
+             The various number of pages that a user can choose to print on a single side of a sheet of paper.
+            </summary>
+        </member>
+        <member name="M:Inv.Printer.GetIcon">
+            <summary>
+            Get an icon for this printer.
+            </summary>
+            <returns>A bitmap image representation of this <see cref="T:Inv.Printer"/>.</returns>
+        </member>
+        <member name="T:Inv.PrinterManager">
+            <summary>
+            Manages the list of system printers.
+            </summary>
+        </member>
+        <member name="P:Inv.PrinterManager.DefaultPrinter">
+            <summary>
+            The default printer for the system.
+            </summary>
+        </member>
+        <member name="P:Inv.PrinterManager.PrinterList">
+            <summary>
+            The list of printers installed on the system.
+            </summary>
+        </member>
+        <member name="T:Inv.SystemMemory">
+            <summary>
+            Represents the amount of memory in the system.
+            </summary>
+        </member>
+        <member name="M:Inv.SystemMemory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Inv.SystemMemory"/> class with current system memory values.
+            </summary>
+        </member>
+        <member name="P:Inv.SystemMemory.TotalVirtualMemory">
+            <summary>
+            The total number of bytes of virtual memory in the system.
+            </summary>
+        </member>
+        <member name="P:Inv.SystemMemory.AvailableVirtualMemory">
+            <summary>
+            The available number of bytes of virtual memory in the system.
+            </summary>
+        </member>
+        <member name="P:Inv.SystemMemory.TotalPhysicalMemory">
+            <summary>
+            The total number of bytes of physical memory in the system.
+            </summary>
+        </member>
+        <member name="P:Inv.SystemMemory.AvailablePhysicalMemory">
+            <summary>
+            The available number of bytes of physical memory in the system.
+            </summary>
+        </member>
+        <member name="M:Inv.SystemMemory.Refresh">
+            <summary>
+            Attempt to refresh memory values from the system.
+            </summary>
+            <remarks>
+            Attempts to fetch total and available memory values from Windows.
+            If this fails, all values will be set to zero.
+            </remarks>
+        </member>
+        <member name="T:Inv.TaskSequence">
+            <summary>
+            Represents a sequence of tasks to be executed in order, halting if any task fails.
+            </summary>
+            <remarks>
+            <para>Executes a sequence of <see cref="T:Inv.TaskOperation"/>s, optionally executing a delegate before and/or after each step.</para>
+            <para>In the event of an exception occurring during execution of a task step, <see cref="T:Inv.TaskSequence"/> will execute
+            the <see cref="P:Inv.TaskSequence.Exception"/> delegate, if it exists, and then abort the sequence.</para>
+            <example>
+            <code>
+            TaskSequence seq = new TaskSequence();
+                      
+            // This will be executed before each task in the sequence.
+            seq.Before = (Operation) => { Console.Out.WriteLine("Before"); }
+            
+            // This will be executed after each task in the sequence.
+            seq.After = (Operation) => { Console.Out.WriteLine("After"); }
+            
+            TaskOperation op1 = seq.Add("TaskName");
+            op1.Execute = () => { Console.Out.WriteLine("Task 1"); }
+            
+            TaskOperation op2 = seq.Add("TaskName2");
+            op2.Execute = () => { Console.Out.WriteLine("Task 2"); }
+            
+            seq.Run();
+            </code>
+            <para>This example creates a <see cref="T:Inv.TaskSequence"/>, adds two task operations to the sequence, and
+            executes the sequence, resulting in the following output:</para>
+            <code language="none">
+            Before
+            Task 1
+            After
+            Before
+            Task 2
+            After
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:Inv.TaskSequence.#ctor">
+            <summary>
+            Initialize a new instance of the <see cref="T:Inv.TaskSequence"/> class.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskSequence.CurrentStep">
+            <summary>
+            The current step number.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskSequence.StepCount">
+            <summary>
+            The total number of steps in this <see cref="T:Inv.TaskSequence"/>.
+            </summary>
+        </member>
+        <member name="M:Inv.TaskSequence.Clear">
+            <summary>
+            Remove all tasks from this <see cref="T:Inv.TaskSequence"/>.
+            </summary>
+        </member>
+        <member name="M:Inv.TaskSequence.Add(System.String)">
+            <summary>
+            Add a new named task to this <see cref="T:Inv.TaskSequence"/>.
+            </summary>
+            <param name="Name">The name of the new task.</param>
+            <returns>A <see cref="T:Inv.TaskOperation"/> object to which an execution delegate can be set.</returns>
+        </member>
+        <member name="P:Inv.TaskSequence.Before">
+            <summary>
+            A delegate which will be executed before each task in the <see cref="T:Inv.TaskSequence"/>.
+            </summary>
+            <value>The delegate to execute.</value>
+        </member>
+        <member name="P:Inv.TaskSequence.After">
+            <summary>
+            A delegate which will be executed after the successful execution of each task in the <see cref="T:Inv.TaskSequence"/>.
+            </summary>
+            <value>The delegate to execute.</value>
+        </member>
+        <member name="P:Inv.TaskSequence.Exception">
+            <summary>
+            A delegate which will be executed if a task in the <see cref="T:Inv.TaskSequence"/> raises an exception.
+            </summary>
+            <value>The delegate to execute.</value>
+        </member>
+        <member name="M:Inv.TaskSequence.Run">
+            <summary>
+            Execute each operation in the <see cref="T:Inv.TaskSequence"/>, halting if any task fails to execute to completion.
+            </summary>
+            <remarks>
+            The operations will be called in the order they were added. Execution of the sequence will cease upon any operation
+            throwing an exception; the <see cref="P:Inv.TaskSequence.Exception"/> delegate will be called before <see cref="M:Inv.TaskSequence.Run"/> returns.
+            </remarks>
+        </member>
+        <member name="T:Inv.TaskOperation">
+            <summary>
+            Represents an individual task operation within a <see cref="T:Inv.TaskSequence"/>.
+            </summary>
+            <remarks>
+            <see cref="T:Inv.TaskOperation"/> objects are not directly instantiated, but can be obtained by:
+            <list type="bullet">
+              <item>
+                <description>
+                  Calling TaskSequence.Add(String) to add a new
+                  task to a <see cref="T:Inv.TaskSequence"/>, or
+                </description>
+              </item>
+              <item>
+                <description>
+                  Calling TaskSequence.Continue(String) to add a continuation requirement to an existing <see cref="T:Inv.TaskOperation"/>.
+                </description>    
+              </item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:Inv.TaskOperation.Name">
+            <summary>
+            The name of the task that this <see cref="T:Inv.TaskOperation"/> represents.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskOperation.Execute">
+            <summary>
+            The delegate that this task will execute.
+            </summary>
+            <value>The delegate that this task will execute.</value>
+        </member>
+        <member name="M:Inv.TaskOperation.Continue(System.String)">
+            <summary>
+            Add a task sequence continuation requirement subtask to this <see cref="T:Inv.TaskOperation"/>.
+            </summary>
+            <remarks>
+            <para>Adds a task sequence continuation requirement subtask to this <see cref="T:Inv.TaskOperation"/>.</para>
+            <para>The delegate function added to the returned <see cref="T:Inv.TaskOperation"/> must execute successfully for
+            the parent <see cref="T:Inv.TaskSequence"/> to continue execution beyond this <see cref="T:Inv.TaskOperation"/>.</para>
+            </remarks>
+            <param name="TaskName">The name of the subtask</param>
+            <returns>A new <see cref="T:Inv.TaskOperation"/> object to which an execution delegate can be added.</returns>
+        </member>
+        <member name="M:Inv.Support.Extension.RetrieveLinkerTimestamp(System.Reflection.Assembly)">
+            <summary>
+            Return the timestamp of when the executable was built.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Inv.Support.Extension.ConvertAll``2(System.Collections.Generic.IEnumerable{``0},System.Converter{``0,``1})">
+            <summary>
+            Convert every element of this <see cref="T:System.Collections.Generic.IEnumerable`1"/> using the specified <see cref="T:System.Converter`2"/>.
+            </summary>
+            <typeparam name="T">The type of elements in this <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</typeparam>
+            <typeparam name="TOutput">The desired output type of the conversion.</typeparam>
+            <param name="Source">This <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</param>
+            <param name="Converter">A <see cref="T:System.Converter`2"/> to convert elements.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of converted elements.</returns>
+        </member>
+        <member name="M:Inv.Support.Extension.SetEntryAssembly(System.Reflection.Assembly)">
+            <summary>
+            Use reflection to override the value of the private Entry Assembly field.
+            </summary>
+            <param name="Assembly"></param>
+        </member>
+        <member name="M:Inv.Support.ImageHelper.IsMultiFrameBitmap(Inv.Image)">
+            <summary>
+            Indicates whether the image's buffer contains a bitmap with multiple frames, e.g. a multi-page TIFF.
+            </summary>
+            <param name="Image">The <see cref="T:Inv.Image"/> to test for the presence of multiple frames.</param>
+            <returns>Whether the contained bitmap has multiple frames.</returns>
+        </member>
+        <member name="M:Inv.Support.ImageHelper.ColourToTransparent(System.Windows.Media.Imaging.BitmapSource,Inv.Colour)">
+            <summary>
+            Make the image transparent using a reference colour. Similar to Gimp 'Color To Alpha' function.
+            </summary>
+            <param name="BitmapSource"></param>
+            <param name="ReferenceColour"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inv.Support.ImageHelper.Thumbnail(System.Windows.Media.ImageSource,System.Int32)">
+            <summary>
+            Maintain the aspect ratio to produce a thumbnail version of the original image.
+            </summary>
+            <param name="Image"></param>
+            <param name="ThumbnailSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inv.Support.ImageHelper.Clamped(System.Windows.Media.Imaging.BitmapSource,System.Nullable{System.Int32})">
+            <summary>
+            Crop to produce a square image and optionally scaled to a specified size.
+            </summary>
+            <param name="InputSource"></param>
+            <param name="ImageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Inv.Support.DrawingBitmapHelper.ConvertToDrawingBitmap(System.Windows.Media.Imaging.BitmapSource)">
+            <summary>
+            Convert this <see cref="T:System.Windows.Media.Imaging.BitmapSource"/> to a <see cref="T:System.Drawing.Bitmap"/>.
+            </summary>
+            <param name="BitmapSource">This <see cref="T:System.Windows.Media.Imaging.BitmapSource"/>.</param>
+            <returns>A <see cref="T:System.Drawing.Bitmap"/> with the image contents of this <see cref="T:System.Windows.Media.Imaging.BitmapSource"/>.</returns>
+        </member>
+        <member name="T:Inv.Support.PathHelper">
+            <summary>
+            A static class with extension methods related to paths.
+            </summary>
+        </member>
+        <member name="M:Inv.Support.PathHelper.ProgramFilesx86">
+            <summary>
+            Get the path to the x86 Program Files directory.
+            </summary>
+            <returns>The path to the x86 Program Files directory.</returns>
+        </member>
+        <member name="M:Inv.Support.PathHelper.GetRelativePath(System.String,System.String)">
+            <summary>
+            Get the relative path between two absolute paths. The two paths must share a common prefix and refer to files or directories which
+            actually exist at the time of calling GetRelativePath.
+            </summary>
+            <param name="fromPath">The path to use as the source of the relative path.</param>
+            <param name="toPath">The destination path.</param>
+            <returns>A string expressing the relative path required to get to toPath from fromPath.</returns>
+        </member>
+        <member name="M:Inv.Support.EnvironmentHelper.ResolveMachineName">
+            <summary>
+            Resolve the machine name including support for remote access services.<br />
+            <br />
+            Tested for the following deployment scenarios:<br />
+            1. VMWare Horizon<br />
+            2. VDI Infrastructure<br />
+            3. Standard RDP<br />
+            4. Running the client locally<br />
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Inv.Support.CodepointHelper.Go(Inv.Codepoint)">
+            <summary>
+            Automate Visual Studio to open at the set file:line.
+            </summary>
+        </member>
+        <member name="T:Inv.SystemServiceStatus">
+            <summary>
+            Indicates the current state of a Windows service.
+            </summary>
+        </member>
+        <member name="F:Inv.SystemServiceStatus.Stopped">
+            <summary>
+            The service is stopped.
+            </summary>
+        </member>
+        <member name="F:Inv.SystemServiceStatus.StartPending">
+            <summary>
+            The service is starting.
+            </summary>
+        </member>
+        <member name="F:Inv.SystemServiceStatus.StopPending">
+            <summary>
+            The service is stopping.
+            </summary>
+        </member>
+        <member name="F:Inv.SystemServiceStatus.Running">
+            <summary>
+            The service is running.
+            </summary>
+        </member>
+        <member name="F:Inv.SystemServiceStatus.ContinuePending">
+            <summary>
+            The service is continuing after a pause.
+            </summary>
+        </member>
+        <member name="F:Inv.SystemServiceStatus.PausePending">
+            <summary>
+            The service is pausing.
+            </summary>
+        </member>
+        <member name="F:Inv.SystemServiceStatus.Paused">
+            <summary>
+            The service is paused.
+            </summary>
+        </member>
+        <member name="T:Inv.SystemServiceManager">
+            <summary>
+            An interface to the Windows service system.
+            </summary>
+            <remarks>
+            <para>Provides methods to manipulate the Windows service system by adding/removing services, starting and stopping existing services.</para>
+            <para>Also provides a wrapper around Windows service functionality, allowing you to host your code as a Windows service.</para>
+            <example>
+            <para>Using <see cref="T:Inv.SystemServiceManager"/> to host code as a Windows service:</para>
+            <code>
+            using (var Service = new Inv.SystemService())
+            {
+              Service.StartEvent += () =>
+              {
+                // Delegate will be called when the service starts.
+              };
+              
+              Service.StopEvent += () =>
+              {
+                // Delegate will be called when the service shuts down.
+              };
+              
+              // Run the service.
+              Service.Run();
+            }
+            </code>
+            <para>Using <see cref="T:Inv.SystemServiceManager"/> to register the currently executing assembly as a new Windows service:</para>
+            <code>
+            using (var Service = new Inv.SystemService())
+              Service.Install("ServiceName", "Service Display Name", "Description of the service", Assembly.GetEntryAssembly().Location);
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:Inv.SystemServiceManager.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Inv.SystemServiceManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Inv.SystemServiceManager.Install(System.String,System.String,System.String,System.String,System.Security.SecureString,System.String[])">
+            <summary>
+            Register a new Windows service.
+            </summary>
+            <param name="Name">The service name.</param>
+            <param name="Display">The long display name for a service</param>
+            <param name="Description">A description of the service.</param>
+            <param name="Executable">The path to the service executable.</param>
+            <param name="Username">The account username to run the service as.</param>
+            <param name="Password">The account password to run the service as.</param>
+            <param name="DependencyArray">The services that this service depends on, before it can start</param>
+        </member>
+        <member name="M:Inv.SystemServiceManager.Remove">
+            <summary>
+            Unregister a Windows service from the list of known services.
+            </summary>
+            <param name="Name">The name of the service to remove.</param>
+        </member>
+        <member name="M:Inv.SystemServiceManager.Exists">
+            <summary>
+            Check to see whether or not a given Windows service exists.
+            </summary>
+            <param name="Name">The name of the service to look for.</param>
+            <returns>True if the service exists, False otherwise.</returns>
+        </member>
+        <member name="M:Inv.SystemServiceControl.Start">
+            <summary>
+            Start a Windows service.
+            </summary>
+            <param name="Name">The name of the service to start.</param>
+        </member>
+        <member name="M:Inv.SystemServiceControl.Stop">
+            <summary>
+            Stop a Windows service.
+            </summary>
+            <param name="Name">The name of the service to stop.</param>
+        </member>
+        <member name="P:Inv.SystemServiceControl.Status">
+            <summary>
+            Get the status of a Windows service.
+            </summary>
+            <param name="Name">The name of the service to retrieve status information for.</param>
+            <returns>The status of the service.</returns>
+        </member>
+        <member name="M:Inv.SystemExceptionHandler.Recruit(System.Action{System.Object})">
+            <summary>
+            Register a global exception handler for otherwise unhandled exceptions.
+            </summary>
+            <param name="ExceptionAction"></param>
+        </member>
+        <member name="M:Inv.SystemExceptionHandler.Dismiss(System.Action{System.Object})">
+            <summary>
+            Remove a global exception handler for otherwise unhandled exceptions.
+            </summary>
+            <param name="ExceptionAction"></param>
+        </member>
+        <member name="M:Inv.SystemExceptionHandler.Route(System.Exception)">
+            <summary>
+            Route a manually caught exception through the recruited exception handlers.
+            </summary>
+            <param name="Exception"></param>
+        </member>
+        <member name="T:Inv.ThreadAffinity">
+            <summary>
+            Associates with the current thread to allow affinity checks.
+            </summary>
+            <remarks>
+            <para>Use instances of <see cref="T:Inv.ThreadAffinity"/> to ensure that classes are only being accessed from the thread they were started on.</para>
+            <example>
+            <para>This example uses <see cref="T:Inv.ThreadAffinity"/> to protect the Data property of MyClass from being
+            accessed by threads other than the thread that instantiated the MyClass object.</para>
+            <code>
+            public sealed class MyClass
+            {
+              private Inv.ThreadRequirement ThreadRequirement = new Inv.ThreadRequirement();
+              private int DataField = 0;
+              
+              public Data
+              {
+                get
+                {
+                  // Will throw an InvalidOperationException if the thread accessing Data is not
+                  // the thread that created the instance of MyClass.
+                  ThreadRequirement.Check();
+                  
+                  return DataField;
+                }
+                
+                set
+                {
+                  // Will throw an InvalidOperationException if the thread accessing Data is not
+                  // the thread that created the instance of MyClass.
+                  ThreadRequirement.Check();
+                  
+                  this.DataField = value;
+                }
+              }
+            }
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:Inv.ThreadAffinity.#ctor">
+            <summary>
+            Initialises a new instance of the <see cref="T:Inv.ThreadAffinity"/> class with affinity to the currently executing thread.
+            </summary>
+        </member>
+        <member name="M:Inv.ThreadAffinity.Require">
+            <summary>
+            Throw an exception if we are NOT executing on the affinity thread.
+            </summary>
+        </member>
+        <member name="M:Inv.ThreadAffinity.Prevent">
+            <summary>
+            Throw an exception if we are executing on the affinity thread.
+            </summary>
+        </member>
+        <member name="T:Inv.LogFile">
+            <summary>
+            Represents a record-based logfile on disk.
+            </summary>
+            <remarks>
+            <para><see cref="T:Inv.LogFile"/> provides methods to create and manipulate record-based log files on disk and optionally duplicates log output
+            to the console.</para>
+            </remarks>
+            <example>
+            <code>
+            LogFile log = new LogFile("C:\\Temp\\temp.log");
+            
+            log.Create();
+            log.ConsoleTracing = true;
+            
+            log.WriteRecord (new string[1] { "new log record" });
+            
+            log.Close();
+            </code>
+            <para>This example produces output both on the console and in the log file C:\Temp\temp.log:</para>
+            <code language="none">
+            2010-09-10 15:37:33.985         new log record
+            </code>
+            </example>
+        </member>
+        <member name="M:Inv.LogFile.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:Inv.LogFile"/> object with the specified file path.
+            </summary>
+            <param name="Path">The path to the log file.</param>
+        </member>
+        <member name="P:Inv.LogFile.Path">
+            <summary>
+            Gets a value indicating the path of the log file.
+            </summary>
+        </member>
+        <member name="P:Inv.LogFile.ConsoleTracing">
+            <summary>
+            Gets or sets a value indicating whether to duplicate logged messages to the console.
+            </summary>
+        </member>
+        <member name="M:Inv.LogFile.Create">
+            <summary>
+            Creates the log file on disk.
+            </summary>
+            <remarks>The log file must not be active when <see cref="M:Inv.LogFile.Create"/> is called.</remarks>
+            <exception cref="T:System.Security.SecurityException">Thrown if a security restriction prevents the creation of the file.</exception>
+        </member>
+        <member name="M:Inv.LogFile.Append">
+            <summary>
+            Opens an existing log file on disk for appending.
+            </summary>
+            <remarks>The log file must not be active when <see cref="M:Inv.LogFile.Append"/> is called.</remarks>
+            <exception cref="T:System.Security.SecurityException">Thrown if a security restriction prevents the file from being opened for appending.</exception>
+        </member>
+        <member name="M:Inv.LogFile.Close">
+            <summary>
+            Close the log file.
+            </summary>
+            <remarks>The log file must be active when <see cref="M:Inv.LogFile.Close"/> is called.</remarks>
+        </member>
+        <member name="M:Inv.LogFile.Delete">
+            <summary>
+            Delete the log file from the disk.
+            </summary>
+            <remarks>The log file must not be active when <see cref="M:Inv.LogFile.Delete"/> is called.</remarks>
+        </member>
+        <member name="M:Inv.LogFile.WriteRecordBegin">
+            <summary>
+            Write the beginning of a record to the log file.
+            </summary>
+        </member>
+        <member name="M:Inv.LogFile.WriteRecordEnd">
+            <summary>
+            Write the end of a record to the log file and flush the stream.
+            </summary>
+        </member>
+        <member name="M:Inv.LogFile.WriteRecordField(System.String)">
+            <summary>
+            Write a string field to the log file.
+            </summary>
+            <param name="Field">The string field to write.</param>
+        </member>
+        <member name="M:Inv.LogFile.WriteRecordTab">
+            <summary>
+            Write a tab to the log file.
+            </summary>
+        </member>
+        <member name="M:Inv.LogFile.WriteRecord(System.String[])">
+            <summary>
+            Write an array of fields to the log file.
+            </summary>
+            <remarks>
+            The array will be written tab-delimited to the log file.
+            </remarks>
+            <param name="FieldArray">The array to write to the log file.</param>
+        </member>
+        <member name="T:Inv.LogDirectory">
+             <summary>
+             Represents a folder containing multiple log file series.
+             </summary>
+             <remarks>
+             <para>After creating a <see cref="T:Inv.LogFolder"/> object, create one or more <see cref="T:Inv.LogSeries"/> objects using <see cref="!:AddSeries"/> and then call <see cref="M:Inv.LogSeries.Acquire"/>
+             on the <see cref="T:Inv.LogSeries"/> object(s) to receive <see cref="T:Inv.LogHandle"/> objects which can be used to write to disk.</para>
+             <para>Unlike <see cref="T:Inv.LogFile"/>, actual writes to the log file are unmanaged; <see cref="T:Inv.LogHandle"/> directly exposes a <see cref="!:FileStream"/>, so for logs that comprise mostly
+             string records, <see cref="T:Inv.LogFile"/> will probably be more useful.</para>
+             </remarks>
+             <example>
+             <para>This example will write a single log entry to the 'series1' log series in C:\Temp. Each time the code is run, a new log file will be generated with 
+             an incrementing filename; files older than 30 days (by default) will be automatically deleted.</para>
+             <code>
+             LogFolder folder = new LogFolder("C:\\Temp");
+             LogSeries series = folder.AddSeries("series1");
+            
+             folder.Open();
+            
+             using (LogContext ctx = series.AcquireContext())
+             {
+               StreamWriter writer = new StreamWriter(ctx.FileStream);
+            
+               writer.WriteLine("Log entry");
+            
+               writer.Close();
+             }
+             </code>
+             </example>
+        </member>
+        <member name="M:Inv.LogDirectory.#ctor(System.String)">
+            <summary>
+            Initializes a new <see cref="T:Inv.LogFolder"/> with the specified path.
+            </summary>
+            <param name="Path">The path for the log folder.</param>
+        </member>
+        <member name="P:Inv.LogDirectory.Path">
+            <summary>
+            Gets a value indicating the path for the <see cref="T:Inv.LogFolder"/>.
+            </summary>
+        </member>
+        <member name="T:Inv.TaskProcedure">
+            <summary>
+            Represents a series of tasks to be executed on a separate thread.
+            </summary>
+            <remarks>
+            For tasks that do not need to be executed on a separate thread, consider <see cref="T:Inv.TaskSequence"/>.
+            <example>
+            <para>This example sets up a new <see cref="T:Inv.TaskProcedure"/>, adds three tasks to it, and executes the procedure.</para>
+            <code>
+            TaskProcedure tp = new TaskProcedure("Test Task Procedure");
+            TaskStep step1 = tp.AddStep("Step 1");
+            step1.Execute = (Context) => { Console.Out.WriteLine("Step 1"); };
+            
+            TaskStep step2 = tp.AddStep("Step 2");
+            step2.Query = () => { return false; };
+            step2.Execute = (Context) => { Console.Out.WriteLine("Step 2"); };
+            
+            TaskStep step3 = tp.AddStep("Step 3");
+            step3.Execute = (Context) => { Console.Out.WriteLine("Step 3"); };
+            
+            tp.Start();
+            </code>
+            <para>Note that due to the <see cref="P:Inv.TaskStep.Query"/> delegate returning False on step 2, the main execution delegate for step 2 will not be executed,
+            resulting in the following output:</para>
+            <code language="none">
+            Step 1
+            Step 3
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="M:Inv.TaskProcedure.#ctor(System.String)">
+            <summary>
+            Creates a new <see cref="T:Inv.TaskProcedure"/> with no steps.
+            </summary>
+            <param name="Name">The name of the new <see cref="T:Inv.TaskProcedure"/>.</param>
+        </member>
+        <member name="P:Inv.TaskProcedure.Name">
+            <summary>
+            The name of the <see cref="T:Inv.TaskProcedure"/>.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskProcedure.MinimumElapsedTime">
+            <summary>
+            The minimum amount of time this <see cref="T:Inv.TaskProcedure"/> may execute in.
+            </summary>
+            <remarks>
+            If the actual execution of the <see cref="T:Inv.TaskProcedure"/> takes less than <see cref="P:Inv.TaskProcedure.MinimumElapsedTime"/> time,
+            a delay will occur to pad execution time to the specified value.
+            </remarks>
+        </member>
+        <member name="E:Inv.TaskProcedure.NotifyEvent">
+            <summary>
+            Occurs when each step of the <see cref="T:Inv.TaskProcedure"/> is about to be executed, and when the TaskProcedure completes.
+            </summary>
+            <remarks>
+            <para>The <see cref="E:Inv.TaskProcedure.NotifyEvent"/> delegate will be called immediately before each step of the <see cref="T:Inv.TaskProcedure"/> is executed
+            and additionally once after all tasks have been executed.</para>
+            <para>It will not be executed in the event that the <see cref="T:Inv.TaskProcedure"/> is explicitly terminated with a call to
+            <see cref="M:Inv.TaskProcedure.Stop"/>.</para>
+            </remarks>
+        </member>
+        <member name="M:Inv.TaskProcedure.AddStep(System.String)">
+            <summary>
+            Add a new step to the TaskProcedure.
+            </summary>
+            <remarks>Adds a new step to the <see cref="T:Inv.TaskProcedure"/>, provided that the <see cref="T:Inv.TaskProcedure"/>
+            has not already started to execute.</remarks>
+            <param name="Description">The name of the new step.</param>
+            <returns>A <see cref="T:Inv.TaskStep"/> object representing the new step.</returns>
+        </member>
+        <member name="M:Inv.TaskProcedure.StepCount">
+            <summary>
+            Count the number of steps in the <see cref="T:Inv.TaskProcedure"/>.
+            </summary>
+            <returns>The number of steps in the <see cref="T:Inv.TaskProcedure"/>.</returns>
+        </member>
+        <member name="M:Inv.TaskProcedure.Start">
+            <summary>
+            Begin executing the steps of the <see cref="T:Inv.TaskProcedure"/> in a new thread.
+            </summary>
+        </member>
+        <member name="M:Inv.TaskProcedure.Stop">
+            <summary>
+            Interrupt execution of the <see cref="T:Inv.TaskProcedure"/>.
+            </summary>
+            <remarks>
+            <para>Interrupt execution of the <see cref="T:Inv.TaskProcedure"/> after the current task step is executed.</para>
+            <para>Prevents any further tasks from occurring, and will execute the interruption delegate for the
+            current task step if one was specified.</para>
+            </remarks>
+        </member>
+        <member name="T:Inv.TaskStep">
+            <summary>
+            Represents a step within a <see cref="T:Inv.TaskProcedure"/>.
+            </summary>
+            <remarks>
+            <para><see cref="T:Inv.TaskStep"/> objects are not directly instantiated. Instead, use <see cref="M:Inv.TaskProcedure.AddStep(System.String)"/> to obtain a new <see cref="T:Inv.TaskStep"/> object.</para>
+            <example>
+            <para>To set up a basic <see cref="T:Inv.TaskStep"/>:</para>
+            <code>
+            TaskProcedure tp = new TaskProcedure("TaskProcedureName");
+            
+            TaskStep step = tp.AddStep("StepName");
+            
+            step.Execute = () => 
+            {
+              // Task step execution code goes here.
+            }
+            
+            step.Query = () =>
+            {
+              // Optional code to determine if the step needs to be run. 
+              return true;
+            }
+            </code>
+            </example>
+            </remarks>
+        </member>
+        <member name="P:Inv.TaskStep.Description">
+            <summary>
+            The description of this <see cref="T:Inv.TaskStep"/>.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskStep.Query">
+            <summary>
+            The progress of this <see cref="T:Inv.TaskStep"/>.
+            </summary>
+            <summary>
+            A query delegate to determine whether or not to run the execution delegate for this <see cref="T:Inv.TaskStep"/>.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskStep.Execute">
+            <summary>
+            The execution delegate for this <see cref="T:Inv.TaskStep"/> to perform any required work.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskStep.Interrupt">
+            <summary>
+            The interruption delegate for this <see cref="T:Inv.TaskStep"/>.
+            </summary>
+            <remarks>
+            The interruption delegate will be called if the task is interrupted by calling <see cref="M:Inv.TaskProcedure.Stop"/>
+            on the <see cref="T:Inv.TaskProcedure"/> containing this <see cref="T:Inv.TaskStep"/>.
+            </remarks>
+        </member>
+        <member name="T:Inv.TaskState">
+            <summary>
+            Represents the state of execution for a <see cref="T:Inv.TaskProcedure"/>.
+            </summary>
+            <remarks>
+            <para>A <see cref="T:Inv.TaskState"/> object is passed to the <see cref="E:Inv.TaskProcedure.NotifyEvent"/> delegate of
+            the <see cref="T:Inv.TaskProcedure"/> immediately before execution of each step, and after all steps have been executed.</para> 
+            <para>It contains information about the execution state of the <see cref="T:Inv.TaskProcedure"/>, including the elapsed time and
+            task number/count.</para>
+            </remarks>
+        </member>
+        <member name="P:Inv.TaskState.Count">
+            <summary>
+            The number of task steps in the <see cref="T:Inv.TaskProcedure"/>.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskState.Index">
+            <summary>
+            The current task number.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskState.IsCompleted">
+            <summary>
+            Whether or not the <see cref="T:Inv.TaskProcedure"/> has completed successfully.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskState.Exception">
+            <summary>
+            The <see cref="P:Inv.TaskState.Exception"/> (if any) that caused the <see cref="T:Inv.TaskProcedure"/> to abort.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskState.CurrentStep">
+            <summary>
+            The <see cref="T:Inv.TaskStep"/> object representing the currently executing task step.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskState.CurrentProgress">
+            <summary>
+            The optional progress of the currently executing task step.
+            </summary>
+        </member>
+        <member name="P:Inv.TaskState.ElapsedTime">
+            <summary>
+            The time elapsed so far during execution of the <see cref="T:Inv.TaskProcedure"/>.
+            </summary>
+            <returns>The time elapsed so far during execution of the <see cref="T:Inv.TaskProcedure"/>.</returns>
+        </member>
+        <member name="T:Inv.IISExpress">
+            <summary>
+            Wrapper class to launch IIS Express on a given physical path and clean up afterwards.
+            May also launch a browser for you.
+            
+            Has little to no error handling in the launch and may die if, for example:
+            - Something else is holding a handle on the application host config file
+            - Someone mangles the applicationhost.config resource inappropriately
+            - Something odd happens when trying to launch the IIS Express process.
+            
+            This class is not thread safe, but you probably shouldn't be trying to simultaneously start the same IIS Express instance on multiple threads anyhow.
+            
+            </summary>
+        </member>
+        <member name="M:Inv.IISExpress.#ctor(System.String,System.String,System.String,System.Int32,Inv.IISExpressBitness)">
+            <summary>
+            Create a new IIS Express wrapper and start it automatically.
+            </summary>
+            <param name="WebAppBasePhysicalPath">The root of the web app on disk.</param>
+            <param name="SiteName">The name of the web site - also becomes the name of the IIS access logs. Defaults to "launchedSite".</param>
+            <param name="WebAppDefaultURL">The default URL to load in the web browser ("/" by default)</param>
+            <param name="RequestedPort">The port to listen on, or pick a random port if none is specified.</param>
+            <param name="RequestedBitness">The requested bitness of the IIS Express instance, or the same as the launching process if none is specified.</param>
+        </member>
+        <member name="M:Inv.IISExpress.Start">
+            <summary>
+            Start the IIS Express instance.
+            </summary>
+        </member>
+        <member name="M:Inv.IISExpress.Stop">
+            <summary>
+            Stop the IIS Express instance. Does nothing if it hasn't been started, silently succeeds if the attempt to kill the process fails.
+            Thus, if you're unlucky you may end up with zombie IISExpress processes. C'est la vie.
+            </summary>
+        </member>
+        <member name="M:Inv.IISExpress.LaunchBrowser">
+            <summary>
+            Open the user's default web browser and point it at the web application.
+            </summary>
+        </member>
+        <member name="T:Inv.OperatingSystem">
+            <summary>
+            Provides detailed information about the host operating system.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.Identity">
+            <summary>
+            Full identity of the installed operating system.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.Name">
+            <summary>
+            Gets the name of the operating system running on this computer.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.Edition">
+            <summary>
+            Gets the edition of the operating system running on this computer.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.Version">
+            <summary>
+            Gets the full version of the operating system running on this computer.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.ServicePack">
+            <summary>
+            Gets the service pack information of the operating system running on this computer.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.LogicalPixelX">
+            <summary>
+            Number of logical pixels for the width of the screen.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.LogicalPixelY">
+            <summary>
+            Number of logical pixels for the height of the screen.
+            </summary>
+        </member>
+        <member name="P:Inv.OperatingSystem.VerticalRefreshRate">
+            <summary>
+            Vertical refresh rate of the display device, in cycles per second (Hz).
+            </summary>
+        </member>
+        <member name="M:Inv.OperatingSystem.HasTouchInput">
+            <summary>
+            Ask if the device and operating system supports touch input.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Inv.OperatingSystem.RunningInContainer">
+            <summary>
+            Is the process currently running in a container
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.DRIVERVERSION">
+            <summary>
+            Device driver version
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.TECHNOLOGY">
+            <summary>
+            Device classification
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.HORZSIZE">
+            <summary>
+            Horizontal size in millimeters
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.VERTSIZE">
+            <summary>
+            Vertical size in millimeters
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.HORZRES">
+            <summary>
+            Horizontal width in pixels
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.VERTRES">
+            <summary>
+            Vertical height in pixels
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.BITSPIXEL">
+            <summary>
+            Number of bits per pixel
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.PLANES">
+            <summary>
+            Number of planes
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.NUMBRUSHES">
+            <summary>
+            Number of brushes the device has
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.NUMPENS">
+            <summary>
+            Number of pens the device has
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.NUMMARKERS">
+            <summary>
+            Number of markers the device has
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.NUMFONTS">
+            <summary>
+            Number of fonts the device has
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.NUMCOLORS">
+            <summary>
+            Number of colors the device supports
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.PDEVICESIZE">
+            <summary>
+            Size required for device descriptor
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.CURVECAPS">
+            <summary>
+            Curve capabilities
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.LINECAPS">
+            <summary>
+            Line capabilities
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.POLYGONALCAPS">
+            <summary>
+            Polygonal capabilities
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.TEXTCAPS">
+            <summary>
+            Text capabilities
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.CLIPCAPS">
+            <summary>
+            Clipping capabilities
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.RASTERCAPS">
+            <summary>
+            Bitblt capabilities
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.ASPECTX">
+            <summary>
+            Length of the X leg
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.ASPECTY">
+            <summary>
+            Length of the Y leg
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.ASPECTXY">
+            <summary>
+            Length of the hypotenuse
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.SHADEBLENDCAPS">
+            <summary>
+            Shading and Blending caps
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.LOGPIXELSX">
+            <summary>
+            Logical pixels inch in X
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.LOGPIXELSY">
+            <summary>
+            Logical pixels inch in Y
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.SIZEPALETTE">
+            <summary>
+            Number of entries in physical palette
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.NUMRESERVED">
+            <summary>
+            Number of reserved entries in palette
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.COLORRES">
+            <summary>
+            Actual color resolution
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.PHYSICALWIDTH">
+            <summary>
+            Physical Width in device units
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.PHYSICALHEIGHT">
+            <summary>
+            Physical Height in device units
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.PHYSICALOFFSETX">
+            <summary>
+            Physical Printable Area x margin
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.PHYSICALOFFSETY">
+            <summary>
+            Physical Printable Area y margin
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.SCALINGFACTORX">
+            <summary>
+            Scaling factor x
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.SCALINGFACTORY">
+            <summary>
+            Scaling factor y
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.VREFRESH">
+            <summary>
+            Current vertical refresh rate of the display device (for displays only) in Hz
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.DESKTOPVERTRES">
+            <summary>
+            Vertical height of entire desktop in pixels
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.DESKTOPHORZRES">
+            <summary>
+            Horizontal width of entire desktop in pixels
+            </summary>
+        </member>
+        <member name="F:Inv.OperatingSystem.DeviceCap.BLTALIGNMENT">
+            <summary>
+            Preferred blt alignment
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -13,21 +13,24 @@ namespace Pathos
     internal CodexAnatomies(Codex Codex)
       : base(Codex.Manifest.Anatomies)
     {
-      Anatomy AddAnatomy(string Name, string AbsenceText)
+      var Properties = Codex.Properties;
+
+      Anatomy AddAnatomy(string Name, string AbsenceText, Property BypassProperty = null)
       {
         return Register.Add(A =>
         {
           A.Name = Name;
           A.AbsenceText = AbsenceText;
+          A.BypassedByProperty = BypassProperty;
         });
       }
 
       head = AddAnatomy("head", "NO HEAD");
       mind = AddAnatomy("mind", "MINDLESS");
-      eyes = AddAnatomy("eyes", "NO EYES");
+      eyes = AddAnatomy("eyes", "NO EYES", Properties != null ? Properties.clairvoyance : null);
       ears = AddAnatomy("ears", "NO EARS");
       voice = AddAnatomy("voice", "VOICELESS");
-      hands = AddAnatomy("hands", "NO HANDS");
+      hands = AddAnatomy("hands", "NO HANDS", Properties != null ? Properties.protoplasmatic_hands : null);
       limbs = AddAnatomy("limbs", "NO LIMBS");
       feet = AddAnatomy("feet", "NO FEET");
       blood = AddAnatomy("blood", "NO BLOOD");

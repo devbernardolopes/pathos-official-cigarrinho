@@ -31,10 +31,16 @@ namespace Pathos
         this.AttackTypes = new CodexAttackTypes(this);
         this.Genders = new CodexGenders(this);
         this.Skills = new CodexSkills(this);
+
+        
+
         this.Anatomies = new CodexAnatomies(this);
         this.Slots = new CodexSlots(this);
         this.Elements = new CodexElements(this);
         this.Properties = new CodexProperties(this);
+
+        this.Anatomies = new CodexAnatomies(this);
+
         this.Appetites = new CodexAppetites(this);
         this.Standings = new CodexStandings(this);
         this.Warnings = new CodexWarnings(this);
@@ -190,6 +196,8 @@ namespace Pathos
       Manifest.Trading.Set(Attributes.charisma, Skills.bartering);
 
       Manifest.Tunnelling.Set(Properties.tunnelling, Strikes.tunnel, Elements.digging);
+
+      //Manifest.Entities.
     }
 #endif
 
@@ -864,7 +872,14 @@ namespace Pathos
         {
           foreach (var Item in Kit.Items)
           {
+            //List<Skill> Skills = new List<Skill>();
+
+            //Skills.Add(Item.Armour?.Skill);
+            //Skills.Add(Item.Weapon?.Skill);
+            //Skills.Add(Item.UtilitySkill);
+
             foreach (var Skill in Item.GetSkills())
+            //foreach (var Skill in Skills)
             {
               if (Skill != null && !Class.Startup.HasSkill(Skill))
                 Record($"Class {Class.Name} can start with an item that requires skill in {Skill.Name} (but is unskilled)");

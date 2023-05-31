@@ -4,6 +4,11 @@
       "commandName": "Executable",
       "executablePath": "$(PathosInstallation)\\PathosGame.exe",
       "commandLineArgs": "disable-update wm campaign:\"$(AssemblyName).dll\" module:$(PathosModule) start:$(PathosHero)"
+    },
+    "Run PathosCigarrinho": {
+      "commandName": "Executable",
+      "executablePath": "$(SolutionDir)Binaries\\PathosGameCigarrinho.exe",
+      "commandLineArgs": "disable-update wm campaign:\"$(AssemblyName).dll\" module:$(PathosModule) start:$(PathosHero)"
     }
   }
 }
