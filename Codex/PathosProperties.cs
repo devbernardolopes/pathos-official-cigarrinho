@@ -86,6 +86,7 @@ namespace Pathos
       {
         P.Description = "You have an awareness of other entities elsewhere in the dungeon.";
         P.AlertingVision = true;
+        P.AnatomySubstitution = Anatomies.eyes;
       });
 
       clarity = AddProperty("clarity", P =>
@@ -504,7 +505,7 @@ namespace Pathos
       protoplasmatic_hands = AddProperty("protoplasmatic hands", P =>
       {
         P.Description = "Gives you a protoplasmatic pair of hands.";
-        P.SubstitutesHands = true;
+        P.AnatomySubstitution = Anatomies.hands;
         //P.ChangeFigure(Anatomies.hands, true, F => F.ChangeFigure(Anatomies.hands, true));
       });
 

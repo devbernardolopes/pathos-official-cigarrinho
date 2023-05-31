@@ -248,6 +248,7 @@ namespace Pathos
           Properties.deflection,
           Properties.reflection,
           Properties.clarity,
+          Properties.protoplasmatic_hands,
           Properties.quickness
         );
 

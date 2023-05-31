@@ -39,7 +39,7 @@ namespace Pathos
         this.Elements = new CodexElements(this);
         this.Properties = new CodexProperties(this);
 
-        this.Anatomies = new CodexAnatomies(this);
+        //this.Anatomies = new CodexAnatomies(this);
 
         this.Appetites = new CodexAppetites(this);
         this.Standings = new CodexStandings(this);
@@ -378,6 +378,7 @@ namespace Pathos
       if (Blood) Figure.Set(Anatomy.blood);
       if (Mounted) Figure.Set(Anatomy.mounted);
       if (Amorphous) Figure.Set(Anatomy.amorphous);
+      //if (InnerCore) Figure.Set(Anatomy.inner_core);
     }
     internal static void WithSourceSanctity(this ApplyEditor Apply, Action<ApplyEditor> BlessedAction, Action<ApplyEditor> UncursedAction, Action<ApplyEditor> CursedAction)
     {

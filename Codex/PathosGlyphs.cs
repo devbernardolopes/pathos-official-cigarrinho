@@ -2471,6 +2471,8 @@ namespace Pathos
     public readonly Glyph equip_amulet;
     public readonly Glyph equip_left_ring;
     public readonly Glyph equip_right_ring;
+    public readonly Glyph equip_middle_ring;
+    public readonly Glyph equip_inner_core;
 
     public readonly Glyph skill_bartering;
     public readonly Glyph skill_crafting;

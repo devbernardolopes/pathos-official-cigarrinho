@@ -121,6 +121,11 @@ namespace Pathos
         S.RequiresAnatomy(Anatomies.hands);
       });
 
+      //middle_ring = AddSlot("middle ring", S =>
+      //{
+      //  S.RequiresAnatomy(Anatomies.hands);
+      //});
+
       boots = AddSlot("boots", S =>
       {
         S.RequiresAnatomy(Anatomies.feet, Anatomies.hands); // hands means they are likely to be humanoid.
@@ -131,6 +136,11 @@ namespace Pathos
         S.Autostack = true;
         S.RequiresAnatomy(Anatomies.hands);
       });
+
+      //inner_core = AddSlot("inner core", S =>
+      //{
+      //  S.RequiresAnatomy(Anatomies.inner_core);
+      //});
 
       Register.ItemTypeSlotArray = new Inv.EnumArray<ItemType, Slot>()
       {
@@ -163,6 +173,7 @@ namespace Pathos
         new SlotRow(quiver, suit, light),
         new SlotRow(main_hand, barding, left_ring),
         new SlotRow(offhand, gloves, right_ring),
+        //new SlotRow(inner_core),
         new SlotRow(purse, boots, keys),
       };
 
@@ -175,7 +186,9 @@ namespace Pathos
       Register.keys = keys;
       Register.left_ring = left_ring;
       Register.right_ring = right_ring;
+      //Register.middle_ring = middle_ring;
       Register.purse = purse;
+      //Register.inner_core = inner_core;
     }
 #endif
 
@@ -198,5 +211,7 @@ namespace Pathos
     public readonly Slot right_ring;
     public readonly Slot boots;
     public readonly Slot purse;
+    //public readonly Slot inner_core;
+    //public readonly Slot middle_ring;
   }
 }

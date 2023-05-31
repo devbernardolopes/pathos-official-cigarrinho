@@ -1347,7 +1347,9 @@ namespace Pathos
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.mithril_whip);
         C.Startup.Loot.AddKit(Chance.Always, Modifier.Plus1, Items.cloak_of_displacement);
         C.Startup.Loot.AddKit(Chance.Always, Items.magic_candle);
-        //C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus2, Items.Ring_of_Bia_Vis);
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus2, Items.Ring_of_Bia_Vis);
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus2, Items.ring_of_adornment);
+        C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Modifier.Plus2, Items.ring_of_strength);
         C.Startup.Loot.AddKit(Chance.Always, Sanctities.Blessed, Items.amulet_of_life_saving);
         C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Sanctities.Blessed, Items.potion_of_water);
         //C.Startup.Loot.AddKit(Chance.Always, Dice.Fixed(3), Sanctities.Blessed, Items.potion_of_gain_ability);
