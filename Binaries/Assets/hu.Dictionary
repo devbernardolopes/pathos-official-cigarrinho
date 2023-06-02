@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,kontár
 ClassName,tourist//female,turista
 ClassName,tourist//male,turista
 ClassName,tourist//non-binary,turista
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} elpusztult tő
 FormatText,{AssetName} was disintegrated,{AssetName} szétbomlott
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} lefejezte: {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} halálra rémisztette: {Defender:CharacterName}
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} megölte: {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} sajnálja {Defender:CharacterName} esetét
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} ellenségévé tette {Defender:CharacterName} karaktert!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Üdv, {CharacterName}
 FormatText,Hail {PlayerHandle}!,"Üdv, {PlayerHandle}!"
 FormatText,harm {ElementName} {DamageDice},sebzés {ElementName} {DamageDice}
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},gyógyítás {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,HÁTTÉRHANGOK
 LiteralText,AMMO,LŐSZER
 LiteralText,amnesia,amnézia
 LiteralText,AMNESIA,AMNÉZIA
+LiteralText,anatomies,
 LiteralText,anatomy,anatómia
 LiteralText,animate mount,
 LiteralText,animate revenant,élesztés kísértetek
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,IMPORTÁL
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,LEHETETLEN
 LiteralText,in both hands,mindkét kézben
+LiteralText,INATE,
 LiteralText,incarceration,BEBÖRTÖNZÉS
 LiteralText,increase,növel
 LiteralText,INCREASE,NÖVEL
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,tünet(ek)
 LiteralText,Table of Contents,Tartalomjegyzék
 LiteralText,TAKE,FELVESZ
 LiteralText,TAKE ALL,ÖSSZES ELVÉTELE
+LiteralText,TALENT,
 LiteralText,talents,készségek
 LiteralText,TALENTS,KÉSZSÉGEK
 LiteralText,TELEKINESIS,TELEKINÉZIS
@@ -3827,6 +3835,7 @@ LiteralText,touch,érintés
 LiteralText,TRACKS,ZENE
 LiteralText,TRADE,KERESKEDÉS
 LiteralText,transform to,átalakul:
+LiteralText,TRANSIENT,
 LiteralText,transients,átmeneti hatások
 LiteralText,TRANSIENTS,ÁTMENETI HATÁSOK
 LiteralText,TRANSLATIONS,FORDÍTÁSOK

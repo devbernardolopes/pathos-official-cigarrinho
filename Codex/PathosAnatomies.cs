@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Inv.Support;
@@ -21,6 +22,8 @@ namespace Pathos
         {
           A.Name = Name;
           A.AbsenceText = AbsenceText;
+          A.Glyph = Codex.Glyphs.GetGlyphOrNull(A.Name + " anatomy");
+          Debug.Assert(A.Glyph != null, A.Name + " anatomy must have a glyph.");
           //A.BypassedByProperty = BypassProperty;
         });
       }

@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,thợ rèn lưỡng tính
 ClassName,tourist//female,du khách
 ClassName,tourist//male,du khách
 ClassName,tourist//non-binary,du khách lưỡng tính
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} bị phá hủ
 FormatText,{AssetName} was disintegrated,{AssetName} đã bị tan rã
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} chặt đầu {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} dọa {Defender:CharacterName} sợ đến chết
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} đã giết {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} hối hận về những gì đã xảy ra với {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} biến {Defender:CharacterName} thành kẻ thù!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Kính chào {Characte
 FormatText,Hail {PlayerHandle}!,Kính chào {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},gây sát thương {ElementName} {DamageDice}
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},hồi {LifeDice} sinh lực
 FormatText,increase {AttributeName} by {AdjustmentDice},tăng {AttributeName} bởi {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},tăng tất cả kỹ năng bởi {AdjustmentDice}
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,ÂM THANH MÔI TRƯỜNG
 LiteralText,AMMO,ĐẠN
 LiteralText,amnesia,mất trí
 LiteralText,AMNESIA,MẤT TRÍ
+LiteralText,anatomies,
 LiteralText,anatomy,giải phẫu
 LiteralText,animate mount,
 LiteralText,animate revenant,tái sinh những vong hồn
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,NHẬP
 LiteralText,Import a file,Nhập một file
 LiteralText,IMPOSSIBLE,BẤT KHẢ THI
 LiteralText,in both hands,trong cả 2 tay
+LiteralText,INATE,
 LiteralText,incarceration,nhốt
 LiteralText,increase,tăng
 LiteralText,INCREASE,TĂNG
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,triệu chứng
 LiteralText,Table of Contents,Nội dung
 LiteralText,TAKE,LẤY
 LiteralText,TAKE ALL,LẤY TẤT CẢ
+LiteralText,TALENT,
 LiteralText,talents,tài năng
 LiteralText,TALENTS,TÀI NĂNG
 LiteralText,TELEKINESIS,CHUYỂN ĐỘNG TỪ XA
@@ -3827,6 +3835,7 @@ LiteralText,touch,chạm
 LiteralText,TRACKS,THEO DÕI
 LiteralText,TRADE,TRAO ĐỔI
 LiteralText,transform to,biến hình thành
+LiteralText,TRANSIENT,
 LiteralText,transients,hiệu ứng tạm thời
 LiteralText,TRANSIENTS,HIỆU ỨNG TẠM THỜI
 LiteralText,TRANSLATIONS,BẢN DỊCH

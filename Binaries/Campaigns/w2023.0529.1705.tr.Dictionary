@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,tamirci
 ClassName,tourist//female,turist
 ClassName,tourist//male,turist
 ClassName,tourist//non-binary,turist
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} {ElementName} 
 FormatText,{AssetName} was disintegrated,{AssetName} ufalandı
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Defender:CharacterName} {Attacker:CharacterName} tarafından uzuvları uçuruldu
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Defender:CharacterName} {Attacker:CharacterName} tarafından korkutularak öldürüldü
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Defender:CharacterName} {Attacker:CharacterName} tarafından öldürüldü
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} {Defender:CharacterName} ile alakalı yaşananlar için pişman
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Defender:CharacterName} {Attacker:CharacterName} tarafından düşman edinildi!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Hoşgeldin {Character
 FormatText,Hail {PlayerHandle}!,Hoşgeldin {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,AMBİYANS SESİ
 LiteralText,AMMO,CEPHANE
 LiteralText,amnesia,unutkanlık
 LiteralText,AMNESIA,UNUTKANLIK
+LiteralText,anatomies,
 LiteralText,anatomy,anatomi
 LiteralText,animate mount,
 LiteralText,animate revenant,hortlaklar hareketlendir
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,İMKANSIZ
 LiteralText,in both hands,iki elle
+LiteralText,INATE,
 LiteralText,incarceration,hapsetme
 LiteralText,increase,artır
 LiteralText,INCREASE,ARTIR
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,semptomlar
 LiteralText,Table of Contents,
 LiteralText,TAKE,AL
 LiteralText,TAKE ALL,HEPSİNİ AL
+LiteralText,TALENT,
 LiteralText,talents,yetenekler
 LiteralText,TALENTS,YETENEKLER
 LiteralText,TELEKINESIS,
@@ -3827,6 +3835,7 @@ LiteralText,touch,dokun
 LiteralText,TRACKS,
 LiteralText,TRADE,ALIŞVERİŞ
 LiteralText,transform to,
+LiteralText,TRANSIENT,
 LiteralText,transients,geçİcİler
 LiteralText,TRANSIENTS,GEÇİCİLER
 LiteralText,TRANSLATIONS,ÇEVİRİLER

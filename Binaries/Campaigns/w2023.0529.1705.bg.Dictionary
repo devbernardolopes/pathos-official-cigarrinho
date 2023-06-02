@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,
 ClassName,tourist//female,турист
 ClassName,tourist//male,турист
 ClassName,tourist//non-binary,турист
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},
 FormatText,{AssetName} was disintegrated,{AssetName} распалось
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} убивает {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} сожалеет о случившемся с {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} приводит {Defender:CharacterName} в ярость!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Приветству�
 FormatText,Hail {PlayerHandle}!,Приветствуем {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,
 LiteralText,AMMO,БОЕЗАПАС
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
+LiteralText,anatomies,
 LiteralText,anatomy,
 LiteralText,animate mount,
 LiteralText,animate revenant,
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,НЕВОЗМОЖНО
 LiteralText,in both hands,в обе руки
+LiteralText,INATE,
 LiteralText,incarceration,
 LiteralText,increase,увеличить
 LiteralText,INCREASE,УВЕЛИЧИТЬ
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,
 LiteralText,Table of Contents,
 LiteralText,TAKE,ПОДНЯТЬ
 LiteralText,TAKE ALL,ПОДНЯТЬ ВСЁ
+LiteralText,TALENT,
 LiteralText,talents,таланты
 LiteralText,TALENTS,ТАЛАНТЫ
 LiteralText,TELEKINESIS,
@@ -3827,6 +3835,7 @@ LiteralText,touch,касание
 LiteralText,TRACKS,
 LiteralText,TRADE,ТОРГОВЛЯ
 LiteralText,transform to,
+LiteralText,TRANSIENT,
 LiteralText,transients,временные эффекты
 LiteralText,TRANSIENTS,ВРЕМЕННЫЕ ЭФФЕКТЫ
 LiteralText,TRANSLATIONS,ПЕРЕВОДЫ

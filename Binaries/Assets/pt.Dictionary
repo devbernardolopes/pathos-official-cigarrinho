@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,inventor
 ClassName,tourist//female,turista
 ClassName,tourist//male,turista
 ClassName,tourist//non-binary,turista
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} foi destruído
 FormatText,{AssetName} was disintegrated,{AssetName} foi desintegrado
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} decapitou {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} assustou até a morte {Defender:CharacterName}
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} matou {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} lamenta o que aconteceu a {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} tornou {Defender:CharacterName} hostil!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Salve {CharacterName}
 FormatText,Hail {PlayerHandle}!,Salve {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},dano {ElementName} {DamageDice}
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},curar {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},aumentar {AttributeName} por {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},aumentar todas as abilidades por {AdjustmentDice}
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,SONS AMBIENTES
 LiteralText,AMMO,MUNIÇÃO
 LiteralText,amnesia,amnésia
 LiteralText,AMNESIA,AMNÉSIA
+LiteralText,anatomies,
 LiteralText,anatomy,anatomia
 LiteralText,animate mount,
 LiteralText,animate revenant,animar fantasmas
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,IMPORTAR
 LiteralText,Import a file,Importar um arquivo
 LiteralText,IMPOSSIBLE,IMPOSSÍVEL
 LiteralText,in both hands,em ambas as mãos
+LiteralText,INATE,
 LiteralText,incarceration,encarceramento
 LiteralText,increase,aumentar
 LiteralText,INCREASE,AUMENTAR
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,sintomas
 LiteralText,Table of Contents,Mesa de conteúdos
 LiteralText,TAKE,PEGAR
 LiteralText,TAKE ALL,PEGAR TUDO
+LiteralText,TALENT,
 LiteralText,talents,talentos
 LiteralText,TALENTS,TALENTOS
 LiteralText,TELEKINESIS,TELECINÉSIA
@@ -3827,6 +3835,7 @@ LiteralText,touch,tocar
 LiteralText,TRACKS,FAIXAS
 LiteralText,TRADE,NEGOCIAR
 LiteralText,transform to,se transformar em
+LiteralText,TRANSIENT,
 LiteralText,transients,temporários
 LiteralText,TRANSIENTS,TEMPORÁRIOS
 LiteralText,TRANSLATIONS,TRADUÇÕES

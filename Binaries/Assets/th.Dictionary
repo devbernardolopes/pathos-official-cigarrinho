@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,ช่างบัดกรี
 ClassName,tourist//female,นักท่องเที่ยว
 ClassName,tourist//male,นักท่องเที่ยว
 ClassName,tourist//non-binary,นักท่องเที่ยว
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName}ถูกทำ
 FormatText,{AssetName} was disintegrated,{AssetName}สลายไป
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} ประหาร {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} หลอก {Defender:CharacterName} จนตาย
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} สังหาร {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} รู้สึกเสียใจกับสิ่งที่เกิดขึ้นกับ {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} ทำให้ {Defender:CharacterName} เกลียดชัง!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}",
 FormatText,Hail {PlayerHandle}!,จงสรรเสริญ {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},รักษา {LifeDice} พลังชีวิต
 FormatText,increase {AttributeName} by {AdjustmentDice},เพิ่ม{AttributeName}ขึ้น {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},เพิ่มทุกทักษะขึ้น {AdjustmentDice}
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,เสียงบรรยากาศ
 LiteralText,AMMO,กระสุน
 LiteralText,amnesia,ความจำเสื่อม
 LiteralText,AMNESIA,ความจำเสื่อม
+LiteralText,anatomies,
 LiteralText,anatomy,ร่างกาย
 LiteralText,animate mount,
 LiteralText,animate revenant,
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,นำเข้า
 LiteralText,Import a file,นำเข้าข้อมูล
 LiteralText,IMPOSSIBLE,เป็นไปไม่ได้
 LiteralText,in both hands,สองมือ
+LiteralText,INATE,
 LiteralText,incarceration,
 LiteralText,increase,เพิ่ม
 LiteralText,INCREASE,เพิ่ม
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,อาการป่วย
 LiteralText,Table of Contents,เนื้อหา
 LiteralText,TAKE,เก็บ
 LiteralText,TAKE ALL,เก็บทั้งหมด
+LiteralText,TALENT,
 LiteralText,talents,พรสวรรค์
 LiteralText,TALENTS,พรสวรรค์
 LiteralText,TELEKINESIS,พลังโทรจิต
@@ -3827,6 +3835,7 @@ LiteralText,touch,สัมผัส
 LiteralText,TRACKS,เพลง
 LiteralText,TRADE,แลกเปลี่ยน
 LiteralText,transform to,แปลงร่างเป็น
+LiteralText,TRANSIENT,
 LiteralText,transients,สถานะชั่วคราว
 LiteralText,TRANSIENTS,สถานะชั่วคราว
 LiteralText,TRANSLATIONS,การแปลภาษา

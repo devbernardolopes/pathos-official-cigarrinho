@@ -48,3 +48,12 @@
 - many changes in Reactor.cs, Engine.cs and Director.cs of PathosEngine.dll
 
 - probably more stuff that I`m forgetting. It`s still a work in progress...
+
+20230602_1:
+- balanced the new Qualifications
+
+- new Figure panel in the Character panel (Anatomies must have a Glyph now)
+
+- Spells now can have boosted damage of 10% of the Character competency in the respective School
+
+- new Literals, new helper methods a many minor refactorings

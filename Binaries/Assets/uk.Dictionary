@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,майстер
 ClassName,tourist//female,туристка
 ClassName,tourist//male,турист
 ClassName,tourist//non-binary,турист
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} зруйнов
 FormatText,{AssetName} was disintegrated,{AssetName} дезінтеговано
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} вбиває {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} сумує щодо долі {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} зробив {Defender:CharacterName} ворогом!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Вітаємо {Chara
 FormatText,Hail {PlayerHandle}!,"Вітаємо, {PlayerHandle}!"
 FormatText,harm {ElementName} {DamageDice},
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,НАВКОЛИШНІ ЗВУКИ
 LiteralText,AMMO,БОЄЗАПАС
 LiteralText,amnesia,амнезія
 LiteralText,AMNESIA,АМНЕЗІЯ
+LiteralText,anatomies,
 LiteralText,anatomy,анатомія
 LiteralText,animate mount,
 LiteralText,animate revenant,анімувати повсталі
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,ІМПОРТ
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,НЕМОЖЛИВО
 LiteralText,in both hands,в обидві руки
+LiteralText,INATE,
 LiteralText,incarceration,ув’язнення
 LiteralText,increase,збільшити
 LiteralText,INCREASE,ЗБІЛЬШИТИ
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,симптоми
 LiteralText,Table of Contents,Зміст
 LiteralText,TAKE,ВЗЯТИ
 LiteralText,TAKE ALL,ВЗЯТИ ВСЕ
+LiteralText,TALENT,
 LiteralText,talents,таланти
 LiteralText,TALENTS,ТАЛАНТИ
 LiteralText,TELEKINESIS,
@@ -3827,6 +3835,7 @@ LiteralText,touch,дотик
 LiteralText,TRACKS,СЛІДИ
 LiteralText,TRADE,ТОРГ
 LiteralText,transform to,трансформувати на
+LiteralText,TRANSIENT,
 LiteralText,transients,тимчасові ефекти
 LiteralText,TRANSIENTS,ТИМЧАСОВІ ЕФЕКТИ
 LiteralText,TRANSLATIONS,ПЕРЕКЛАДИ

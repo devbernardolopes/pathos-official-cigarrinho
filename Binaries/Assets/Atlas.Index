@@ -172,6 +172,7 @@ alchemy smock
 altar
 aluminium wand
 amnesia trap
+amorphous anatomy
 amulet stock
 ancient black dragon
 ancient blue dragon
@@ -301,6 +302,7 @@ blindness property
 blinking eye
 blinking property
 blinking spell
+blood anatomy
 blood imp
 bloodshot eye
 bloodworm
@@ -646,6 +648,7 @@ dwarvish roundshield
 dwarvish short sword
 dwarvish spear
 earmuffs
+ears anatomy
 earth binder
 earth elemental
 earth maker
@@ -728,6 +731,7 @@ equip suit
 erinys
 etched helmet
 ethereal
+ethereal debug
 ettin
 ettin mummy
 ettin zombie
@@ -737,6 +741,7 @@ explosive trap
 exterminator
 extinction icon
 extra healing spell
+eyes anatomy
 faded book
 fainting property
 fairy
@@ -775,6 +780,7 @@ fauchard
 fear property
 fear spell
 fedora
+feet anatomy
 female barbarian
 female bard
 female caveman
@@ -1069,11 +1075,13 @@ halfling female reaver
 halfling male reaver
 hallucination property
 hallucination trap
+hands anatomy
 hardcover book
 harpy
 haste spell
 hatchet
 hawaiian shirt
+head anatomy
 healing spell
 heavy hammer
 heavy iron ball
@@ -1295,6 +1303,7 @@ lightning beam vertical
 lightning bolt spell
 lightning bug
 lightning trap
+limbs anatomy
 little dog
 living wall
 living wall spell
@@ -1433,6 +1442,7 @@ migo drone
 migo queen
 migo warrior
 milky potion
+mind anatomy
 mind flayer
 minotaur
 mist wolf
@@ -1469,6 +1479,7 @@ mottled book
 mouldy pudding
 mountain centaur
 mountain nymph
+mounted anatomy
 movanic deva
 mud boots
 muddy explosion bottom center
@@ -2042,6 +2053,7 @@ teleport up spell
 teleportation property
 teleporter
 tengu
+thermal anatomy
 thick book
 thin book
 thirst punishment
@@ -2126,6 +2138,7 @@ violet fungus
 violet gem
 visored helmet
 vitality property
+voice anatomy
 volatile icon
 vorpal jabberwock
 voulge

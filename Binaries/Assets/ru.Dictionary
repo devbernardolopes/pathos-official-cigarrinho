@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,ремесленник
 ClassName,tourist//female,турист
 ClassName,tourist//male,турист
 ClassName,tourist//non-binary,турист
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} было ун�
 FormatText,{AssetName} was disintegrated,{AssetName} распалось
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} отрубает голову {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} пугает до смерти {Defender:CharacterName}
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} убивает {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} сожалеет о случившемся с {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} проявляет враждебность к {Defender:CharacterName}!
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Приветству�
 FormatText,Hail {PlayerHandle}!,Приветствуем {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},наносит урон {ElementName} {DamageDice}
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},лечение {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},увеличение {AttributeName} на {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},увеличение всех характеристик на {AdjustmentDice}
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,ЗВУКИ ОКРУЖЕНИЯ
 LiteralText,AMMO,БОЕЗАПАС
 LiteralText,amnesia,амнезия
 LiteralText,AMNESIA,АМНЕЗИЯ
+LiteralText,anatomies,
 LiteralText,anatomy,анатомия
 LiteralText,animate mount,
 LiteralText,animate revenant,оживление восставшие
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,ИМПОРТ
 LiteralText,Import a file,Импорт файла
 LiteralText,IMPOSSIBLE,НЕВОЗМОЖНО
 LiteralText,in both hands,в обе руки
+LiteralText,INATE,
 LiteralText,incarceration,заточение
 LiteralText,increase,увеличить
 LiteralText,INCREASE,УВЕЛИЧИТЬ
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,симптомы
 LiteralText,Table of Contents,Оглавление
 LiteralText,TAKE,ВЗЯТЬ
 LiteralText,TAKE ALL,ВЗЯТЬ ВСЁ
+LiteralText,TALENT,
 LiteralText,talents,таланты
 LiteralText,TALENTS,ТАЛАНТЫ
 LiteralText,TELEKINESIS,ТЕЛЕКИНЕЗ
@@ -3827,6 +3835,7 @@ LiteralText,touch,касание
 LiteralText,TRACKS,МУЗЫКА
 LiteralText,TRADE,ТОРГОВЛЯ
 LiteralText,transform to,превращение в
+LiteralText,TRANSIENT,
 LiteralText,transients,временные эффекты
 LiteralText,TRANSIENTS,ВРЕМЕННЫЕ ЭФФЕКТЫ
 LiteralText,TRANSLATIONS,ПЕРЕВОДЫ

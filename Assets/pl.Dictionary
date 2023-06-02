@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,majsterkowicz
 ClassName,tourist//female,turystka
 ClassName,tourist//male,turysta
 ClassName,tourist//non-binary,turysta
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} został zniszc
 FormatText,{AssetName} was disintegrated,{AssetName} uległ rozpadowi
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},Atakujący {Attacker:CharacterName} zdekapitował {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} przeraził na śmierć {Defender:CharacterName}
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} zabił {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} żałuje tego co stało się z {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} zmienił {Defender:CharacterName}
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}","Witaj {CharacterName}
 FormatText,Hail {PlayerHandle}!,Niech żyje {PlayerHandle}!
 FormatText,harm {ElementName} {DamageDice},harm {ElementName} {DamageDice}
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},uzdrawiaj {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},
 FormatText,increase all abilities by {AdjustmentDice},
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,DŹWIĘKI OTOCZENIA
 LiteralText,AMMO,POCISKÓW
 LiteralText,amnesia,amnezja
 LiteralText,AMNESIA,AMNESJA
+LiteralText,anatomies,
 LiteralText,anatomy,anatomia
 LiteralText,animate mount,
 LiteralText,animate revenant,animuje zemsta
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,IMPORT
 LiteralText,Import a file,
 LiteralText,IMPOSSIBLE,NIEMOŻLIWE
 LiteralText,in both hands,w obu dłoniach
+LiteralText,INATE,
 LiteralText,incarceration,uwięzienie
 LiteralText,increase,zwiększyć
 LiteralText,INCREASE,ZWIĘKSZYĆ
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,objawy
 LiteralText,Table of Contents,Spis treści
 LiteralText,TAKE,WEŹ
 LiteralText,TAKE ALL,WEŹ WSZYSTKO
+LiteralText,TALENT,
 LiteralText,talents,talenty
 LiteralText,TALENTS,TALENTY
 LiteralText,TELEKINESIS,TELEKINEZA
@@ -3827,6 +3835,7 @@ LiteralText,touch,dotyk
 LiteralText,TRACKS,ŚCIEŻKI
 LiteralText,TRADE,HANDEL
 LiteralText,transform to,transformuj do
+LiteralText,TRANSIENT,
 LiteralText,transients,stany przejściowe
 LiteralText,TRANSIENTS,EFEKTY
 LiteralText,TRANSLATIONS,TŁUMACZENIA

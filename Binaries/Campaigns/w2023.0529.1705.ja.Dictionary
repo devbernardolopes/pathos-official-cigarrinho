@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,冶金術師
 ClassName,tourist//female,旅行者
 ClassName,tourist//male,旅行者
 ClassName,tourist//non-binary,旅行者
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName}は{ElementName
 FormatText,{AssetName} was disintegrated,{AssetName}は崩れ去った
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName}は{Defender:CharacterName}の首をはねた
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName}は{Defender:CharacterName}へ死に至る恐怖をもたらした
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName}が{Defender:CharacterName}を殺害した
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName}は{Defender:CharacterName}の身に起こってしまったことを後悔している
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName}は{Defender:CharacterName}を敵に回した！
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}",よくぞ来てくれ�
 FormatText,Hail {PlayerHandle}!,よくぞ来てくれた{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},{ElementName}ダメージ {DamageDice}
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},ライフ回復 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}が{AdjustmentDice}増加
 FormatText,increase all abilities by {AdjustmentDice},全ての能力値が{AdjustmentDice}増加
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,環境音
 LiteralText,AMMO,弾薬
 LiteralText,amnesia,記憶喪失
 LiteralText,AMNESIA,記憶喪失
+LiteralText,anatomies,
 LiteralText,anatomy,形態
 LiteralText,animate mount,
 LiteralText,animate revenant,生命付与黄泉帰り
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,インポート
 LiteralText,Import a file,ファイル読み込み
 LiteralText,IMPOSSIBLE,不可能
 LiteralText,in both hands,両手で
+LiteralText,INATE,
 LiteralText,incarceration,硬直化
 LiteralText,increase,増加する
 LiteralText,INCREASE,増加する
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,症状
 LiteralText,Table of Contents,目次
 LiteralText,TAKE,取る
 LiteralText,TAKE ALL,全部取る
+LiteralText,TALENT,
 LiteralText,talents,性質
 LiteralText,TALENTS,性質
 LiteralText,TELEKINESIS,念動力
@@ -3827,6 +3835,7 @@ LiteralText,touch,触る
 LiteralText,TRACKS,音楽
 LiteralText,TRADE,売買
 LiteralText,transform to,変身可能
+LiteralText,TRANSIENT,
 LiteralText,transients,一時的な状態
 LiteralText,TRANSIENTS,一時的な状態
 LiteralText,TRANSLATIONS,翻訳

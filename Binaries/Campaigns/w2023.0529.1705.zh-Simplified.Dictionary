@@ -814,6 +814,9 @@ ClassName,tinker//non-binary,修补匠
 ClassName,tourist//female,游客
 ClassName,tourist//male,游客
 ClassName,tourist//non-binary,游客
+ClassName,trickster debug//female,
+ClassName,trickster debug//male,
+ClassName,trickster debug//non-binary,
 ClassName,trickster//female,
 ClassName,trickster//male,
 ClassName,trickster//non-binary,
@@ -1921,6 +1924,7 @@ FormatText,{AssetName} was destroyed by {ElementName},{AssetName} 被 {ElementNa
 FormatText,{AssetName} was disintegrated,{AssetName} 分解了
 FormatText,{Attacker:CharacterName} decapitated {Defender:CharacterName},{Attacker:CharacterName} 将{Defender:CharacterName}斩首
 FormatText,{Attacker:CharacterName} frightened to death {Defender:CharacterName},{Attacker:CharacterName} 吓死了 {Defender:CharacterName}
+FormatText,{Attacker:CharacterName} inflicted {DamagePoints} damage to {Defender:CharacterName},
 FormatText,{Attacker:CharacterName} killed {Defender:CharacterName},{Attacker:CharacterName} 杀死了 {Defender:CharacterName}
 FormatText,{Attacker:CharacterName} regrets what happened to {Defender:CharacterName},{Attacker:CharacterName} 为 {Defender:CharacterName} 身上发生的不幸感到难过
 FormatText,{Attacker:CharacterName} turned {Defender:CharacterName} hostile!,{Attacker:CharacterName} 迫使 {Defender:CharacterName} 发起攻击！
@@ -2113,6 +2117,7 @@ FormatText,"Hail {CharacterName}, {CharacterDescription}",向你致敬，{Charac
 FormatText,Hail {PlayerHandle}!,向你致敬，{PlayerHandle}！
 FormatText,harm {ElementName} {DamageDice},伤害{ElementName}{DamageDice}
 FormatText,harm area {ElementName} {DamageDice} {RangeDice},
+FormatText,harm area {ElementName} {DamageDice} {RangeDice} {BoosterDamage},
 FormatText,heal {LifeDice},治疗 {LifeDice}
 FormatText,increase {AttributeName} by {AdjustmentDice},{AttributeName}提升 {AdjustmentDice}
 FormatText,increase all abilities by {AdjustmentDice},所有能力提升 {AdjustmentDice}
@@ -3133,6 +3138,7 @@ LiteralText,AMBIENT SOUNDS,周围声音
 LiteralText,AMMO,弹药
 LiteralText,amnesia,失忆
 LiteralText,AMNESIA,失忆
+LiteralText,anatomies,
 LiteralText,anatomy,解剖学
 LiteralText,animate mount,活化 骑乘
 LiteralText,animate revenant,活化 复仇者
@@ -3463,6 +3469,7 @@ LiteralText,IMPORT,导入
 LiteralText,Import a file,請輸入文件
 LiteralText,IMPOSSIBLE,不可能
 LiteralText,in both hands,双手持
+LiteralText,INATE,
 LiteralText,incarceration,禁锢
 LiteralText,increase,上升
 LiteralText,INCREASE,增加
@@ -3793,6 +3800,7 @@ LiteralText,symptoms,症状
 LiteralText,Table of Contents,目录
 LiteralText,TAKE,拿取
 LiteralText,TAKE ALL,拿取全部
+LiteralText,TALENT,
 LiteralText,talents,天赋
 LiteralText,TALENTS,天赋
 LiteralText,TELEKINESIS,念力控制
@@ -3827,6 +3835,7 @@ LiteralText,touch,触摸
 LiteralText,TRACKS,音轨
 LiteralText,TRADE,交易
 LiteralText,transform to,变形为
+LiteralText,TRANSIENT,
 LiteralText,transients,短期效果
 LiteralText,TRANSIENTS,短期效果
 LiteralText,TRANSLATIONS,翻译

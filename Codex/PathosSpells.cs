@@ -2221,7 +2221,7 @@ namespace Pathos
           {
             P.SetCast().Strike(Strikes.flash, Dice.Zero);
             P.Apply.Light(true, Locality.Area);
-            P.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 1.d4() + 1, Range.Sq1, Modifier.Zero));
+            P.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 1.d2(), Range.Sq1, true, Z.School.Skill));
             P.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.WhenSourceBelowAppetite(Appetites.hungry, A => A.Nutrition(2.d10() + 10)));
           },
           S =>
@@ -2229,8 +2229,8 @@ namespace Pathos
             S.SetCast().Strike(Strikes.flash, Dice.Zero);
             S.Apply.Light(true, Locality.Area);
             S.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
-            S.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq2, false, true, false));
-            S.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 2.d4() + 4, Range.Sq2, Modifier.Zero));
+            //S.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq1, false, true, false));
+            S.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 2.d2() + 2, Range.Sq2, true, Z.School.Skill));
             S.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.WhenSourceBelowAppetite(Appetites.hungry, A => A.Nutrition(3.d10() + 10)));
           },
           E =>
@@ -2239,9 +2239,9 @@ namespace Pathos
             E.Apply.Light(true, Locality.Area);
             E.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.demon, Kinds.vampire, Kinds.orc);
             E.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
-            E.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq3, false, true, false));
-            E.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 3.d4() + 8, Range.Sq3, Modifier.Zero));
-            E.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn77, A => A.LoseTalent(Properties.blindness)));
+            E.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq2, false, true, false));
+            E.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 3.d2() + 3, Range.Sq3, true, Z.School.Skill));
+            E.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn120, A => A.LoseTalent(Properties.blindness)));
             E.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.WhenSourceBelowAppetite(Appetites.hungry, A => A.Nutrition(4.d10() + 10)));
           },
           M =>
@@ -2250,9 +2250,9 @@ namespace Pathos
             M.Apply.Light(true, Locality.Area);
             M.Apply.AreaTransient(Properties.fear, 4.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
             M.Apply.AreaTransient(Properties.blindness, 4.d6() + 4);
-            M.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq4, false, true, false));
-            M.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 4.d4() + 16, Range.Sq4, Modifier.Zero));
-            M.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn50, A => A.LoseTalent(Properties.blindness)));
+            M.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq3, false, true, false));
+            M.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 4.d2() + 4, Range.Sq4, true, Z.School.Skill));
+            M.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn100, A => A.LoseTalent(Properties.blindness)));
             M.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.WhenSourceBelowAppetite(Appetites.hungry, A => A.Nutrition(5.d10() + 10)));
           },
           C =>
@@ -2261,9 +2261,9 @@ namespace Pathos
             C.Apply.Light(true, Locality.Area);
             C.Apply.AreaTransient(Properties.fear, 5.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc }).ToArray());
             C.Apply.AreaTransient(Properties.blindness, 5.d6() + 5);
-            C.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq5, false, true, false));
-            C.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 5.d4() + 32, Range.Sq5, Modifier.Zero));
-            C.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn25, A => A.LoseTalent(Properties.blindness)));
+            C.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq4, false, true, false));
+            C.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 5.d2() + 5, Range.Sq5, true, Z.School.Skill));
+            C.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn60, A => A.LoseTalent(Properties.blindness)));
             C.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.WhenSourceBelowAppetite(Appetites.hungry, A => A.Nutrition(6.d10() + 10)));
           },
           T =>
@@ -2273,11 +2273,11 @@ namespace Pathos
             T.Apply.AreaTransient(Properties.fear, 7.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc, Kinds.giant, Kinds.dwarf }).ToArray());
             T.Apply.AreaTransient(Properties.blindness, 7.d6() + 7);
             T.Apply.AreaTransient(Properties.confusion, 7.d6() + 7);
-            T.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq6, false, true, false), A => A.Repel(Range.Sq2, false, true, false));
-            T.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 6.d4() + 64, Range.Sq6, Modifier.Zero), A => A.HarmArea(Elements.light, 2.d4() + 4, Range.Sq2, Modifier.Zero));
+            T.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq5, false, true, false), A => A.Repel(Range.Sq2, false, true, false));
+            T.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 6.d2() + 6, Range.Sq6, true, Z.School.Skill), A => A.HarmArea(Elements.light, 1.d4() + 1, Range.Sq2, false));
             T.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.WhenSourceBelowAppetite(Appetites.content, A => A.Nutrition(6.d10() + 10)));
             //T.Apply.WhenSourceHasProperty(Properties.blindness, A => A.LoseTalent(Properties.blindness));
-            T.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn12, A => A.LoseTalent(Properties.blindness)));
+            T.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn33, A => A.LoseTalent(Properties.blindness)));
             T.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.ApplyTransient(Properties.life_regeneration, 2.d5() + 5));
           },
           D =>
@@ -2287,11 +2287,11 @@ namespace Pathos
             D.Apply.AreaTransient(Properties.fear, 10.d6(), Kinds.Undead.ToArray().Union(new[] { Kinds.demon, Kinds.orc, Kinds.giant, Kinds.dwarf, Kinds.dragon, Kinds.kobold, Kinds.bird, Kinds.bat, Kinds.elf }).ToArray());
             D.Apply.AreaTransient(Properties.blindness, 10.d6() + 10);
             D.Apply.AreaTransient(Properties.confusion, 10.d6() + 10);
-            D.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq7, false, true, false), A => A.Repel(Range.Sq3, false, true, false));
-            D.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 7.d4() + 128, Range.Sq7, Modifier.Zero), A => A.HarmArea(Elements.light, 3.d4() + 8, Range.Sq3, Modifier.Zero));
+            D.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.Repel(Range.Sq6, false, true, false), A => A.Repel(Range.Sq3, false, true, false));
+            D.Apply.WhenSourceKind(Kinds.Extradimensional, A => A.HarmArea(Elements.light, 7.d2() + 7, Range.Sq7, true, Z.School.Skill), A => A.HarmArea(Elements.light, 1.d4() + 2, Range.Sq3, false));
             D.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.WhenSourceBelowAppetite(Appetites.content, A => A.Nutrition(7.d10() + 10)));
             //D.Apply.WhenSourceHasProperty(Properties.blindness, A => A.LoseTalent(Properties.blindness));
-            D.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn5, A => A.LoseTalent(Properties.blindness)));
+            D.Apply.WhenSourceEntity(new List<Entity>() { Entities.ethereal }, A => A.WhenChance(Chance.OneIn10, A => A.LoseTalent(Properties.blindness)));
             D.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.ApplyTransient(Properties.life_regeneration, 4.d5() + 10));
             D.Apply.WhenSourceHasDiet(Diets.photoautotroph, A => A.ApplyTransient(Properties.slow_digestion, 5.d5() + 15));
           }
@@ -2601,7 +2601,7 @@ namespace Pathos
                 );
       });
 
-      protoplasmatic_hands = AddSpell(Schools.transmutation, "protoplasmatic hands", 16, new Precept(Purpose.Buff), Glyphs.protoplasmatic_hands_spell, Z =>
+      protoplasmatic_hands = AddSpell(Schools.transmutation, "protoplasmatic hands", 20, new Precept(Purpose.Buff), Glyphs.protoplasmatic_hands_spell, Z =>
       {
         Z.Description = null;
         SetAdept(Z,
@@ -3083,7 +3083,7 @@ namespace Pathos
         );
       });
 
-      teleport_up = AddSpell(Schools.abjuration, "teleport up", 10, new Precept(Purpose.Teleport), Glyphs.teleport_up_spell, Z =>
+      teleport_up = AddSpell(Schools.abjuration, "teleport up", 16, new Precept(Purpose.Teleport), Glyphs.teleport_up_spell, Z =>
       {
         Z.Description = null;
         SetAdept(Z,
@@ -3100,7 +3100,7 @@ namespace Pathos
               );
       });
 
-      teleport_down = AddSpell(Schools.abjuration, "teleport down", 10, new Precept(Purpose.Teleport), Glyphs.teleport_down_spell, Z =>
+      teleport_down = AddSpell(Schools.abjuration, "teleport down", 16, new Precept(Purpose.Teleport), Glyphs.teleport_down_spell, Z =>
       {
         Z.Description = null;
         SetAdept(Z,

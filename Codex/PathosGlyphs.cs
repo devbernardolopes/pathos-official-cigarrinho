@@ -2566,6 +2566,19 @@ namespace Pathos
     public readonly Glyph protoplasmatic_hands_property;
     public readonly Glyph Ring_of_Bia_Vis;
     public readonly Glyph absorption_spell;
+    public readonly Glyph head_anatomy;
+    public readonly Glyph mind_anatomy;
+    public readonly Glyph eyes_anatomy;
+    public readonly Glyph ears_anatomy;
+    public readonly Glyph voice_anatomy;
+    public readonly Glyph hands_anatomy;
+    public readonly Glyph limbs_anatomy;
+    public readonly Glyph feet_anatomy;
+    public readonly Glyph blood_anatomy;
+    public readonly Glyph thermal_anatomy;
+    public readonly Glyph amorphous_anatomy;
+    public readonly Glyph mounted_anatomy;
+    public readonly Glyph ethereal_debug;
 
 #pragma warning restore 0649
 

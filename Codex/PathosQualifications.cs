@@ -29,8 +29,8 @@ namespace Pathos
             expert = AddQualification("e", "expert", 500);         // +300
             master = AddQualification("m", "master", 1000);        // +500
             champion = AddQualification("c", "champion", 2000);    // +1000
-            transcendent = AddQualification("t", "transcendent", 3500);    // +2000
-            divine = AddQualification("d", "divine", 5000);    // +3500
+            transcendent = AddQualification("t", "transcendent", 5000);    // +2000
+            divine = AddQualification("d", "divine", 10000);    // +5000
         }
 #endif
 

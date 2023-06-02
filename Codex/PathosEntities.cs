@@ -200,9 +200,9 @@ namespace Pathos
         E.Challenge = 0;
         E.Difficulty = 0;
         E.Frequency = 0;
-        E.Defence = new Defence(D: 10, P: +0, S: +0, B: +0);
+        E.Defence = new Defence(D: 8, P: -1, S: -1, B: +0);
         E.SetDiet(Diets.photoautotroph);
-        E.Speed = Speed.S7_5;
+        E.Speed = Speed.S6_5;
         E.Size = Size.Medium;
         E.Strategy = Strategy.Escape;
         E.Weight = Weight.FromUnits(75);
@@ -224,7 +224,7 @@ namespace Pathos
         );
 
         E.LifeAdvancement.Set(2, Dice.Fixed(+1));
-        E.ManaAdvancement.Set(6, Dice.Fixed(+6));
+        E.ManaAdvancement.Set(6, Dice.Fixed(+4));
 
         E.DefaultForm.Set(STR: 10, DEX: 10, CON: 10, INT: 10, WIS: 10, CHA: 10);
         E.LimitForm.Set(STR: 10, DEX: 28, CON: 12, INT: 30, WIS: 30, CHA: 10);
@@ -261,7 +261,7 @@ namespace Pathos
             Elements.cold
         );
 
-        E.Startup.SetSkill(Qualifications.specialist, Skills.abjuration);
+        E.Startup.SetSkill(Qualifications.proficient, Skills.abjuration);
         E.Startup.SetSkill(Qualifications.proficient, Skills.transmutation);
         //E.Startup.SetSkill(Qualifications.transcendent, Skills.conjuration);
 
@@ -270,6 +270,7 @@ namespace Pathos
         E.Startup.AddGrimoire(Dice.One, Spells.teleport_down);
         E.Startup.AddGrimoire(Dice.One, Spells.protoplasmatic_hands);
         //E.Startup.AddGrimoire(Dice.One, Spells.absorption);
+
 
         E.Startup.SetRecognition(Items.scroll_of_light, Items.book_of_light, Items.wand_of_light, Items.magic_lamp, Items.oil_lamp, Items.oil_lamp, Items.magic_candle, Items.wax_candle);
 
